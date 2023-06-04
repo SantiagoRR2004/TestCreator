@@ -1,16 +1,27 @@
 {
   "questions": [
     {
-      "question": "¿Qué tipo de empresas son más propensas a sufrir el 'dilema del innovador'?",
-      "options": ["Empresas pequeñas y nuevas que ofrecen productos o servicios disruptivos",
-      		 "Empresas grandes y establecidas que ofrecen productos o serv. de alto valor",
-      		 "Empresas medianas y emergentes que exploran nuevos mercados y tecnologías",
-      		 "Todas las empresas que optan por la innovación abierta"],
+      "question": "¿Cuál no es un criterio del control?",
+      "options": ["Financiero",
+      		        "Objetivo",
+      		        "No financiero",
+      		        "Mixto"],
       "correct_option": 1
     },
     {
-      "question": "What is the chemical symbol for gold?",
-      "options": ["Au", "Ag", "Fe", "Hg"],
+      "question": "Elija la opción correcta",
+      "options": ["Un proyecto predictivo o adaptativo son lo mismo",
+      		        "Los proyectos adaptativos siguen un ciclo de vida secuencial",
+      		        "Los proyectos predictivos intentan cumplir con el plan establecido",
+      		        "La estimación de un proyecto predictivo es el alcance"],
+      "correct_option": 2
+    },
+    {
+      "question": "¿Qué es incorrecto sobre un análisis PERT?",
+      "options": ["Sólo contiene las actividades más importantes",
+      		        "Importa el orden de los eventos",
+      		        "Lo más importante es la ruta crítica",
+      		        "Hay que estimar el tiempo para cada actividad"],
       "correct_option": 0
     }
   ]

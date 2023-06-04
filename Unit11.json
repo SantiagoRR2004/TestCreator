@@ -1,6 +1,14 @@
 {
   "questions": [
     {
+      "question": "¿Qué tipo de empresas son más propensas a sufrir el 'dilema del innovador'?",
+      "options": ["Empresas pequeñas y nuevas que ofrecen productos o servicios disruptivos",
+      		        "Empresas grandes y establecidas que ofrecen productos o serv. de alto valor",
+      		        "Empresas medianas y emergentes que exploran nuevos mercados y tecnologías",
+      		        "Todas las empresas que optan por la innovación abierta"],
+      "correct_option": 1
+    },
+    {
       "question": "¿Cuál no es un tipo de innovación según el objeto de la innovación?",
       "options": ["Innovación de producto o servicio",
       		        "Innovación de proceso",
