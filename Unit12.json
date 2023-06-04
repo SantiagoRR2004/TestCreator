@@ -1,18 +1,27 @@
 {
   "questions": [
     {
-      "question": "What is the capital of France?",
-      "options": ["London", "Paris", "Berlin", "Madrid"],
+      "question": "¿Cuál de los siguientes no es un modelo de negocio?",
+      "options": ["Software as a Service (SaaS)",
+      		        "Long tail",
+      		        "Red Colaborativa",
+      		        "Comercio electrónico"],
+      "correct_option": 2
+    },
+    {
+      "question": "¿Cuál de los siguientes no es un modelo de negocio?",
+      "options": ["De dos (o varios) lados",
+      		        "Personalized Solution",
+      		        "Crowdsourcing",
+      		        "Modelo de suscripción"],
       "correct_option": 1
     },
     {
-      "question": "Which planet is known as the Red Planet?",
-      "options": ["Venus", "Mars", "Jupiter", "Saturn"],
-      "correct_option": 1
-    },
-    {
-      "question": "What is the chemical symbol for gold?",
-      "options": ["Au", "Ag", "Fe", "Hg"],
+      "question": "¿Cuál de los siguientes no es un modelo de negocio?",
+      "options": ["Continuous Innovation",
+      		        "Bait & hook",
+      		        "Freemium",
+      		        "Peer to peer"],
       "correct_option": 0
     }
   ]
