@@ -1,18 +1,27 @@
 {
   "questions": [
     {
-      "question": "What is the capital of France?",
-      "options": ["London", "Paris", "Berlin", "Madrid"],
+      "question": "¿Cuál no es un tipo de innovación según el objeto de la innovación?",
+      "options": ["Innovación de producto o servicio",
+      		        "Innovación de proceso",
+      		        "Innovación comercial",
+      		        "Innovación radical"],
+      "correct_option": 3
+    },
+    {
+      "question": "¿Cuál no es un tipo de innovación según el impacto de la innovación?",
+      "options": ["Innovación de cambio de paradigma",
+      		        "Impulsada por el mercado",
+      		        "Innovación incremental",
+      		        "Innovación radical"],
       "correct_option": 1
     },
     {
-      "question": "Which planet is known as the Red Planet?",
-      "options": ["Venus", "Mars", "Jupiter", "Saturn"],
-      "correct_option": 1
-    },
-    {
-      "question": "What is the chemical symbol for gold?",
-      "options": ["Au", "Ag", "Fe", "Hg"],
+      "question": "¿Cuáles son los dos tipo de innovación según el el grado de colaboración con agentes externos?",
+      "options": ["Innovación cerrada o abierta",
+      		        "Innovación por el mercado o por la tecnología",
+      		        "Innovación internacional o nacional",
+      		        "Innovación privada o pública"],
       "correct_option": 0
     }
   ]
