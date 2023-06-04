@@ -119,6 +119,76 @@
            "El modelo de economía compartida se basa en la propiedad colectiva de activos y recursos en lugar de la propiedad individual",
            "Puede ser llamada economía de acceso"],
       "correct_option": 2
+    },
+    {
+      "question": "¿Qué es una empresa?",
+      "options": [
+        "Una organización sin ánimo de lucro",
+        "Una entidad que transforma recursos en bienes y/o servicios para obtener beneficios",
+        "Un sistema abierto que intercambia retroalimentación con su entorno",
+        "Una forma de gobierno"
+      ],
+      "correct_option": 1
+    },
+    {
+      "question": "¿Cuál es el objetivo último de una empresa?",
+      "options": [
+        "Crear valor para la sociedad",
+        "Crear valor para los accionistas",
+        "Crear valor para los empleados",
+        "Crear valor para el gobierno"
+      ],
+      "correct_option": 1
+    },
+    {
+      "question": "¿Cuál es una característica de las organizaciones?",
+      "options": [
+        "La falta de estructura y reglas establecidas",
+        "La ausencia de metas y objetivos",
+        "La existencia de un propósito o finalidad específicos",
+        "La imprevisibilidad constante"
+      ],
+      "correct_option": 2
+    },
+    {
+      "question": "¿Qué se entiende por eficiencia en la gestión?",
+      "options": [
+        "Realizar tareas que ayudan a la organización a alcanzar sus objetivos",
+        "Obtener el máximo rendimiento con el mínimo de recursos",
+        "Tomar decisiones informadas y eficaces",
+        "No cometer errores en la toma de decisiones"
+      ],
+      "correct_option": 1
+    },
+    {
+      "question": "¿Qué es la economía compartida?",
+      "options": [
+        "Un sistema cerrado que no intercambia retroalimentación con su entorno",
+        "Un sistema económico basado en el intercambio de bienes y servicios",
+        "Un sistema en el que los propietarios comparten activos subutilizados con otras personas a través de servicios peer-to-peer",
+        "Un sistema en el que los propietarios obtienen beneficios sin compartir con otros"
+      ],
+      "correct_option": 2
+    },
+    {
+      "question": "¿Cuál es una categoría del entorno externo que afecta a una organización?",
+      "options": [
+        "La dimensión astronómica",
+        "La dimensión cultural",
+        "La dimensión virtual",
+        "La dimensión espiritual"
+      ],
+      "correct_option": 1
+    },
+    {
+      "question": "¿Cuál es una tendencia demográfica relevante?",
+      "options": [
+        "El aumento de la población en Europa",
+        "El envejecimiento de la población en China",
+        "La disminución de la población en África",
+        "La migración masiva en América"
+      ],
+      "correct_option": 1
     }
   ]
 }
