@@ -9,8 +9,11 @@
       "correct_option": 2
     },
     {
-      "question": "What is the chemical symbol for gold?",
-      "options": ["Au", "Ag", "Fe", "Hg"],
+      "question": "¿Según Mintzberg cuál no es un rol interpersonal?",
+      "options": ["Conciliador de conflictos",
+      		 "Representante",
+      		 "Líder",
+      		 "Enlace"],
       "correct_option": 0
     }
   ]

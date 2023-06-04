@@ -9,9 +9,20 @@
       "correct_option": 3
     },
     {
-      "question": "What is the chemical symbol for gold?",
-      "options": ["Au", "Ag", "Fe", "Hg"],
+      "question": "¿Cuál es la fórmula de la productividad del factor trabajo?",
+      "options": ["Unidades producidas / Horas de trabajo empleadas",
+      		 "Unidades producidas / Valor de los factores empleados",
+      		 "Valor de la producción obtenida / Horas de trabajo empleadas",
+      		 "Valor de la producción obtenida / Valor de los factores empleados"],
       "correct_option": 0
+    },
+    {
+      "question": "¿Cuál es la fórmula de la productividad global?",
+      "options": ["Unidades producidas / Horas de trabajo empleadas",
+      		 "Unidades producidas / Valor de los factores empleados",
+      		 "Valor de la producción obtenida / Horas de trabajo empleadas",
+      		 "Valor de la producción obtenida / Valor de los factores empleados"],
+      "correct_option": 3
     }
   ]
 }

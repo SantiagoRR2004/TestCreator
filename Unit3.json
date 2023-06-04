@@ -9,9 +9,12 @@
       "correct_option": 2
     },
     {
-      "question": "What is the chemical symbol for gold?",
-      "options": ["Au", "Ag", "Fe", "Hg"],
-      "correct_option": 0
+      "question": "¿Cuál no es un sesgo del entrevistador?",
+      "options": ["El orden en que se obtiene la información durante la entrevista",
+      		 "Escribir una evaluación del candidato nada más terminar la entrevista",
+      		 "Favorecer a los candidatos que comparten sus propias actitudes",
+      		 "El orden en que se entrevisten a los candidatos"],
+      "correct_option": 1
     }
   ]
 }
