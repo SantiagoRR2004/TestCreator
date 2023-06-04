@@ -5,7 +5,7 @@ questionsOfEachUnit = {key: 0 for key in range(1, 14)}
 numOfQuestions= 30
 questions = []
 
-for i in range(30):
+for i in range(numOfQuestions):
     x = randint(1, 13)
     questionsOfEachUnit[x] += 1
 
