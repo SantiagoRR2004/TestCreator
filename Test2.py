@@ -3,158 +3,215 @@ import json
 import random
 
 numOfQuestions = 30  ## Cambiar el número de preguntas aquí
+questionsPerTopic = {
+    1: 5,
+    2: 4,
+    3: 4,
+    4: 2,
+    5: 1,
+    6: 2,
+    7: 1,
+    8: 1,
+    9: 1,
+    10: 2,
+    11: 2,
+    12: 3,
+    13: 2
+} ## Elegimos cuántas preguntas de cada tema queremos
 
-def make_test(number=1):
-    for i in range(number):
-        questions = []
+def generate_questions(number=1):
+    questions = []
+    while len(questions) < number:
         for unit in range(1, 14):
-            with open(f"Unit{unit}.json", "r", encoding='utf-8') as file:
+            filename = f"Unit{unit}.json"
+            if not os.path.exists(filename):
+                continue
+
+            with open(filename, "r", encoding='utf-8') as file:
                 questionsData = json.load(file)
                 available_questions = questionsData["questions"]
-                
+
                 ## Verificar si hay suficientes preguntas en la unidad
                 if not available_questions:
                     continue
-                
-                ## Seleccionar preguntas sin repetir
-                selected_questions = random.sample(available_questions, min(len(available_questions), numOfQuestions))
-                
-                for question in selected_questions:
-                    if question not in questions:
-                        questions.append(question)
-                    if len(questions) == numOfQuestions:
-                        break
 
-        fileOutName = f"./ExamenTest1.html"
+                if unit in questionsPerTopic:
+                    selected_questions = random.sample(available_questions, min(len(available_questions), questionsPerTopic[unit]))
+                    for question in selected_questions:
+                        question["unit"] = unit
+                        if question not in questions:
+                            questions.append(question)
+                        if len(questions) == number:
+                            break
+                if len(questions) == number:
+                    break
+            if len(questions) == number:
+                break
+    return questions
 
-        ## Verificar la existencia del archivo y actualizar el nombre si es necesario
-        fileIndex = 2
-        while os.path.exists(fileOutName):
-            fileOutName = f"./ExamenTest{fileIndex}.html"
-            fileIndex += 1
+def create_html_page(questions, index):
+    fileOutName = f"./ExamenTest{index}.html"
 
-        html_head = """
-        <html>
-        <head>
-            <meta charset="UTF-8">
-            <title>Empresas</title>
-            <style>
-                .question {
-                    margin-bottom: 20px;
-                }
-                .question p {
-                    font-weight: bold;
-                    font-size: 20px;
-                }
-                .question li {
-                    font-size: 18px;
-                    list-style-type: none;
-                }
-                .correct-answer {
-                    display: none;
-                    font-weight: bold;
-                    font-size: 16px;
-                }
-                .answered {
-                    pointer-events: none;
-                }
-            </style>
-            <script>
-                function submitForm() {
-                    var form = document.getElementById("testForm");
-                    var answers = [];
-                    var questions = document.getElementsByClassName("question");
-                    for (var i = 0; i < questions.length; i++) {
-                        var question = questions[i];
-                        var inputs = question.getElementsByTagName("input");
-                        var answer = null;
-                        for (var j = 0; j < inputs.length; j++) {
-                            if (inputs[j].checked) {
-                                answer = inputs[j].value;
-                                break;
-                            }
-                        }
-                        answers.push(answer);
-                    }
-                    
-                    // Mostrar las respuestas después de enviar el formulario
-                    var correctAnswers = document.getElementsByClassName("correct-answer");
-                    for (var i = 0; i < correctAnswers.length; i++) {
-                        correctAnswers[i].style.display = "block";
-                    }
-                    
-                    // Bloquear las opciones después de enviar el formulario
-                    var options = document.getElementsByTagName("input");
-                    for (var i = 0; i < options.length; i++) {
-                        options[i].classList.add("answered");
-                    }
-                    
-                    // Calcular puntuación total
-                    var score = calculateScore(answers);
-                    var scoreDisplay = document.getElementById("scoreDisplay");
-                    scoreDisplay.innerHTML = "Puntuación total: " + score;
-                    
-                    return false;
-                }
+    html_head = """
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Empresas</title>
+        <style>
+            .question {
+                margin-bottom: 20px;
+            }
+            .question p {
+                font-weight: bold;
+                font-size: 20px;
+            }
+            .question span {
+                font-size: 16px;
+                font-style: italic;
+            }
+            .question li {
+                font-size: 18px;
+                list-style-type: none;
+            }
+            .correct-answer {
+                display: none;
+                font-weight: bold;
+                font-size: 16px;
+            }
+            .answered {
+                pointer-events: none;
+            }
+        </style>
+        <script>
+            function submitForm() {
+                var form = document.getElementById("testForm");
+                var answers = [];
+                var questions = document.getElementsByClassName("question");
                 
-                function calculateScore(answers) {
-                    var correctCount = 0;
-                    for (var i = 0; i < answers.length; i++) {
-                        var questionIndex = i;
-                        var correctOptionInput = document.getElementsByName("correct_" + questionIndex)[0];
-                        var correctOption = correctOptionInput.value;
-                        if (answers[i] === correctOption) {
-                            correctCount++;
+                for (var i = 0; i < questions.length; i++) {
+                    var question = questions[i];
+                    var inputs = question.getElementsByTagName("input");
+                    var answer = null;
+                    
+                    for (var j = 0; j < inputs.length; j++) {
+                        if (inputs[j].checked) {
+                            answer = inputs[j].value;
+                            break;
                         }
                     }
-                    var totalOptions = answers.length;
-                    var score = (correctCount / totalOptions) * 100;
-                    return score.toFixed(2) + "%";
+                    
+                    answers.push(answer);
                 }
-            </script>
-        </head>
-        <body>
-            <form id="testForm" onsubmit="return submitForm()">
-        """
 
-        html_tail = '''
-                <input type="submit" value="Enviar respuestas">
-            </form>
-            <p id="scoreDisplay"></p>
-        </body>
-        </html>
-        '''
+                var correctAnswers = document.getElementsByClassName("correct-answer");
+                
+                for (var i = 0; i < correctAnswers.length; i++) {
+                    correctAnswers[i].style.display = "block";
+                }
 
-        fileOut = open(fileOutName, "w", encoding='utf-8')
-        fileOut.write(html_head)
+                var options = document.getElementsByTagName("input");
+                
+                for (var i = 0; i < options.length; i++) {
+                    options[i].classList.add("answered");
+                }
 
-        for i, question in enumerate(questions[:numOfQuestions]):
-            question_number = i + 1  ## Incrementar el número de pregunta
-            
-            question_text = question["question"]
-            options = question["options"]
-            correct_option = question["correct_option"]
-            option_html = ""
-            for j, option in enumerate(options):
-                option_letter = chr(ord("A") + j)  ## Convertir el índice en una letra
-                option_html += f'<li><input type="radio" name="question_{i}" value="{option_letter}"> {option_letter}) {option}</li>'
-            
-            correct_html = f'<p class="correct-answer">Respuesta correcta: {chr(ord("A") + correct_option)}</p>'
-            correct_hidden_input = f'<input type="hidden" name="correct_{i}" value="{chr(ord("A") + correct_option)}">'
-            
-            fileOut.write(f"""
-            <div class="question">
-                <p>{question_number}: {question_text}</p>  <!-- Mostrar el número de pregunta -->
-                <ul>
-                    {option_html}
-                </ul>
-                {correct_html}
-                {correct_hidden_input}
-            </div>
-            """)
+                var scores = calculateScore(answers);
+                var scoreDisplay = document.getElementById("scoreDisplay");
+                
+                scoreDisplay.innerHTML = "Preguntas acertadas: " + scores.correctGlobal + "<br>Preguntas falladas: " + scores.incorrectGlobal + "<br>Puntuación total: " + scores.totalScore + "/10";
 
-        fileOut.write(html_tail)
-        fileOut.close()
+                form.elements["submitButton"].disabled = true;
 
+                return false;
+            }
 
-make_test(10) ## Número de exámenes se que quiere generar
+            function calculateScore(answers) {
+                var correctCount = 0;
+                var correctGlobal = 0;
+                var incorrectCount = 0;
+                var incorrectGlobal = 0;
+
+                for (var i = 0; i < answers.length; i++) {
+                    var questionIndex = i;
+                    var correctOptionInput = document.getElementsByName("correct_" + questionIndex)[0];
+                    var correctOption = correctOptionInput.value;
+
+                    if (answers[i] === correctOption) {
+                        correctCount++;
+                        correctGlobal++;
+                        incorrectCount = 0;  // Reiniciar el contador de respuestas incorrectas
+                    } else {
+                        incorrectCount++;
+                        incorrectGlobal++;
+
+                        if (incorrectCount === 3) {
+                            correctCount--;  // Restar una respuesta correcta
+                            incorrectCount = 0;  // Reiniciar el contador de respuestas incorrectas
+                        }
+                    }
+                }
+
+                var totalOptions = answers.length;
+                var score = ((correctCount / 30) * 10).toFixed(2);
+                if (score < 0){
+                    var score = 0
+                }
+
+                var result = {
+                    correctCount: correctCount,
+                    incorrectCount: incorrectCount,
+                    totalScore: score,
+                    correctGlobal: correctGlobal,
+                    incorrectGlobal: incorrectGlobal
+                };
+
+                return result;
+            }
+        </script>
+    </head>
+    <body>
+        <form id="testForm" onsubmit="return submitForm()">
+    """
+
+    html_tail = '''
+            <input id="submitButton" type="submit" value="Enviar respuestas">
+        </form>
+        <p id="scoreDisplay"></p>
+    </body>
+    </html>
+    '''
+
+    fileOut = open(fileOutName, "w", encoding='utf-8')
+    fileOut.write(html_head)
+
+    for i, question in enumerate(questions[:numOfQuestions]):
+        question_number = i + 1  ## Incrementar el número de pregunta
+        unit = question["unit"]
+        question_text = question["question"]
+        options = question["options"]
+        correct_option = question["correct_option"]
+        option_html = ""
+        for j, option in enumerate(options):
+            option_letter = chr(ord("A") + j)  ## Convertir el índice en una letra
+            option_html += f'<li><input type="radio" name="question_{i}" value="{option_letter}"> {option_letter}) {option}</li>'
+
+        correct_html = f'<p class="correct-answer">Respuesta correcta: {chr(ord("A") + correct_option)}</p>'
+        correct_hidden_input = f'<input type="hidden" name="correct_{i}" value="{chr(ord("A") + correct_option)}">'
+
+        fileOut.write(f"""
+        <div class="question">
+            <p>{question_number}: {question_text} <span>[Tema {unit}]</span></p>  <!-- Mostrar el número de pregunta y el tema -->
+            <ul>
+                {option_html}
+            </ul>
+            {correct_html}
+            {correct_hidden_input}
+        </div>
+        """)
+
+    fileOut.write(html_tail)
+    fileOut.close()
+
+for i in range(1, 11): # Hacer 10 exámenes
+    questions = generate_questions(numOfQuestions)
+    create_html_page(questions, i)
