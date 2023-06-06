@@ -78,6 +78,46 @@
       	"Todas son correctas"
       ],
       "correct_option": 0
+    },
+    {
+      "question": "Cual es la variable mas importante en la productividad y compromiso del empleado sin que haya algun factor externo como una crisis financiera:",
+      "options": [
+        "Prestaciones laborales y ambiente laboral",
+      	"Salario",
+      	"Relacion con el supervisor",
+      	"Situaciones de estrés"
+      ],
+      "correct_option": 2
+    },
+    {
+      "question": "Cual es la variable mas importante en la productividad y compromiso del empleado contando con factores externos como una crisis financiera:",
+      "options": [
+        "Prestaciones laborales y ambiente laboral",
+      	"Salario y menor estrés",
+      	"Relacion con el supervisor",
+      	"Facilidades que ofrece la compañía, tales como cafetería o zonas de ocio"
+      ],
+      "correct_option": 1
+    },
+    {
+      "question": "Como estructurarías en niveles una organización:",
+      "options": [
+        "Altos cargos, directivos, supervisores y empleados no gerenciales",
+      	"Directivos, medios cargos, lideres de equipo y empleados no gerenciales",
+      	"Altos cargos, medios cargos, gerentes de primera linea y lideres de equipo",
+      	"CEOs, vicedirectores, gerentes y trabajadores no gerenenciales"
+      ],
+      "correct_option": 2
+    },
+    {
+      "question": "Cuales son las cuatro funciones basicas de gestion:",
+      "options": [
+        "Planificar, organizar, liderar y controlar",
+      	"Pensar, ordenar, listar y comunicar",
+      	"Planificar, ordenar, liderar y comunicar",
+      	"Pensar, organizar, listar y controlar"
+      ],
+      "correct_option": 0
     }
   ]
 }
