@@ -7,11 +7,6 @@
       		 "Implica tomar decisiones sobre las metas y planes en el largo plazo",
       		 "Implica acciones y asignaciones de recursos necesarios"],
       "correct_option": 0
-    },
-    {
-      "question": "What is the chemical symbol for gold?",
-      "options": ["Au", "Ag", "Fe", "Hg"],
-      "correct_option": 0
     }
   ]
 }

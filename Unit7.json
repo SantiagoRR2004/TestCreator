@@ -7,11 +7,6 @@
       		 "cuando  r   >= k",
       		 "cuando  r   >  k"],
       "correct_option": 3
-    },
-    {
-      "question": "What is the chemical symbol for gold?",
-      "options": ["Au", "Ag", "Fe", "Hg"],
-      "correct_option": 0
     }
   ]
 }

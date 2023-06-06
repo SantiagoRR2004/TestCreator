@@ -7,11 +7,6 @@
       		 "Oferta del producto incluye: producto básico, aspectos formales y añadidos",
       		 "Debe centrarse en las características físicas y no en los beneficios que da"],
       "correct_option": 2
-    },
-    {
-      "question": "What is the chemical symbol for gold?",
-      "options": ["Au", "Ag", "Fe", "Hg"],
-      "correct_option": 0
     }
   ]
 }
