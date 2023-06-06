@@ -1,21 +1,39 @@
 from random import randint
 import json
+import copy
 
-questionsOfEachUnit = {key: 0 for key in range(1, 14)}
-numOfQuestions= 30
-questions = []
+def questionGenerator(numOfQuestions = 30):
+    questionsOfEachUnit = {key: 0 for key in range(1, 14)}
+    questions = []
 
-for i in range(numOfQuestions):
-    x = randint(1, 13)
-    questionsOfEachUnit[x] += 1
+    for i in range(numOfQuestions):
+        x = randint(1, 13)
+        questionsOfEachUnit[x] += 1
 
-for unit in questionsOfEachUnit.keys():
-    with open("Unit"+str(unit)+".json", "r") as file:
-        questionsData = json.load(file)
-        numOfQuestionsInUnit = len(questionsData["questions"])
-        for i in range(questionsOfEachUnit[unit]):
-            x = randint(0, numOfQuestionsInUnit-1)
-            questions.append(questionsData["questions"][x])
+    for unit in questionsOfEachUnit.keys():
+        with open("Unit"+str(unit)+".json", "r") as file:
+            questionsData = json.load(file)
+            numOfQuestionsInUnit = len(questionsData["questions"])
+
+            enoughQuestions = (questionsOfEachUnit[unit] <= numOfQuestionsInUnit)
+            print(enoughQuestions)
+
+            while questionsOfEachUnit[unit] > 0:
+                x = randint(0, numOfQuestionsInUnit-1)
+                questionAdded = copy.deepcopy(questionsData)
+                questionAdded = questionAdded["questions"][x]
+                questionAdded["question"] = "Tema "+str(unit)+": "+questionAdded["question"]
+
+                if enoughQuestions and questionAdded not in questions:
+                    questions.append(questionAdded)
+                    questionsOfEachUnit[unit] -= 1
+
+                elif not enoughQuestions:
+                    questions.append(questionAdded)
+                    questionsOfEachUnit[unit] -= 1
+
+    return questions
+
 
 
 fileOutName = "./ExamenTest.html"
@@ -33,6 +51,9 @@ html_tail='''
 </hmtl>
 '''
 
+numOfQuestions = 30
+
+questions = questionGenerator(numOfQuestions)
 
 fileOut = open(fileOutName, "w")
 fileOut.write(html_head)
