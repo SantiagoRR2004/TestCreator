@@ -2,31 +2,28 @@
   "questions": [
     {
       "question": "En relación con la cadena de valor de Porter, señale la afirmación correcta",
-      "options": [
-        "Contabilidad marketing y recursos humanos son actividades de apoyo",
-      	"Servicio post-venta e I+D de la tecnología son actividades primarias",
-      	"Toda la ventaja competitiva viene de las interrelaciones entre actividades",
-      	"Un objetivo pricipal de las actividades primarias es crear valor añadido"
+      "options": ["Contabilidad marketing y recursos humanos son actividades de apoyo",
+      	          "Servicio post-venta e I+D de la tecnología son actividades primarias",
+      	          "Toda la ventaja competitiva viene de las interrelaciones entre actividades",
+      	          "Un objetivo pricipal de las actividades primarias es crear valor añadido"
       ],
       "correct_option": 3
     },
     {
       "question": "¿Cuál es la fórmula de la productividad del factor trabajo?",
-      "options": [
-        "Unidades producidas / Horas de trabajo empleadas",
-      	"Unidades producidas / Valor de los factores empleados",
-      	"Valor de la producción obtenida / Horas de trabajo empleadas",
-      	"Valor de la producción obtenida / Valor de los factores empleados"
+      "options": ["Unidades producidas / Horas de trabajo empleadas",
+      	          "Unidades producidas / Valor de los factores empleados",
+      	          "Valor de la producción obtenida / Horas de trabajo empleadas",
+      	          "Valor de la producción obtenida / Valor de los factores empleados"
       ],
       "correct_option": 0
     },
     {
       "question": "¿Cuál es la fórmula de la productividad global?",
-      "options": [
-        "Unidades producidas / Horas de trabajo empleadas",
-      	"Unidades producidas / Valor de los factores empleados",
-      	"Valor de la producción obtenida / Horas de trabajo empleadas",
-      	"Valor de la producción obtenida / Valor de los factores empleados"
+      "options": ["Unidades producidas / Horas de trabajo empleadas",
+      	          "Unidades producidas / Valor de los factores empleados",
+      	          "Valor de la producción obtenida / Horas de trabajo empleadas",
+      	          "Valor de la producción obtenida / Valor de los factores empleados"
       ],
       "correct_option": 3
     },
