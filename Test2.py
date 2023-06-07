@@ -206,6 +206,6 @@ def create_html_page(questions, index):
     fileOut.write(html_tail)
     fileOut.close()
 
-for i in range(1, 2): # Hacer 10 exámenes
+for i in range(1, 11): # Hacer 10 exámenes
     questions = generate_questions(numOfQuestions)
     create_html_page(questions, i)
