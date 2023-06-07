@@ -5,8 +5,7 @@
       "options": ["Contabilidad marketing y recursos humanos son actividades de apoyo",
       	          "Servicio post-venta e I+D de la tecnología son actividades primarias",
       	          "Toda la ventaja competitiva viene de las interrelaciones entre actividades",
-      	          "Un objetivo pricipal de las actividades primarias es crear valor añadido"
-      ],
+      	          "Un objetivo pricipal de las actividades primarias es crear valor añadido"],
       "correct_option": 3
     },
     {
@@ -14,8 +13,7 @@
       "options": ["Unidades producidas / Horas de trabajo empleadas",
       	          "Unidades producidas / Valor de los factores empleados",
       	          "Valor de la producción obtenida / Horas de trabajo empleadas",
-      	          "Valor de la producción obtenida / Valor de los factores empleados"
-      ],
+      	          "Valor de la producción obtenida / Valor de los factores empleados"],
       "correct_option": 0
     },
     {
@@ -23,8 +21,7 @@
       "options": ["Unidades producidas / Horas de trabajo empleadas",
       	          "Unidades producidas / Valor de los factores empleados",
       	          "Valor de la producción obtenida / Horas de trabajo empleadas",
-      	          "Valor de la producción obtenida / Valor de los factores empleados"
-      ],
+      	          "Valor de la producción obtenida / Valor de los factores empleados"],
       "correct_option": 3
     },
     {
