@@ -1,14 +1,16 @@
-from random import randint
+from random import randint,shuffle
 import json
 import copy
 
-def questionGenerator(numOfQuestions = 30):
-    questionsOfEachUnit = {key: 0 for key in range(1, 14)}
+def questionGenerator(numOfQuestions = 30,questionsOfEachUnit=None):
     questions = []
 
-    for i in range(numOfQuestions):
-        x = randint(1, 13)
-        questionsOfEachUnit[x] += 1
+    if questionsOfEachUnit == None:
+        questionsOfEachUnit = {key: 0 for key in range(1, 14)}
+
+        for i in range(numOfQuestions):
+            x = randint(1, 13)
+            questionsOfEachUnit[x] += 1
 
     for unit in questionsOfEachUnit.keys():
         with open("Unit"+str(unit)+".json", "r") as file:
@@ -21,7 +23,7 @@ def questionGenerator(numOfQuestions = 30):
                 x = randint(0, numOfQuestionsInUnit-1)
                 questionAdded = copy.deepcopy(questionsData)
                 questionAdded = questionAdded["questions"][x]
-                questionAdded["question"] = "Tema "+str(unit)+": "+questionAdded["question"]
+                questionAdded["question"] = questionAdded["question"]+" [Tema "+str(unit)+"]"
 
                 if enoughQuestions and questionAdded not in questions:
                     questions.append(questionAdded)
@@ -33,6 +35,14 @@ def questionGenerator(numOfQuestions = 30):
 
     return questions
 
+def testRandomizer(listOfQuestions):
+    shuffle(listOfQuestions)
+    for question in listOfQuestions:
+        correct = question["options"][question["correct_option"]]
+        shuffle(question["options"])
+        question["correct_option"] = question["options"].index(correct)
+    return listOfQuestions
+
 def examWriter(questions, fileOutName):
     html_head = """
     <html>
@@ -40,35 +50,50 @@ def examWriter(questions, fileOutName):
         <meta charset="UTF-8">
         <title>Empresas</title>
         <style>
-            .question {
-                margin-bottom: 20px;
-            }
-            .question p {
-                font-weight: bold;
-                font-size: 20px;
-            }
-            .question li {
-                font-size: 18px;
-                list-style-type: none;
-            }
-            .correct-answer {
-                display: none;
-                font-weight: bold;
-                font-size: 16px;
-            }
-            .answered {
-                pointer-events: none;
-            }
+            body {font-family: Arial, sans-serif; 
+                }
+                .correct {
+                    color: green;
+                }
+                .incorrect {
+                    color: red;
+                }
+                .question {
+                    margin-bottom: 19px;
+                }
+                .question p {
+                    font-weight: bold;
+                    font-size: 19px;
+                }
+                .question span {
+                    font-size: 17px;
+                    font-style: italic;
+                }
+                .question li {
+                    font-size: 18px;
+                    list-style-type: none;
+                }
+                .correct-answer {
+                    display: none;
+                    font-weight: bold;
+                    font-size: 16px;
+                }
+                .answered {
+                    pointer-events: none;
+                }
+            
         </style>
         <script>
             function submitForm() {
                 var form = document.getElementById("testForm");
                 var answers = [];
                 var questions = document.getElementsByClassName("question");
+
                 for (var i = 0; i < questions.length; i++) {
                     var question = questions[i];
                     var inputs = question.getElementsByTagName("input");
                     var answer = null;
+
                     for (var j = 0; j < inputs.length; j++) {
                         if (inputs[j].checked) {
                             answer = inputs[j].value;
@@ -77,41 +102,76 @@ def examWriter(questions, fileOutName):
                     }
                     answers.push(answer);
                 }
-                
-                // Mostrar las respuestas después de enviar el formulario
+
                 var correctAnswers = document.getElementsByClassName("correct-answer");
+
                 for (var i = 0; i < correctAnswers.length; i++) {
                     correctAnswers[i].style.display = "block";
+
+                    // Obtener el input seleccionado de la pregunta
+                    var questionIndex = i;
+                    var selectedInput = document.querySelector('input[name="question_' + questionIndex + '"]:checked');
+
+                    // Verificar si la respuesta es correcta o incorrecta y aplicar la clase correspondiente
+                    if (selectedInput && selectedInput.value === correctAnswers[i].innerHTML.split(":")[1].trim()) {
+                        correctAnswers[i].classList.add("correct");
+                    } else {
+                        correctAnswers[i].classList.add("incorrect");
+                    }
                 }
-                
-                // Bloquear las opciones después de enviar el formulario
+
                 var options = document.getElementsByTagName("input");
+
                 for (var i = 0; i < options.length; i++) {
                     options[i].classList.add("answered");
                 }
-                
-                // Calcular puntuación total
-                var score = calculateScore(answers);
+
+                var scores = calculateScore(answers);
                 var scoreDisplay = document.getElementById("scoreDisplay");
-                scoreDisplay.innerHTML = "Puntuación total: " + score;
-                
+
+                scoreDisplay.innerHTML = "Preguntas acertadas: " + scores.correctGlobal + "<br>Preguntas falladas: " + scores.incorrectGlobal + "<br>Puntuación total: " + scores.totalScore + "/10";
+
+                form.elements["submitButton"].disabled = true;
+
                 return false;
             }
-            
+
             function calculateScore(answers) {
-                var correctCount = 0;
+                var correctGlobal = 0;
+                var incorrectGlobal = 0;
+                var unanswered = 0;
+
                 for (var i = 0; i < answers.length; i++) {
                     var questionIndex = i;
                     var correctOptionInput = document.getElementsByName("correct_" + questionIndex)[0];
                     var correctOption = correctOptionInput.value;
+
                     if (answers[i] === correctOption) {
-                        correctCount++;
+                        correctGlobal++;
+                    } else if (answers[i] !== null) {
+                        incorrectGlobal++;
+                    } else {
+                        unanswered++;
                     }
                 }
+
                 var totalOptions = answers.length;
-                var score = (correctCount / totalOptions) * 100;
-                return score.toFixed(2) + "%";
+                var totalCorrect = correctGlobal - Math.floor(incorrectGlobal / 3);  // Restar respuestas correctas por cada tres respuestas incorrectas
+                var score = (totalCorrect / totalOptions) * 10;  // Calcular la puntuación como un porcentaje
+
+                if (score < 0) {
+                    score = 0;
+                }
+
+                var result = {
+                    totalScore: score.toFixed(2),
+                    correctGlobal: correctGlobal,
+                    incorrectGlobal: incorrectGlobal,
+                    unanswered: unanswered
+                };
+                return result;
             }
+
         </script>
     </head>
     <body>
@@ -119,12 +179,13 @@ def examWriter(questions, fileOutName):
     """
 
     html_tail='''
-            <input type="submit" value="Enviar respuestas">
+            <input id="submitButton" type="submit" value="Enviar respuestas">
         </form>
         <p id="scoreDisplay"></p>
     </body>
     </html>
     '''
+
     fileOut = open(fileOutName, "w", encoding="utf-8")
     fileOut.write(html_head)
 
@@ -156,10 +217,33 @@ def examWriter(questions, fileOutName):
     fileOut.write(html_tail)
     fileOut.close()
 
+def examGenerator(numberOfExams = 1,numberOfQuestions = 30,questionsPerTopic = None):
+    output = "./ExamenTest.html"
+    for exam in range(numberOfExams):
+        questions = questionGenerator(numberOfQuestions,questionsPerTopic)
+        questions = testRandomizer(questions)
+        examWriter(questions, "./ExamenTest"+str(exam+1)+".html")
+    
 
-output = "./ExamenTest.html"
+
+numExams = 2
 numOfQuestions = 30
+questionsPerTopic = {
+    1: 5,
+    2: 4,
+    3: 4,
+    4: 2,
+    5: 1,
+    6: 2,
+    7: 1,
+    8: 1,
+    9: 1,
+    10: 2,
+    11: 2,
+    12: 3,
+    13: 2
+}
 
-questions = questionGenerator(numOfQuestions)
 
-examWriter(questions, output)
+examGenerator(numExams,numOfQuestions)
+examGenerator()
