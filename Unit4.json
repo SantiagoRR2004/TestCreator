@@ -2,27 +2,133 @@
   "questions": [
     {
       "question": "En relación con la cadena de valor de Porter, señale la afirmación correcta",
-      "options": ["Contabilidad marketing y recursos humanos son actividades de apoyo",
-      		 "Servicio post-venta e I+D de la tecnología son actividades primarias",
-      		 "Toda la ventaja competitiva viene de las interrelaciones entre actividades",
-      		 "Un objetivo pricipal de las actividades primarias es crear valor añadido"],
+      "options": [
+        "Contabilidad marketing y recursos humanos son actividades de apoyo",
+      	"Servicio post-venta e I+D de la tecnología son actividades primarias",
+      	"Toda la ventaja competitiva viene de las interrelaciones entre actividades",
+      	"Un objetivo pricipal de las actividades primarias es crear valor añadido"
+      ],
       "correct_option": 3
     },
     {
       "question": "¿Cuál es la fórmula de la productividad del factor trabajo?",
-      "options": ["Unidades producidas / Horas de trabajo empleadas",
-      		 "Unidades producidas / Valor de los factores empleados",
-      		 "Valor de la producción obtenida / Horas de trabajo empleadas",
-      		 "Valor de la producción obtenida / Valor de los factores empleados"],
+      "options": [
+        "Unidades producidas / Horas de trabajo empleadas",
+      	"Unidades producidas / Valor de los factores empleados",
+      	"Valor de la producción obtenida / Horas de trabajo empleadas",
+      	"Valor de la producción obtenida / Valor de los factores empleados"
+      ],
       "correct_option": 0
     },
     {
       "question": "¿Cuál es la fórmula de la productividad global?",
-      "options": ["Unidades producidas / Horas de trabajo empleadas",
-      		 "Unidades producidas / Valor de los factores empleados",
-      		 "Valor de la producción obtenida / Horas de trabajo empleadas",
-      		 "Valor de la producción obtenida / Valor de los factores empleados"],
+      "options": [
+        "Unidades producidas / Horas de trabajo empleadas",
+      	"Unidades producidas / Valor de los factores empleados",
+      	"Valor de la producción obtenida / Horas de trabajo empleadas",
+      	"Valor de la producción obtenida / Valor de los factores empleados"
+      ],
       "correct_option": 3
+    },
+    {
+      "question": "Señala la opción incorrecta: La mejora de la productividad:",
+      "options": [
+        "Beneficia a las organizaciones las cuales consiguen mayor crecimiento y desarrollo económico",
+      	"Beneficia a los países al aumentar los salarios y ganancias sin inflación",
+      	"Dependen principalmente de los gerentes o directivos",
+      	"Todas son correctas"
+      ],
+      "correct_option": 3
+    },
+    {
+      "question": "¿Cuál es la diferencia entre gasto y coste?",
+      "options": [
+        "El gasto es el equivalente monetario de los bienes y servicios adquiridos por la empresa, el coste es la parte del gasto realmente consumida en la actividad productiva",
+      	"El gasto representa los beneficios líquidos de la empresa mientas que el coste son los gastos consecuentes de la producción",
+      	"El gasto forma parte del coste",
+      	"Coste y gasto son lo mismo"
+      ],
+      "correct_option": 0
+    },
+    {
+      "question": "¿Qué es la cadena de valor?",
+      "options": [
+        "Método para atraer a nuevos candidatos para la contratación",
+      	"Serie de actividades que agregan valor en cada paso",
+      	"Jerarquía que tiene una empresa en su estructura, puede ser rígida u orgánica",
+      	"Fórmula usada para calcular el valor total de una empresa"
+      ],
+      "correct_option": 1
+    },
+    {
+      "question": "Señala la opción incorrecta:",
+      "options": [
+        "La gestión la cadena de suministros está orientada a la eficiencia",
+      	"El objetivo de la cadena de suministros es reducir los costes y lograr que la organización sea más productiva",
+      	"La gestión de la cadena de valor tiene como objetivo crear el mayor valor para los clientes",
+      	"Los clientes no tienen ningún poder sobre la cadena de valor"
+      ],
+      "correct_option": 3
+    },
+    {
+      "question": "¿Qué es el valor?",
+      "options": [
+        "Es el valor completo de toda una empresa, propiedades, empleados, clientes...",
+      	"Es el precio final del producto o servicio que ofrece la empresa",
+      	"Es el conjunto de características, funciones y atributos de los bienes y servicios por los cuales los clientes están dispuestos a pagar",
+      	"Según los 14 principios de Deiming el valor es la diferencia entre el precio al que ventes tu producto/servicio y el precio el que lo vente tu competencia"
+      ],
+      "correct_option": 2
+    },
+    {
+      "question": "¿Cuál es un requisito principal para la gestión de la cadena de valor?",
+      "options": [
+        "Empleados que hagan tareas que añadan valor y que sean flexibles para adaptarse rápidamente",
+      	"Coordinación y colaboración entre todos los miembros de la cadena",
+      	"Invertir en tecnología con el fin de servir mejor a los usuarios finales.",
+      	"Todas las anteriores"
+      ],
+      "correct_option": 3
+    },
+    {
+      "question": "¿Qué es el modelo de negocio?",
+      "options": [
+        "Es la propuesta donde se define la estructura directiva que mantendrá la empresa",
+      	"Es la propuesta de cómo una empresa intenta sacar provecho de sus estrategias, procesos y actividades",
+      	"Es la propuesta donde se establecen los objetivos de la empresa",
+      	"Es la propuesta del negocio ideal que se quiere alcanzar"
+      ],
+      "correct_option": 1
+    },
+    {
+      "question": "¿Cuál no es un objetivo de la dirección de la producción?",
+      "options": [
+        "Reducción de costes",
+      	"Mejorar la calida",
+      	"Crecimiento de la empresa",
+      	"Todas las anteriores lo son"
+      ],
+      "correct_option": 2
+    },
+    {
+      "question": "ISO 9000 y Six Sigma son:",
+      "options": [
+        "Dos normas de calidad muy conocidas",
+      	"Ejemplos de cadenas de valor bien formadas",
+      	"Empresas cuyo modelo de negocio está basado en la IA",
+      	"Ninguna de las anteriores"
+      ],
+      "correct_option": 0
+    },
+    {
+      "question": "Señala la opción incorrecta:",
+      "options": [
+        "El certificado de calidad es voluntario",
+      	"El certificado de calidad es proporcionado por cualquier entidad independiente a la empresa",
+      	"El certificado de calidad ofrece ventajas tanto para la empresa como para el cliente",
+      	"El certificado de calidad aumenta la eficacia por la rápida aceptación de los productos por los clientes"
+      ],
+      "correct_option": 1
     }
   ]
 }
