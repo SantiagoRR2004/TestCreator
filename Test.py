@@ -1,8 +1,9 @@
-from random import randint,shuffle
+from random import randint, shuffle
 import json
 import copy
 
-def questionGenerator(numOfQuestions = 30,questionsOfEachUnit=None):
+
+def questionGenerator(numOfQuestions=30, questionsOfEachUnit=None):
     questions = []
 
     if questionsOfEachUnit == None:
@@ -13,17 +14,19 @@ def questionGenerator(numOfQuestions = 30,questionsOfEachUnit=None):
             questionsOfEachUnit[x] += 1
 
     for unit in questionsOfEachUnit.keys():
-        with open("Unit"+str(unit)+".json", "r") as file:
+        with open("Unit" + str(unit) + ".json", "r") as file:
             questionsData = json.load(file)
             numOfQuestionsInUnit = len(questionsData["questions"])
 
-            enoughQuestions = (questionsOfEachUnit[unit] <= numOfQuestionsInUnit)
+            enoughQuestions = questionsOfEachUnit[unit] <= numOfQuestionsInUnit
 
             while questionsOfEachUnit[unit] > 0:
-                x = randint(0, numOfQuestionsInUnit-1)
+                x = randint(0, numOfQuestionsInUnit - 1)
                 questionAdded = copy.deepcopy(questionsData)
                 questionAdded = questionAdded["questions"][x]
-                questionAdded["question"] = questionAdded["question"]+" [Tema "+str(unit)+"]"
+                questionAdded["question"] = (
+                    questionAdded["question"] + " [Tema " + str(unit) + "]"
+                )
 
                 if enoughQuestions and questionAdded not in questions:
                     questions.append(questionAdded)
@@ -35,6 +38,7 @@ def questionGenerator(numOfQuestions = 30,questionsOfEachUnit=None):
 
     return questions
 
+
 def testRandomizer(listOfQuestions):
     shuffle(listOfQuestions)
     for question in listOfQuestions:
@@ -42,6 +46,7 @@ def testRandomizer(listOfQuestions):
         shuffle(question["options"])
         question["correct_option"] = question["options"].index(correct)
     return listOfQuestions
+
 
 def examWriter(questions, fileOutName):
     html_head = """
@@ -178,20 +183,20 @@ def examWriter(questions, fileOutName):
         <form id="testForm" onsubmit="return submitForm()">
     """
 
-    html_tail='''
+    html_tail = """
             <input id="submitButton" type="submit" value="Enviar respuestas">
         </form>
         <p id="scoreDisplay"></p>
     </body>
     </html>
-    '''
+    """
 
     fileOut = open(fileOutName, "w", encoding="utf-8")
     fileOut.write(html_head)
 
     for i, question in enumerate(questions[:numOfQuestions]):
         question_number = i + 1  ## Incrementar el número de pregunta
-        
+
         question_text = question["question"]
         options = question["options"]
         correct_option = question["correct_option"]
@@ -199,11 +204,12 @@ def examWriter(questions, fileOutName):
         for j, option in enumerate(options):
             option_letter = chr(ord("A") + j)  ## Convertir el índice en una letra
             option_html += f'<li><input type="radio" name="question_{i}" value="{option_letter}"> {option_letter}) {option}</li>'
-        
+
         correct_html = f'<p class="correct-answer">Respuesta correcta: {chr(ord("A") + correct_option)}</p>'
         correct_hidden_input = f'<input type="hidden" name="correct_{i}" value="{chr(ord("A") + correct_option)}">'
-        
-        fileOut.write(f"""
+
+        fileOut.write(
+            f"""
         <div class="question">
             <p>{question_number}: {question_text}</p>  <!-- Mostrar el número de pregunta -->
             <ul>
@@ -212,18 +218,19 @@ def examWriter(questions, fileOutName):
             {correct_html}
             {correct_hidden_input}
         </div>
-        """)
+        """
+        )
 
     fileOut.write(html_tail)
     fileOut.close()
 
-def examGenerator(numberOfExams = 1,numberOfQuestions = 30,questionsPerTopic = None):
+
+def examGenerator(numberOfExams=1, numberOfQuestions=30, questionsPerTopic=None):
     output = "./ExamenTest.html"
     for exam in range(numberOfExams):
-        questions = questionGenerator(numberOfQuestions,questionsPerTopic)
+        questions = questionGenerator(numberOfQuestions, questionsPerTopic)
         questions = testRandomizer(questions)
-        examWriter(questions, "./ExamenTest"+str(exam+1)+".html")
-    
+        examWriter(questions, "./ExamenTest" + str(exam + 1) + ".html")
 
 
 numExams = 2
@@ -241,9 +248,9 @@ questionsPerTopic = {
     10: 2,
     11: 2,
     12: 3,
-    13: 2
+    13: 2,
 }
 
 
-examGenerator(numExams,numOfQuestions)
+examGenerator(numExams, numOfQuestions)
 examGenerator()

@@ -1,0 +1,32 @@
+{
+    "python.linting.mypyEnabled": true,
+    "python.linting.enabled": true,
+    "python.testing.unittestArgs": [
+        "-v",
+        "-s",
+        "./tests",
+        "-p",
+        "test_*.py"
+    ],
+    "python.testing.pytestEnabled": false,
+    "python.testing.unittestEnabled": true,
+    "python.linting.pylintEnabled": true,
+    "editor.formatOnSaveMode": "file",
+    "[python]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "ms-python.black-formatter"
+    },
+    "python.formatting.autopep8Args": [
+        "--max-line-length=300"
+    ],
+    "python.linting.pylintArgs": [
+        "--variable-naming-style=camelCase",
+        "--function-naming-style=camelCase",
+        "--method-naming-style=camelCase",
+        "--argument-naming-style=camelCase",
+        "--attr-naming-style=camelCase",
+        "--class-naming-style=PascalCase",
+        "--class-const-naming-style=camelCase"
+    ],
+    "python.formatting.provider": "black"
+}

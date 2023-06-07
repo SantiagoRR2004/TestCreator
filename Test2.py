@@ -16,8 +16,9 @@ questionsPerTopic = {
     10: 2,
     11: 2,
     12: 3,
-    13: 2
-} ## Elegimos cuántas preguntas de cada tema queremos
+    13: 2,
+}  ## Elegimos cuántas preguntas de cada tema queremos
+
 
 def generate_questions(number=1):
     questions = []
@@ -27,7 +28,7 @@ def generate_questions(number=1):
             if not os.path.exists(filename):
                 continue
 
-            with open(filename, "r", encoding='utf-8') as file:
+            with open(filename, "r", encoding="utf-8") as file:
                 questionsData = json.load(file)
                 available_questions = questionsData["questions"]
 
@@ -36,7 +37,10 @@ def generate_questions(number=1):
                     continue
 
                 if unit in questionsPerTopic:
-                    selected_questions = random.sample(available_questions, min(len(available_questions), questionsPerTopic[unit]))
+                    selected_questions = random.sample(
+                        available_questions,
+                        min(len(available_questions), questionsPerTopic[unit]),
+                    )
                     for question in selected_questions:
                         question["unit"] = unit
                         if question not in questions:
@@ -48,6 +52,7 @@ def generate_questions(number=1):
             if len(questions) == number:
                 break
     return questions
+
 
 def create_html_page(questions, index):
     fileOutName = f"./ExamenTest{index}.html"
@@ -189,15 +194,15 @@ def create_html_page(questions, index):
         <form id="testForm" onsubmit="return submitForm()">
     """
 
-    html_tail = '''
+    html_tail = """
             <input id="submitButton" type="submit" value="Enviar respuestas">
         </form>
         <p id="scoreDisplay"></p>
     </body>
     </html>
-    '''
+    """
 
-    fileOut = open(fileOutName, "w", encoding='utf-8')
+    fileOut = open(fileOutName, "w", encoding="utf-8")
     fileOut.write(html_head)
 
     for i, question in enumerate(questions[:numOfQuestions]):
@@ -214,7 +219,8 @@ def create_html_page(questions, index):
         correct_html = f'<p class="correct-answer">Respuesta correcta: {chr(ord("A") + correct_option)}</p>'
         correct_hidden_input = f'<input type="hidden" name="correct_{i}" value="{chr(ord("A") + correct_option)}">'
 
-        fileOut.write(f"""
+        fileOut.write(
+            f"""
         <div class="question">
             <p>{question_number}: {question_text} <span>[Tema {unit}]</span></p>  <!-- Mostrar el número de pregunta y el tema -->
             <ul>
@@ -223,11 +229,13 @@ def create_html_page(questions, index):
             {correct_html}
             {correct_hidden_input}
         </div>
-        """)
+        """
+        )
 
     fileOut.write(html_tail)
     fileOut.close()
 
-for i in range(1, 11): # Hacer 10 exámenes
+
+for i in range(1, 11):  # Hacer 10 exámenes
     questions = generate_questions(numOfQuestions)
     create_html_page(questions, i)
