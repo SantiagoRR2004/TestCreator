@@ -3,9 +3,9 @@
     {
       "question": "Siendo r el tipo de rendimiento interno y k el coste del capital, una inversión es realizable según el criterio de TIR",
       "options": ["cuando TIR >= 0",
-      		 "cuando  TIR >  0",
-      		 "cuando  r   >= k",
-      		 "cuando  r   >  k"],
+      		        "cuando TIR >  0",
+      		        "cuando r   >= k",
+      		        "cuando r   >  k"],
       "correct_option": 3
     }
   ]

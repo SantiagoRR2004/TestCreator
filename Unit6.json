@@ -3,9 +3,9 @@
     {
       "question": "Criterios para ordenar las cuentas del activo y pasivo",
       "options": ["Monetario en el activo, deudor en el pasivo",
-      		 "'Permanencia en el activo, rotación en el pasivo",
-      		 "Ninguna respuesta es correcta",
-      		 "Liquidez en el activo, exibiligidad en el pasivo"],
+      		        "Permanencia en el activo, rotación en el pasivo",
+      		        "Ninguna respuesta es correcta",
+      		        "Liquidez en el activo, exibiligidad en el pasivo"],
       "correct_option": 3
     },
     {
