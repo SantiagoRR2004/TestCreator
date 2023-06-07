@@ -60,6 +60,12 @@ def create_html_page(questions, index):
         <style>
             body {font-family: Arial, sans-serif; 
                 }
+                .correct {
+                    color: green;
+                }
+                .incorrect {
+                    color: red;
+                }
                 .question {
                     margin-bottom: 19px;
                 }
@@ -90,43 +96,55 @@ def create_html_page(questions, index):
                 var form = document.getElementById("testForm");
                 var answers = [];
                 var questions = document.getElementsByClassName("question");
-                
+
                 for (var i = 0; i < questions.length; i++) {
                     var question = questions[i];
                     var inputs = question.getElementsByTagName("input");
                     var answer = null;
-                    
+
                     for (var j = 0; j < inputs.length; j++) {
                         if (inputs[j].checked) {
                             answer = inputs[j].value;
                             break;
                         }
                     }
-                    
+
                     answers.push(answer);
                 }
 
                 var correctAnswers = document.getElementsByClassName("correct-answer");
-                
+
                 for (var i = 0; i < correctAnswers.length; i++) {
                     correctAnswers[i].style.display = "block";
+
+                    // Obtener el input seleccionado de la pregunta
+                    var questionIndex = i;
+                    var selectedInput = document.querySelector('input[name="question_' + questionIndex + '"]:checked');
+
+                    // Verificar si la respuesta es correcta o incorrecta y aplicar la clase correspondiente
+                    if (selectedInput && selectedInput.value === correctAnswers[i].innerHTML.split(":")[1].trim()) {
+                        correctAnswers[i].classList.add("correct");
+                    } else {
+                        correctAnswers[i].classList.add("incorrect");
+                    }
                 }
 
                 var options = document.getElementsByTagName("input");
-                
+
                 for (var i = 0; i < options.length; i++) {
                     options[i].classList.add("answered");
                 }
 
                 var scores = calculateScore(answers);
                 var scoreDisplay = document.getElementById("scoreDisplay");
-                
+
                 scoreDisplay.innerHTML = "Preguntas acertadas: " + scores.correctGlobal + "<br>Preguntas falladas: " + scores.incorrectGlobal + "<br>Puntuación total: " + scores.totalScore + "/10";
 
                 form.elements["submitButton"].disabled = true;
 
                 return false;
             }
+
 
             function calculateScore(answers) {
                 var correctGlobal = 0;
