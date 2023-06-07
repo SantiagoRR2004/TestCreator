@@ -58,29 +58,32 @@ def create_html_page(questions, index):
         <meta charset="UTF-8">
         <title>Empresas</title>
         <style>
-            .question {
-                margin-bottom: 20px;
-            }
-            .question p {
-                font-weight: bold;
-                font-size: 20px;
-            }
-            .question span {
-                font-size: 16px;
-                font-style: italic;
-            }
-            .question li {
-                font-size: 18px;
-                list-style-type: none;
-            }
-            .correct-answer {
-                display: none;
-                font-weight: bold;
-                font-size: 16px;
-            }
-            .answered {
-                pointer-events: none;
-            }
+            body {font-family: Arial, sans-serif; 
+                }
+                .question {
+                    margin-bottom: 19px;
+                }
+                .question p {
+                    font-weight: bold;
+                    font-size: 19px;
+                }
+                .question span {
+                    font-size: 17px;
+                    font-style: italic;
+                }
+                .question li {
+                    font-size: 18px;
+                    list-style-type: none;
+                }
+                .correct-answer {
+                    display: none;
+                    font-weight: bold;
+                    font-size: 16px;
+                }
+                .answered {
+                    pointer-events: none;
+                }
+            
         </style>
         <script>
             function submitForm() {
@@ -126,9 +129,7 @@ def create_html_page(questions, index):
             }
 
             function calculateScore(answers) {
-                var correctCount = 0;
                 var correctGlobal = 0;
-                var incorrectCount = 0;
                 var incorrectGlobal = 0;
 
                 for (var i = 0; i < answers.length; i++) {
@@ -137,30 +138,23 @@ def create_html_page(questions, index):
                     var correctOption = correctOptionInput.value;
 
                     if (answers[i] === correctOption) {
-                        correctCount++;
-                        correctGlobal++;
-                        incorrectCount = 0;  // Reiniciar el contador de respuestas incorrectas
+                        correctGlobal++
+                          
                     } else {
-                        incorrectCount++;
                         incorrectGlobal++;
-
-                        if (incorrectCount === 3) {
-                            correctCount--;  // Restar una respuesta correcta
-                            incorrectCount = 0;  // Reiniciar el contador de respuestas incorrectas
-                        }
                     }
                 }
 
                 var totalOptions = answers.length;
-                var score = ((correctCount / 30) * 10).toFixed(2);
-                if (score < 0){
-                    var score = 0
+                var totalCorrect = correctGlobal - Math.floor(incorrectGlobal / 3);  // Restar respuestas correctas por cada tres respuestas incorrectas
+                var score = (totalCorrect / totalOptions) * 10;  // Calcular la puntuación como un porcentaje
+
+                if (score < 0) {
+                    score = 0;
                 }
 
                 var result = {
-                    correctCount: correctCount,
-                    incorrectCount: incorrectCount,
-                    totalScore: score,
+                    totalScore: score.toFixed(2),
                     correctGlobal: correctGlobal,
                     incorrectGlobal: incorrectGlobal
                 };
@@ -212,6 +206,6 @@ def create_html_page(questions, index):
     fileOut.write(html_tail)
     fileOut.close()
 
-for i in range(1, 11): # Hacer 10 exámenes
+for i in range(1, 2): # Hacer 10 exámenes
     questions = generate_questions(numOfQuestions)
     create_html_page(questions, i)
