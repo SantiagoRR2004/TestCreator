@@ -131,6 +131,7 @@ def create_html_page(questions, index):
             function calculateScore(answers) {
                 var correctGlobal = 0;
                 var incorrectGlobal = 0;
+                var unanswered = 0;
 
                 for (var i = 0; i < answers.length; i++) {
                     var questionIndex = i;
@@ -138,10 +139,11 @@ def create_html_page(questions, index):
                     var correctOption = correctOptionInput.value;
 
                     if (answers[i] === correctOption) {
-                        correctGlobal++
-                          
-                    } else {
+                        correctGlobal++;
+                    } else if (answers[i] !== null) {
                         incorrectGlobal++;
+                    } else {
+                        unanswered++;
                     }
                 }
 
@@ -156,11 +158,13 @@ def create_html_page(questions, index):
                 var result = {
                     totalScore: score.toFixed(2),
                     correctGlobal: correctGlobal,
-                    incorrectGlobal: incorrectGlobal
+                    incorrectGlobal: incorrectGlobal,
+                    unanswered: unanswered
                 };
 
                 return result;
             }
+
         </script>
     </head>
     <body>
