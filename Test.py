@@ -1,20 +1,27 @@
 from random import randint, shuffle
 import json
 import copy
+import glob
+import os
 
 
-def questionGenerator(numOfQuestions=30, questionsOfEachUnit=None):
+def findPatternFiles(pattern, folderPath):
+    return len(glob.glob(f"{folderPath}/{pattern}"))
+
+
+def questionGenerator(folderPath, numOfQuestions=10, questionsOfEachUnit=None):
     questions = []
+    numUnits = findPatternFiles("Unit*.json", folderPath)
 
     if questionsOfEachUnit == None:
-        questionsOfEachUnit = {key: 0 for key in range(1, 14)}
+        questionsOfEachUnit = {key: 0 for key in range(1, numUnits + 1)}
 
         for i in range(numOfQuestions):
-            x = randint(1, 13)
+            x = randint(1, numUnits)
             questionsOfEachUnit[x] += 1
 
     for unit in questionsOfEachUnit.keys():
-        with open("Unit" + str(unit) + ".json", "r") as file:
+        with open(os.path.join(folderPath, "Unit" + str(unit) + ".json"), "r") as file:
             questionsData = json.load(file)
             numOfQuestionsInUnit = len(questionsData["questions"])
 
@@ -225,32 +232,20 @@ def examWriter(questions, fileOutName):
     fileOut.close()
 
 
-def examGenerator(numberOfExams=1, numberOfQuestions=30, questionsPerTopic=None):
+def examGenerator(
+    folderPath, numberOfExams=1, numberOfQuestions=30, questionsPerTopic=None
+):
     output = "./ExamenTest.html"
     for exam in range(numberOfExams):
-        questions = questionGenerator(numberOfQuestions, questionsPerTopic)
+        questions = questionGenerator(folderPath, numberOfQuestions, questionsPerTopic)
         questions = testRandomizer(questions)
         examWriter(questions, "./ExamenTest" + str(exam + 1) + ".html")
 
 
 numExams = 2
 numOfQuestions = 30
-questionsPerTopic = {
-    1: 5,
-    2: 4,
-    3: 4,
-    4: 2,
-    5: 1,
-    6: 2,
-    7: 1,
-    8: 1,
-    9: 1,
-    10: 2,
-    11: 2,
-    12: 3,
-    13: 2,
-}
+folder = "Empresa"
 
 
-examGenerator(numExams, numOfQuestions)
-examGenerator()
+examGenerator(folder, numExams, numOfQuestions)
+examGenerator(folder)

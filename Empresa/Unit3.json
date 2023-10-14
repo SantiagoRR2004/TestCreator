@@ -1,0 +1,101 @@
+{
+  "questions": [
+    {
+      "question": "¿Qué diferencias hay entre la descripción y la especificación del puesto de trabajo?",
+      "options": ["La DPT establece las competencias que idealmente debería tener un candidato",
+      	          "La EPT es lo mismo que el registro de trabajo",
+      		        "La DPT describe lo que debe hacer el titular de un puesto de trabajo",
+      		        "EPT y DPT son lo mismo, pero adoptan nombres diferentes según la empresa"],
+      "correct_option": 2
+    },
+    {
+      "question": "¿Cuál no es un sesgo del entrevistador?",
+      "options": ["El orden en que se obtiene la información durante la entrevista",
+      		        "Escribir una evaluación del candidato nada más terminar la entrevista",
+      		        "Favorecer a los candidatos que comparten sus propias actitudes",
+      		        "El orden en que se entrevisten a los candidatos"],
+      "correct_option": 1
+    },
+    {
+      "question": "A la hora de evaluar los RRHH actuales, ¿qué es el inventario de recursos humanos?",
+      "options": ["Registra la cantidad de empleados contratados",
+                	"Registra las capacidades y las habilidades especializadas de cada empleados contratado",
+                	"Registra las tareas llevadas a cabo por los empleados contratados",
+                	"Ninguna de las anteriores"],
+      "correct_option": 1
+    },
+    {
+      "question": "¿Cuál es, según estudios, la mejor fuente de reclutamiento de candidatos a un puesto?",
+      "options": ["Internet",
+      	          "Reclutamiento en universidades",
+      	          "Organizaciones profesionales de reclutamiento",
+      	          "Referencias de empleados"],
+      "correct_option": 3
+    },
+    {
+      "question": "¿Que es el 'downsizing'?",
+      "options": ["Reducir los costes de producción mediante diferentes métodos",
+      	          "Optar por la reducción de plantilla en la empresa",
+      	          "Cambiar de una organización vertical a una horizontal",
+                	"Ninguna de las anteriores"],
+      "correct_option": 1
+    },
+    {
+      "question": "¿Qué es la confiabilidad del proceso de selección?",
+      "options": ["Grado en el que un mecanismo de selección mide la misma característica de manera consistente",
+      	          "Relación demostrada entre un mecanismo de selección y algún criterio relevante que se pide para el puesto",
+                  "La eficacia con la que una proceso de selección tiene éxito",
+      	          "Ninguna de las anteriores"],
+      "correct_option": 0
+    },
+    {
+      "question": "¿Qué es la validez del proceso de selección?",
+      "options": ["Grado en el que un mecanismo de selección mide la misma característica de manera consistente",
+                 	"Relación demostrada entre un mecanismo de selección y algún criterio relevante que se pide para el puesto",
+                	"La eficacia con la que una proceso de selección tiene éxito",
+                	"Ninguna de las anteriores"],
+      "correct_option": 1
+    },
+    {
+      "question": "¿Cual es el mecanismo de selección más utilizado?",
+      "options": ["Entrevistas",
+                	"Pruebas de simulación del desempeño",
+                	"Pruebas por escrito (tests)",
+                	"Muestras de trabajo (work sample tests)"],
+      "correct_option": 0
+    },
+    {
+      "question": "Selecciona la afirmación incorrecta",
+      "options": ["Es recomendable leer el curriculum del evaluado antes de la entrevista",
+      	          "Un posible sesgo es tender a favorecer a los candidatos que comaparten tus propias actitudes",
+                	"Es bueno, en las entrevistas, intercambiar las preguntas entre los entrevistados, para variar.",
+                	"En la entrevista conductal los candidatos son valorados no solo por lo que dicen sino también por cómo se portan"],
+      "correct_option": 2
+    },
+    {
+      "question": "Proporcionar información exageradamente positiva sobre la empresa, causa:",
+      "options": ["Los candidatos no adecuados tienen menos probabilidades de retirarse del proceso de búsqueda",
+      	          "Los recien contratados tienden a desilusionarse por la 'realidad'",
+                	"Puede generar conflictos y problemas para la empresa",
+      	          "Todas son correctas"
+      ],
+      "correct_option": 3
+    },
+    {
+      "question": "Por lo general, cuando un empleado no está a la altura de las expectativas:",
+      "options": ["Se le reasigna a un trabajo más adecuado",
+      	          "Se le capacita para mejorar su rendimiento",
+      	          "Se le asesora o se le abre un expediente",
+                	"Depende de la situación, todas son correctas"],
+      "correct_option": 3
+    },
+    {
+      "question": "Selecciona la afirmación incorrecta",
+      "options": ["Si la compañía está sindicalizada o no influirá en el salario",
+      	          "El tamaño de la compañía no influye en el salario",
+      	          "El tipo de actividad desarrollada y de negocio son factores importantes que influyen en el salario",
+      	          "La ubicación geográfica influye en el salario"],
+      "correct_option": 1
+    }
+  ]
+}
