@@ -243,8 +243,8 @@ def examGenerator(
 
 
 numExams = 2
-numOfQuestions = 30
-folder = "Empresa"
+numOfQuestions = 10
+folder = "Redes"
 
 
 examGenerator(folder, numExams, numOfQuestions)

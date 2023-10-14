@@ -1,0 +1,20 @@
+{
+  "questions": [
+    {
+      "question": "Imagina que deseas realizar un análisis exhaustivo del espacio en disco de tu sistema Linux. Primero, quieres obtener información detallada sobre el uso de espacio en disco de un directorio llamado 'documentos'. Luego, necesitas determinar la capacidad de almacenamiento y las particiones disponibles en tu disco duro (siempre que el primer comando se halla ejecutado de forma correcta). ¿Cuál sería la secuencia de comandos adecuada para llevar a cabo estas tareas?",
+      "options": ["fdisk -l && du -sh /documentos && df -h",
+                	"du -sh /documentos && du /documentos",
+                	"df -h && fdisk -l && du -sh /documentos",
+                	"du -sh /documentos && df -h && fdisk -l"],
+      "correct_option": 3
+    },
+    {
+      "question": "Si deseas dar permisos de lectura, escritura y ejecución a un archivo en Linux para todos los usuarios, ¿cuál sería el comando correcto?",
+      "options": ["chmod 644 archivo",
+                	"chmod 755 archivo",
+                	"chmod 666 archivo",
+     	          	"chmod 777 archivo"],
+      "correct_option": 3
+    }
+  ]
+}
