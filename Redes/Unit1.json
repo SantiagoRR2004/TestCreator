@@ -39,6 +39,46 @@
                   "Todos las respuestas son válidas",
                   "cd ../../.././lib"],
       "correct_option": 2
+    },
+    {
+      "question": "Que comando usarías junto con man para buscar de forma rápida una opción o un texto concreto en la ayuda/descripción de otro comando (deberás escribir el comando usado)",
+      "options": ["grep",
+                  "",
+                  "",
+                  ""],
+      "correct_option": 0
+    },
+    {
+      "question": "Escribe el comando que usarías para guardar la salida del comando date en el fichero /tmp/date",
+      "options": ["date >> /tmp/date",
+                  "",
+                  "",
+                  ""],
+      "correct_option": 0
+    },
+    {
+      "question": "Escribe el comando completo que usarías para ver el resultado de apt search mysql de forma paginada",
+      "options": ["apt search mysql | less",
+                  "",
+                  "",
+                  ""],
+      "correct_option": 0
+    },
+    {
+      "question": "¿Qué comando usarías para guardar el resultado de pwd en una variable llamada var?",
+      "options": ["var=`pwd`",
+                  "",
+                  "",
+                  ""],
+      "correct_option": 0
+    },
+    {
+      "question": "Escribe el comando que usarías para desinstalar el paquete mysql de tu ordenador",
+      "options": ["sudo apt remove mysql",
+                  "",
+                  "",
+                  ""],
+      "correct_option": 0
     }
   ]
 }

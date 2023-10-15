@@ -15,6 +15,70 @@
                 	"chmod 666 archivo",
      	          	"chmod 777 archivo"],
       "correct_option": 3
+    },    
+    {
+      "question": "Como sysadmin quieres ver la carga promedia del sistema en tiempo real (cada 1 segundo), teniendo en cuenta los comandos vistos en clase y exceptuando el uso de `top` ¿Qué comando usarías? (Ejemplo de respuesta no aplicable a este ejercicio echo '1' >/var/log/dpkg.log ;  ps ; time",
+      "options": ["watch -n 1 uptime",
+                  "",
+                  "",
+                  ""],
+      "correct_option": 0
+    },
+    {
+      "question": "Escribe el comando que usarías para enviar el siguiente proceso a background watch uptime",
+      "options": ["watch uptime &",
+                  "",
+                  "",
+                  ""],
+      "correct_option": 0
+    },
+    {
+      "question": "Cuantos comandos/pasos son necesarios para que un nuevo disco duro este disponible en la carpeta /tmp/alumnos teniendo en cuenta que el disco duro está recién conectado y la carpeta /tmp/alumnos no existe.",
+      "options": ["4",
+                  "",
+                  "",
+                  ""],
+      "correct_option": 0
+    },
+    {
+      "question": "Después de ejecutar el comando `ls -l` obtienes la siguiente descripción de ficheros. Teniendo en cuenta la información mostrada ¿Cuántos enlaces existen?",
+      "options": ["10",
+                  "",
+                  "",
+                  ""],
+      "correct_option": 0
+    },
+    {
+      "question": "Después de ejecutar el comando `ls -l` obtienes la siguiente descripción de ficheros. Teniendo en cuenta la información mostrada ¿Cuántos directorios existen?",
+      "options": ["16",
+                  "",
+                  "",
+                  ""],
+      "correct_option": 0
+    },
+    {
+      "question": "Escribe el comando que usarías para monitorizar cada segundo las 10 últimas líneas del fichero /var/log/mysql/error.log",
+      "options": ["watch -n 1 tail -10 /var/log/mysql/error.log",
+                  "",
+                  "",
+                  ""],
+      "correct_option": 0
+    },
+    {
+      "question": "Como sysadmin desear cambiar los permisos de una carpeta 'tareas' para que pertenezcan al usuario 'alumno' y al grupo 'aprobados'. ¿Qué comando/s emplearías? (Ejemplo de respuesta no aplicable a este ejercicio echo '1' >/var/log/dpkg.log ;  ps ; time )",
+      "options": ["chown alumno:aprobados tareas",
+                  "",
+                  "",
+                  ""],
+      "correct_option": 0
+    },
+    {
+      "question": "¿Qué comando usarías para cambiar la configuración de MySQL teniendo en cuenta que el fichero se encuentra en /etc/mysql/conf.d/my.cnf?",
+      "options": ["nano /etc/mysql/conf.d/my.cnf",
+                  "",
+                  "",
+                  ""],
+      "correct_option": 0
     }
   ]
 }
