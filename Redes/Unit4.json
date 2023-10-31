@@ -1,0 +1,146 @@
+{
+  "questions": [
+    {
+      "question": "Completa la información apropiada de la Dirección IP/Máscara CIDR 193.147.87.65/30",
+      "options": ["N.N.N.nnnnnnhh - 255.255.255.252 - 193.147.87.64/30 - 193.147.87.67/30 - 193.147.87.65/30 - 193.147.87.66/30",
+                	"N.N.N.nhhhhhhh - 255.255.255.128 - 10.1.8.128/25 - 10.1.8.255/25 - 10.1.8.129/25 - 10.1.8.254/25",
+                	"N.N.nnnnnnnh.H - 255.255.254.0 - 10.1.8.128/25 - 10.101.99.255/23 - 10.101.98.1/23 - 10.101.99.254/23",
+                	"N.N.N.nnnnhhhh - 255.255.255.240 - 10.1.8.128/25 - 209.165.200.127/28 - 209.165.200.113/28 - 209.165.200.126/28"],
+      "correct_option": 0
+    },
+    {
+      "question": "Completa la información apropiada de la Dirección IP/Máscara CIDR 10.1.8.200/25",
+      "options": ["N.N.N.nnnnnnhh - 255.255.255.252 - 193.147.87.64/30 - 193.147.87.67/30 - 193.147.87.65/30 - 193.147.87.66/30",
+                	"N.N.N.nhhhhhhh - 255.255.255.128 - 10.1.8.128/25 - 10.1.8.255/25 - 10.1.8.129/25 - 10.1.8.254/25",
+                	"N.N.nnnnnnnh.H - 255.255.254.0 - 10.1.8.128/25 - 10.101.99.255/23 - 10.101.98.1/23 - 10.101.99.254/23",
+                	"N.N.N.nnnnhhhh - 255.255.255.240 - 10.1.8.128/25 - 209.165.200.127/28 - 209.165.200.113/28 - 209.165.200.126/28"],
+      "correct_option": 1
+    },
+    {
+      "question": "Completa la información apropiada de la Dirección IP/Máscara CIDR 10.101.99.17/23",
+      "options": ["N.N.N.nnnnnnhh - 255.255.255.252 - 193.147.87.64/30 - 193.147.87.67/30 - 193.147.87.65/30 - 193.147.87.66/30",
+                	"N.N.N.nhhhhhhh - 255.255.255.128 - 10.1.8.128/25 - 10.1.8.255/25 - 10.1.8.129/25 - 10.1.8.254/25",
+                	"N.N.nnnnnnnh.H - 255.255.254.0 - 10.1.8.128/25 - 10.101.99.255/23 - 10.101.98.1/23 - 10.101.99.254/23",
+                	"N.N.N.nnnnhhhh - 255.255.255.240 - 10.1.8.128/25 - 209.165.200.127/28 - 209.165.200.113/28 - 209.165.200.126/28"],
+      "correct_option": 2
+    },
+    {
+      "question": "Completa la información apropiada de la Dirección IP/Máscara CIDR 209.165.200.125/28",
+      "options": ["N.N.N.nnnnnnhh - 255.255.255.252 - 193.147.87.64/30 - 193.147.87.67/30 - 193.147.87.65/30 - 193.147.87.66/30",
+                	"N.N.N.nhhhhhhh - 255.255.255.128 - 10.1.8.128/25 - 10.1.8.255/25 - 10.1.8.129/25 - 10.1.8.254/25",
+                	"N.N.nnnnnnnh.H - 255.255.254.0 - 10.1.8.128/25 - 10.101.99.255/23 - 10.101.98.1/23 - 10.101.99.254/23",
+                	"N.N.N.nnnnhhhh - 255.255.255.240 - 10.1.8.128/25 - 209.165.200.127/28 - 209.165.200.113/28 - 209.165.200.126/28"],
+      "correct_option": 3
+    },
+    {
+      "question": "Tipo de dirección para Dirección IP: 192.168.33.62 y Máscara de subred: 255.255.255.192",
+      "options": ["Host",
+                	"Red",
+                	"Multicast",
+                	"Broadcast"],
+      "correct_option": 0
+    },
+    {
+      "question": "Tipo de dirección para Dirección IP: 193.147.87.3 y Máscara de subred: 255.255.255.252",
+      "options": ["Host",
+                	"Red",
+                	"Multicast",
+                	"Broadcast"],
+      "correct_option": 3
+    },
+    {
+      "question": "Tipo de dirección para Dirección IP: 224.10.0.254 y Máscara de subred: 255.255.255.0",
+      "options": ["Host",
+                	"Red",
+                	"Multicast",
+                	"Broadcast"],
+      "correct_option": 2
+    },
+    {
+      "question": "Tipo de dirección para Dirección IP: 172.16.128.47 y Máscara de subred: 255.255.255.240",
+      "options": ["Host",
+                	"Red",
+                	"Multicast",
+                	"Broadcast"],
+      "correct_option": 3
+    },
+    {
+      "question": "Tipo de dirección para Dirección IP: 10.1.1.1 y Máscara de subred: 255.255.255.252",
+      "options": ["Host",
+                	"Red",
+                	"Multicast",
+                	"Broadcast"],
+      "correct_option": 0
+    },
+    {
+      "question": "Tipo de dirección para Dirección IP/Máscara: 172.20.18.150/14",
+      "options": ["Pública",
+                	"Privada"],
+      "correct_option": 1
+    },
+    {
+      "question": "Tipo de dirección para Dirección IP/Máscara: 10.10.11.103/16",
+      "options": ["Pública",
+                	"Privada"],
+      "correct_option": 1
+    },
+    {
+      "question": "Tipo de dirección para Dirección IP/Máscara: 209.165.201.30/27",
+      "options": ["Pública",
+                	"Privada"],
+      "correct_option": 0
+    },
+    {
+      "question": "Tipo de dirección para Dirección IP/Máscara: 192.168.128.1/17",
+      "options": ["Pública",
+                	"Privada"],
+      "correct_option": 1
+    },
+    {
+      "question": "Tipo de dirección para Dirección IP/Máscara: 192.31.7.128/24",
+      "options": ["Pública",
+                	"Privada"],
+      "correct_option": 0
+    },
+    {
+      "question": "Tipo de dirección para Dirección IP/Máscara: 64.102.255.255/16",
+      "options": ["Host",
+                	"Red",
+                	"Multicast",
+                  "Broadcast",
+                	"Especial",
+                	"Reservada"],
+      "correct_option": 3
+    },
+    {
+      "question": "Tipo de dirección para Dirección IP/Máscara: 192.31.7.128/25",
+      "options": ["Host",
+                	"Red",
+                	"Multicast",
+                  "Broadcast",
+                	"Especial",
+                	"Reservada"],
+      "correct_option": 1
+    },
+    {
+      "question": "Tipo de dirección para Dirección IP/Máscara: 10.10.255.255/8",
+      "options": ["Host",
+                	"Red",
+                	"Multicast",
+                  "Broadcast",
+                	"Especial",
+                	"Reservada"],
+      "correct_option": 0
+    },
+    {
+      "question": "Tipo de dirección para Dirección IP/Máscara: 239.0.0.5/16",
+      "options": ["Host",
+                	"Red",
+                	"Multicast",
+                  "Broadcast",
+                	"Especial",
+                	"Reservada"],
+      "correct_option": 2
+    }
+  ]
+}
