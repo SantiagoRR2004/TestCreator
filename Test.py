@@ -1,23 +1,27 @@
-from random import randint, shuffle
+from random import randint, shuffle, choice
 import json
 import copy
 import glob
 import os
+import re
 
 
 def findPatternFiles(pattern, folderPath):
-    return len(glob.glob(f"{folderPath}/{pattern}"))
+    files = glob.glob(f"{folderPath}/{pattern}")
+    pattern_re = re.compile(pattern.replace("*", "(.*?)"))
+    matching_parts = [pattern_re.search(file).group(1) for file in files]
+    return matching_parts
 
 
 def questionGenerator(folderPath, numOfQuestions=10, questionsOfEachUnit=None):
     questions = []
-    numUnits = findPatternFiles("Unit*.json", folderPath)
+    namesOfUnits = findPatternFiles("Unit*.json", folderPath)
 
     if questionsOfEachUnit == None:
-        questionsOfEachUnit = {key: 0 for key in range(1, numUnits + 1)}
+        questionsOfEachUnit = {key: 0 for key in namesOfUnits}
 
         for i in range(numOfQuestions):
-            x = randint(1, numUnits)
+            x = choice(list(questionsOfEachUnit.keys()))
             questionsOfEachUnit[x] += 1
 
     for unit in questionsOfEachUnit.keys():
