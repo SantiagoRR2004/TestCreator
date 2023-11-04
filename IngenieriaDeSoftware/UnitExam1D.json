@@ -30,7 +30,7 @@
                     "De recoger los requisitos para el software",
                     "De traducir los requisitos en código",
                     "Ninguna de las opciones es correcta"],
-        "correct_option": -1
+        "correct_option": 1
       },
       {
         "question": "NO es un modelo de ciclo de vida alternativo",
