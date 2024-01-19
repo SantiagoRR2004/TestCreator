@@ -4,10 +4,21 @@ import copy
 import glob
 import os
 import re
+from typing import List
+
+
+def combineFunctions(functions: List[str]) -> str:
+    # Join the list of functions into a single string
+    combinedFunctions = "\n".join(functions)
+
+    # Wrap the combined functions in a <script> tag
+    combinedScript = f"<script>\n{combinedFunctions}\n</script>"
+
+    return combinedScript
 
 
 def findPatternFiles(pattern, folderPath):
-    files = glob.glob(f"{folderPath}/{pattern}")
+    files = glob.glob(os.path.join(folderPath, pattern), recursive=True)
     pattern_re = re.compile(pattern.replace("*", "(.*?)"))
     matching_parts = [pattern_re.search(file).group(1) for file in files]
     return matching_parts
@@ -53,54 +64,15 @@ def questionGenerator(folderPath, numOfQuestions=10, questionsOfEachUnit=None):
 def testRandomizer(listOfQuestions):
     shuffle(listOfQuestions)
     for question in listOfQuestions:
-        correct = question["options"][question["correct_option"]]
-        shuffle(question["options"])
-        question["correct_option"] = question["options"].index(correct)
+        if question["questionType"] == "multipleChoice":
+            correct = question["options"][question["correct_option"]]
+            shuffle(question["options"])
+            question["correct_option"] = question["options"].index(correct)
     return listOfQuestions
 
 
 def examWriter(questions, fileOutName):
-    html_head = """
-    <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Empresas</title>
-        <style>
-            body {font-family: Arial, sans-serif; 
-                }
-                .correct {
-                    color: green;
-                }
-                .incorrect {
-                    color: red;
-                }
-                .question {
-                    margin-bottom: 19px;
-                }
-                .question p {
-                    font-weight: bold;
-                    font-size: 19px;
-                }
-                .question span {
-                    font-size: 17px;
-                    font-style: italic;
-                }
-                .question li {
-                    font-size: 18px;
-                    list-style-type: none;
-                }
-                .correct-answer {
-                    display: none;
-                    font-weight: bold;
-                    font-size: 16px;
-                }
-                .answered {
-                    pointer-events: none;
-                }
-            
-        </style>
-        <script>
-            function submitForm() {
+    submitFormFunction = """function submitForm() {
                 var form = document.getElementById("testForm");
                 var answers = [];
                 var questions = document.getElementsByClassName("question");
@@ -151,8 +123,9 @@ def examWriter(questions, fileOutName):
 
                 return false;
             }
+"""
 
-            function calculateScore(answers) {
+    calculateScoreFunction = """function calculateScore(answers) {
                 var correctGlobal = 0;
                 var incorrectGlobal = 0;
                 var unanswered = 0;
@@ -187,8 +160,47 @@ def examWriter(questions, fileOutName):
                 };
                 return result;
             }
+"""
 
-        </script>
+    html_head = """
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Examen</title>
+        <style>
+            body {font-family: Arial, sans-serif; 
+                }
+                .correct {
+                    color: green;
+                }
+                .incorrect {
+                    color: red;
+                }
+                .question {
+                    margin-bottom: 19px;
+                }
+                .question p {
+                    font-weight: bold;
+                    font-size: 19px;
+                }
+                .question span {
+                    font-size: 17px;
+                    font-style: italic;
+                }
+                .question li {
+                    font-size: 18px;
+                    list-style-type: none;
+                }
+                .correct-answer {
+                    display: none;
+                    font-weight: bold;
+                    font-size: 16px;
+                }
+                .answered {
+                    pointer-events: none;
+                }
+            
+        </style>
     </head>
     <body>
         <form id="testForm" onsubmit="return submitForm()">
@@ -206,6 +218,12 @@ def examWriter(questions, fileOutName):
     fileOut.write(html_head)
 
     for i, question in enumerate(questions[:numOfQuestions]):
+        """
+        ##########################################################
+        Here is where we would check the question type and generate the HTML accordingly.
+        ##########################################################
+        """
+
         question_number = i + 1  ## Incrementar el número de pregunta
 
         question_text = question["question"]
@@ -233,6 +251,7 @@ def examWriter(questions, fileOutName):
         )
 
     fileOut.write(html_tail)
+    fileOut.write(combineFunctions([submitFormFunction, calculateScoreFunction]))
     fileOut.close()
 
 
