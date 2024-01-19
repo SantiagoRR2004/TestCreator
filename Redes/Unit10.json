@@ -1,0 +1,102 @@
+{
+  "questions": [
+    {
+      "question": "A través de qué puerto se accede a la página web Proxmox (Puerto por defecto). Escribe el número.",
+      "options": [
+        "8006",
+        "",
+        "",
+        ""
+      ],
+      "correct_option": 0
+    },
+    {
+      "question": "¿Qué tipo de comprensión se puede usar a la hora de hacer un Backup de una máquina virtual creada (mediante la interfaz de Proxmox)?",
+      "options": [
+        "Todas las anteriores",
+        "LZO, GZIP, 7z",
+        "LZO, ZIP, TAR",
+        "LZO, GZIP, ZSTD"
+      ],
+      "correct_option": 3
+    },
+    {
+      "question": "¿Cuáles de los siguientes templates son válidos a la hora de hacer una copia de seguridad de una máquina virtual en proxmox?",
+      "options": [
+        "{{guestname}}, {{vmid}}, {{node}}, {{cluster}}",
+        "{{cluster}}, {{guestrole}}, {{node}}, {{timestamp}}",
+        "{{cluster}}, {{guestname}}, {{timestamp}}, {{user}}",
+        "{{timestamp}}, {{guestname}}, {{role}}, {{user}}"
+      ],
+      "correct_option": 0
+    },
+    {
+      "question": "¿Cuáles de los siguientes comandos NO funcionan (unknown command) en el apartado “Monitor” de una máquina virtual en funcionamiento (en Proxmox)?",
+      "options": [
+        "ls",
+        "mkdir",
+        "Todos los anteriores",
+        "df"
+      ],
+      "correct_option": 2
+    },
+    {
+      "question": "¿Es posible editar el archivo Hosts de un nodo desde la interfaz de Proxmox?",
+      "options": [
+        "Falso",
+        "Verdadero"
+      ],
+      "correct_option": 1
+    },
+    {
+      "question": "¿Cuál de las siguientes opciones NO es un campo que debemos rellenar a la hora de crear un usuario en Proxmox?",
+      "options": [
+        "Location (Localización)",
+        "Realm (Ámbito)",
+        "Comment (Comentario)",
+        "Expire (Caducar)"
+      ],
+      "correct_option": 0
+    },
+    {
+      "question": "¿Qué información recoge el apartado Summary en Proxmox?",
+      "options": [
+        "El estado de los dispositivos de almacenamiento",
+        "Información acerca de los usuarios",
+        "Un resumen del estado actual del equipo",
+        "Información de las distintas máquinas virtuales creadas"
+      ],
+      "correct_option": 2
+    },
+    {
+      "question": "¿Cuál es el número máximo de cores que nos permite introducir Proxmox a la hora de crear una máquina virtual?",
+      "options": [
+        "Los mismos que la máquina en la que se ejecuta",
+        "1",
+        "Infinito",
+        "128"
+      ],
+      "correct_option": 3
+    },
+    {
+      "question": "¿Qué opciones de BIOS podemos escoger a la hora de editar una máquina virtual ya creada (en Proxmox)?",
+      "options": [
+        "UEFI, GRUB",
+        "miniBIOS, SeaBios",
+        "UEFI, HybridUEFI",
+        "SeaBios, UEFI"
+      ],
+      "correct_option": 3
+    },
+    {
+      "question": "¿Qué formatos de imagen podemos crear a la hora de crear una máquina virtual en Proxmox?",
+      "options": [
+        "vdi, quemu, iso",
+        "vdi, img, iso",
+        "raw, quemu, vmdk",
+        "vdi, quemu, vmdk"
+      ],
+      "correct_option": 2
+    }
+  ]
+}

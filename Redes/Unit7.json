@@ -1,0 +1,104 @@
+{
+  "questions": [
+    {
+      "question": "Teniendo en cuenta la siguiente figura, escribe el comando que usarías para conectarte con el usuario sysadmin desde Blue Server a Red Server mediante ssh para poder lanzar comandos. (El puerto 80 corresponde a un servidor web al que no podemos acceder a causa de un firewall. Por eso queremos hacer una conexión SSH)",
+      "options": [
+        "ssh sysadmin@192.168.0.2",
+        "",
+        "",
+        ""
+      ],
+      "correct_option": 0
+    },
+    {
+      "question": "¿Qué comando se utiliza para conectarse a un servidor SSH en un puerto específico?",
+      "options": [
+        "ssh -c",
+        "ssh -r",
+        "ssh -p",
+        "ssh --remote_port"
+      ],
+      "correct_option": 2
+    },
+    {
+      "question": "¿Qué comando usarías para ver en tiempo real (cada 10 segundos) desde tu máquina los usuarios conectados a una máquina remota (usuario: user, IP:192.168.0.222)? Deberás emplear unicamente los comandos vistos en clase y sin iniciar una sesión ssh interactiva. Es decir, sin que al ejecutar el comando, la sesión ssh se siga ejecutando",
+      "options": [
+        "watch -n 10 'ssh user@192.168.0.222 who'",
+        "watch -n 10 ssh user@192.168.0.222 'who'",
+        "ssh user@192.168.0.222 'watch -n 10 who'",
+        "Todas son correctas"
+      ],
+      "correct_option": 3
+    },
+    {
+      "question": "Teniendo en cuenta que el comando `date` nos permite ver la fecha actual, escribe el comando que nos permite ver la fecha remota del equipo `192.168.0.88` con el usuario `alumno` sin iniciar una sesión ssh interactiva. Es decir, sin que al ejecutar el comando, la sesión ssh se siga abierta",
+      "options": [
+        "ssh alumno@192.168.0.88 date",
+        "",
+        "",
+        ""
+      ],
+      "correct_option": 0
+    },
+    {
+      "question": "¿Qué es un ataque de “brute force” en SSH?",
+      "options": [
+        "Un ataque en el que un atacante envía millones de paquetes y espera que uno sea dado cómo valido por el receptor",
+        "Un ataque en el que un atacante intercepta la comunicación SSH y se hace pasar por la autoridad de certificación",
+        "Un ataque en el que un atacante intercepta el fichero de clave pública e intenta descifrarla mediante fuerza bruta",
+        "Un ataque en el que el atacante trata de encontrar las contraseñas de inicio mediante la fuerza, probando múltiples combinaciones"
+      ],
+      "correct_option": 3
+    },
+    {
+      "question": "¿Cuál es la función principal del archivo sshd_config en un servidor SSH?",
+      "options": [
+        "Configurar la autenticación y otros aspectos de SSH.",
+        "Configurar las cuentas de los usuarios SSH.",
+        "Configurar las criptografía de contraseñas de los usuarios.",
+        "Configurar las reglas SSH del servidor firewall."
+      ],
+      "correct_option": 0
+    },
+    {
+      "question": "¿Qué extensión suelen tener los archivos que almacenan las claves públicas SSH?",
+      "options": [
+        "Ninguna, en Ubuntu no existen las extensiones",
+        ".key",
+        ".pub",
+        ".priv"
+      ],
+      "correct_option": 1
+    },
+    {
+      "question": "En un sistema de almacenamiento, ¿Cuál es la relación entre el disco duro, particiones y los sistemas de archivos?",
+      "options": [
+        "sudo apt install openssh-client     o     apt-get install ssh",
+        "",
+        "",
+        ""
+      ],
+      "correct_option": 0
+    },
+    {
+      "question": "¿Qué comando (con parámetros y opciones) usarías para crear una clave privada de tipo ecdsa de 9046 bits? (Si 9046 no es posible, escribe el comando como si fuera posible tal cantidad de bits)",
+      "options": [
+        "ssh-keygen -t ecdsa -b 9046",
+        "",
+        "",
+        ""
+      ],
+      "correct_option": 0
+    },
+    {
+      "question": "¿Cuál es el protocolo comúnmente utilizado para la transferencia de archivos a través de SSH?",
+      "options": [
+        "SFTP",
+        "SMTP",
+        "PUB",
+        "HTTP"
+      ],
+      "correct_option": 0
+    }
+  ]
+}

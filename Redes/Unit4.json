@@ -1,146 +1,104 @@
 {
   "questions": [
     {
-      "question": "Completa la información apropiada de la Dirección IP/Máscara CIDR 193.147.87.65/30",
-      "options": ["N.N.N.nnnnnnhh - 255.255.255.252 - 193.147.87.64/30 - 193.147.87.67/30 - 193.147.87.65/30 - 193.147.87.66/30",
-                	"N.N.N.nhhhhhhh - 255.255.255.128 - 10.1.8.128/25 - 10.1.8.255/25 - 10.1.8.129/25 - 10.1.8.254/25",
-                	"N.N.nnnnnnnh.H - 255.255.254.0 - 10.1.8.128/25 - 10.101.99.255/23 - 10.101.98.1/23 - 10.101.99.254/23",
-                	"N.N.N.nnnnhhhh - 255.255.255.240 - 10.1.8.128/25 - 209.165.200.127/28 - 209.165.200.113/28 - 209.165.200.126/28"],
-      "correct_option": 0
-    },
-    {
-      "question": "Completa la información apropiada de la Dirección IP/Máscara CIDR 10.1.8.200/25",
-      "options": ["N.N.N.nnnnnnhh - 255.255.255.252 - 193.147.87.64/30 - 193.147.87.67/30 - 193.147.87.65/30 - 193.147.87.66/30",
-                	"N.N.N.nhhhhhhh - 255.255.255.128 - 10.1.8.128/25 - 10.1.8.255/25 - 10.1.8.129/25 - 10.1.8.254/25",
-                	"N.N.nnnnnnnh.H - 255.255.254.0 - 10.1.8.128/25 - 10.101.99.255/23 - 10.101.98.1/23 - 10.101.99.254/23",
-                	"N.N.N.nnnnhhhh - 255.255.255.240 - 10.1.8.128/25 - 209.165.200.127/28 - 209.165.200.113/28 - 209.165.200.126/28"],
-      "correct_option": 1
-    },
-    {
-      "question": "Completa la información apropiada de la Dirección IP/Máscara CIDR 10.101.99.17/23",
-      "options": ["N.N.N.nnnnnnhh - 255.255.255.252 - 193.147.87.64/30 - 193.147.87.67/30 - 193.147.87.65/30 - 193.147.87.66/30",
-                	"N.N.N.nhhhhhhh - 255.255.255.128 - 10.1.8.128/25 - 10.1.8.255/25 - 10.1.8.129/25 - 10.1.8.254/25",
-                	"N.N.nnnnnnnh.H - 255.255.254.0 - 10.1.8.128/25 - 10.101.99.255/23 - 10.101.98.1/23 - 10.101.99.254/23",
-                	"N.N.N.nnnnhhhh - 255.255.255.240 - 10.1.8.128/25 - 209.165.200.127/28 - 209.165.200.113/28 - 209.165.200.126/28"],
+      "question": "¿Cuál es la ventaja de crear instantáneas (snapshots) en VirtualBox?",
+      "options": [
+        "Realizar una copia de seguridad de los archivos de la máquina virtual.",
+        "Proporciona una vista previa de la pantalla de la máquina virtual.",
+        "Permite capturar el estado en un momento específico de la máquina virtual en funcionamiento.",
+        "Permite guardar múltiples copias de seguridad de la máquina virtual."
+      ],
       "correct_option": 2
     },
     {
-      "question": "Completa la información apropiada de la Dirección IP/Máscara CIDR 209.165.200.125/28",
-      "options": ["N.N.N.nnnnnnhh - 255.255.255.252 - 193.147.87.64/30 - 193.147.87.67/30 - 193.147.87.65/30 - 193.147.87.66/30",
-                	"N.N.N.nhhhhhhh - 255.255.255.128 - 10.1.8.128/25 - 10.1.8.255/25 - 10.1.8.129/25 - 10.1.8.254/25",
-                	"N.N.nnnnnnnh.H - 255.255.254.0 - 10.1.8.128/25 - 10.101.99.255/23 - 10.101.98.1/23 - 10.101.99.254/23",
-                	"N.N.N.nnnnhhhh - 255.255.255.240 - 10.1.8.128/25 - 209.165.200.127/28 - 209.165.200.113/28 - 209.165.200.126/28"],
-      "correct_option": 3
-    },
-    {
-      "question": "Tipo de dirección para Dirección IP: 192.168.33.62 y Máscara de subred: 255.255.255.192",
-      "options": ["Host",
-                	"Red",
-                	"Multicast",
-                	"Broadcast"],
-      "correct_option": 0
-    },
-    {
-      "question": "Tipo de dirección para Dirección IP: 193.147.87.3 y Máscara de subred: 255.255.255.252",
-      "options": ["Host",
-                	"Red",
-                	"Multicast",
-                	"Broadcast"],
-      "correct_option": 3
-    },
-    {
-      "question": "Tipo de dirección para Dirección IP: 224.10.0.254 y Máscara de subred: 255.255.255.0",
-      "options": ["Host",
-                	"Red",
-                	"Multicast",
-                	"Broadcast"],
+      "question": "En el contexto de la virtualización, ¿Qué representan los archivos VDI, VHD y VMDK y cuál es la principal diferencia entre ellos?",
+      "options": [
+        "Son archivos de configuración de máquinas virtuales que almacenan información sobre la memoria asignada y los dispositivos virtuales. La principal diferencia es su compatibilidad entre sistemas operativos.",
+        "Son archivos de registro que guardan todas las acciones realizadas en una máquina virtual. La principal diferencia es el tipo de información almacenada.",
+        "Son archivos de disco duro virtual que almacenan los datos del sistema operativo y las aplicaciones de una máquina virtual. La principal diferencia es el formato de disco y la compatibilidad con diferentes hipervisores.",
+        "Son archivos de instantánea que capturan el estado actual de una máquina virtual en un momento específico. La principal diferencia es el tamaño del archivo."
+      ],
       "correct_option": 2
     },
     {
-      "question": "Tipo de dirección para Dirección IP: 172.16.128.47 y Máscara de subred: 255.255.255.240",
-      "options": ["Host",
-                	"Red",
-                	"Multicast",
-                	"Broadcast"],
-      "correct_option": 3
-    },
-    {
-      "question": "Tipo de dirección para Dirección IP: 10.1.1.1 y Máscara de subred: 255.255.255.252",
-      "options": ["Host",
-                	"Red",
-                	"Multicast",
-                	"Broadcast"],
-      "correct_option": 0
-    },
-    {
-      "question": "Tipo de dirección para Dirección IP/Máscara: 172.20.18.150/14",
-      "options": ["Pública",
-                	"Privada"],
-      "correct_option": 1
-    },
-    {
-      "question": "Tipo de dirección para Dirección IP/Máscara: 10.10.11.103/16",
-      "options": ["Pública",
-                	"Privada"],
-      "correct_option": 1
-    },
-    {
-      "question": "Tipo de dirección para Dirección IP/Máscara: 209.165.201.30/27",
-      "options": ["Pública",
-                	"Privada"],
-      "correct_option": 0
-    },
-    {
-      "question": "Tipo de dirección para Dirección IP/Máscara: 192.168.128.1/17",
-      "options": ["Pública",
-                	"Privada"],
-      "correct_option": 1
-    },
-    {
-      "question": "Tipo de dirección para Dirección IP/Máscara: 192.31.7.128/24",
-      "options": ["Pública",
-                	"Privada"],
-      "correct_option": 0
-    },
-    {
-      "question": "Tipo de dirección para Dirección IP/Máscara: 64.102.255.255/16",
-      "options": ["Host",
-                	"Red",
-                	"Multicast",
-                  "Broadcast",
-                	"Especial",
-                	"Reservada"],
-      "correct_option": 3
-    },
-    {
-      "question": "Tipo de dirección para Dirección IP/Máscara: 192.31.7.128/25",
-      "options": ["Host",
-                	"Red",
-                	"Multicast",
-                  "Broadcast",
-                	"Especial",
-                	"Reservada"],
-      "correct_option": 1
-    },
-    {
-      "question": "Tipo de dirección para Dirección IP/Máscara: 10.10.255.255/8",
-      "options": ["Host",
-                	"Red",
-                	"Multicast",
-                  "Broadcast",
-                	"Especial",
-                	"Reservada"],
-      "correct_option": 0
-    },
-    {
-      "question": "Tipo de dirección para Dirección IP/Máscara: 239.0.0.5/16",
-      "options": ["Host",
-                	"Red",
-                	"Multicast",
-                  "Broadcast",
-                	"Especial",
-                	"Reservada"],
+      "question": "¿Qué es una red NAT (Network Address Translation) en VirtualBox?",
+      "options": [
+        "Una red que solo funciona en sistemas operativos Linux.",
+        "Una red que permite que la máquina virtual tenga acceso a internet.",
+        "Una red que permite que la máquina virtual se comunique con la red externa a través del sistema host.",
+        "Una red que asigna automáticamente direcciones IP a las máquinas virtuales."
+      ],
       "correct_option": 2
+    },
+    {
+      "question": "¿Qué es 'VBoxGuestAdditions.iso' y cuál es su función en VirtualBox?",
+      "options": [
+        "Un tipo de máquina virtual que con características avanzadas",
+        "Un archivo de extensión que agrega características avanzadas a VirtualBox.",
+        "Un archivo de instalación que se instala en el sistema anfitrión para mejorar la compatibilidad con el sistema virtualizado",
+        "Un archivo de instalación de controladores y utilidades para mejorar la interacción entre el sistema host y la máquina virtual."
+      ],
+      "correct_option": 3
+    },
+    {
+      "question": "¿Cuáles de las siguientes opciones de máquina virtual permite VirtualBox en términos de “portapapeles compartido”?",
+      "options": [
+        "Invitado a Anfitrión",
+        "Bidireccional",
+        "Todas son correctas",
+        "Anfitrión a invitado"
+      ],
+      "correct_option": 2
+    },
+    {
+      "question": "¿Qué es el “Modo de Red Interna” en VirtualBox?",
+      "options": [
+        "Un modo que permite la comunicación directa con la red externa sin restricciones.",
+        "Un modo que permite el acceso a Internet desde la máquina virtual y conexión con otros equipos internos del la red LAN.",
+        "Un modo que conecta la máquina virtual con otros equipos virtualizados.",
+        "Un modo que desactiva todas las conexiones de red en la máquina virtual conservando solo la red interna localhost."
+      ],
+      "correct_option": 2
+    },
+    {
+      "question": "¿Cuál es una de las ventajas clave de utilizar discos duros virtuales (VHD, VDI, VMDK) en lugar de discos duros físicos en entornos de virtualización?",
+      "options": [
+        "Los discos duros virtuales pueden ser usados por varios sistemas operativos de forma concurrente.",
+        "Su principal ventaja es que se pueden usar distintos sistemas de ficheros.",
+        "Los discos duros virtuales tienen un rendimiento significativamente mejor al quedar aislados del sistema anfitrión.",
+        "Los discos duros virtuales son más flexibles y portátiles, lo que permite la migración de máquinas virtuales entre diferentes hipervisores."
+      ],
+      "correct_option": 3
+    },
+    {
+      "question": "Si quisieras hacer una copia completa de una maquina en Virtual Box para ser usada en otro ordenador (también con Virtual Box instalado) ¿Cuál de los siguientes formatos usarías?",
+      "options": [
+        "VMDK",
+        "VHD",
+        "OVA",
+        "VDI"
+      ],
+      "correct_option": 2
+    },
+    {
+      "question": "En un sistema de almacenamiento, ¿Cuál es la relación entre el disco duro, particiones y los sistemas de archivos?",
+      "options": [
+        "Un disco duro puede contener distintas particiones pero un único sistemas de ficheros.",
+        "Un sistema de archivos es una partición que se utiliza para almacenar varios discos duros.",
+        "Un disco duro contiene varias particiones, y cada partición puede tener la información estructurada según su propio sistema de archivos.",
+        "Las particiones y los sistemas de archivos son términos intercambiables que se refieren a la misma cosa en el almacenamiento de datos."
+      ],
+      "correct_option": 2
+    },
+    {
+      "question": "¿Cuántos modos de red en VirtualBox permiten hacer una redirección de puertos de forma que podamos, por ejemplo, conectarnos a un servidor ssh o http instalado en la máquina virtualizada? (Escribe únicamente números)",
+      "options": [
+        "1",
+        "",
+        "",
+        ""
+      ],
+      "correct_option": 0
     }
   ]
 }

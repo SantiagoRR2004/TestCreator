@@ -2,82 +2,102 @@
   "questions": [
     {
       "question": "¿Cuál es el propósito del comando `tar` en Linux?",
-      "options": ["Mostrar las coordenadas GPS del equipo actual",
-      	          "Comprimir archivos en un solo archivo.",
-      		        "Listar archivos en un directorio de forma ordenada",
-                  "Copiar archivos entre volúmenes"],
+      "options": [
+        "Mostrar las coordenadas GPS del equipo actual",
+        "Comprimir archivos en un solo archivo.",
+        "Listar archivos en un directorio de forma ordenada",
+        "Copiar archivos entre volúmenes"
+      ],
       "correct_option": 1
     },
     {
       "question": "¿Qué comando se utiliza para programar tareas periódicas en Linux?",
-      "options": ["time",
-                  "task",
-                  "schedule",
-                  "cron"],
+      "options": [
+        "time",
+        "task",
+        "schedule",
+        "cron"
+      ],
       "correct_option": 3
     },
     {
       "question": "¿Cuáles de los siguientes comandos permiten instalar programas y gestionar paquetes?",
-      "options": ["yum",
-                  "dnf",
-                  "apt",
-                  "Todos los anteriores"],
+      "options": [
+        "yum",
+        "dnf",
+        "apt",
+        "Todos los anteriores"
+      ],
       "correct_option": 3
     },
     {
       "question": "¿Qué hace el comando “cat quijote.txt | head -n 100 | tail 5” en un hipotético fichero?",
-      "options": ["Muestra las 5 primeras líneas empezando por la 0. Es decir: 01, 02, 03…05.",
-                  "Muestra las 5 primeras líneas después de la 100. Es decir: 101, 102, 103…105.",
-                  "Ninguna de las anteriores es correcta",
-                  "Muestra las 5 últimas líneas.Es decir: 95, 96 … 100."],
+      "options": [
+        "Muestra las 5 primeras líneas empezando por la 0. Es decir: 01, 02, 03…05.",
+        "Muestra las 5 primeras líneas después de la 100. Es decir: 101, 102, 103…105.",
+        "Ninguna de las anteriores es correcta",
+        "Muestra las 5 últimas líneas.Es decir: 95, 96 … 100."
+      ],
       "correct_option": 1
     },
     {
       "question": "En el supuesto de que un usuario tenga como directorio actual /var/www/html/myApp y quiera moverse a la carpeta /var/lib con un solo comando. ¿Cuál de los siguientes debería utilizar?",
-      "options": ["cd ./../../../lib",
-                  "cd ../../../lib",
-                  "Todos las respuestas son válidas",
-                  "cd ../../.././lib"],
+      "options": [
+        "cd ./../../../lib",
+        "cd ../../../lib",
+        "Todos las respuestas son válidas",
+        "cd ../../.././lib"
+      ],
       "correct_option": 2
     },
     {
       "question": "Que comando usarías junto con man para buscar de forma rápida una opción o un texto concreto en la ayuda/descripción de otro comando (deberás escribir el comando usado)",
-      "options": ["grep",
-                  "",
-                  "",
-                  ""],
+      "options": [
+        "grep",
+        "",
+        "",
+        ""
+      ],
       "correct_option": 0
     },
     {
       "question": "Escribe el comando que usarías para guardar la salida del comando date en el fichero /tmp/date",
-      "options": ["date >> /tmp/date",
-                  "",
-                  "",
-                  ""],
+      "options": [
+        "date >> /tmp/date",
+        "",
+        "",
+        ""
+      ],
       "correct_option": 0
     },
     {
       "question": "Escribe el comando completo que usarías para ver el resultado de apt search mysql de forma paginada",
-      "options": ["apt search mysql | less",
-                  "",
-                  "",
-                  ""],
+      "options": [
+        "apt search mysql | less",
+        "",
+        "",
+        ""
+      ],
       "correct_option": 0
     },
     {
       "question": "¿Qué comando usarías para guardar el resultado de pwd en una variable llamada var?",
-      "options": ["var=`pwd`",
-                  "",
-                  "",
-                  ""],
+      "options": [
+        "var=`pwd`",
+        "",
+        "",
+        ""
+      ],
       "correct_option": 0
     },
     {
       "question": "Escribe el comando que usarías para desinstalar el paquete mysql de tu ordenador",
-      "options": ["sudo apt remove mysql",
-                  "",
-                  "",
-                  ""],
+      "options": [
+        "sudo apt remove mysql",
+        "",
+        "",
+        ""
+      ],
       "correct_option": 0
     }
   ]
