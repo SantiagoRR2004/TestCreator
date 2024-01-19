@@ -64,7 +64,10 @@
         ""
       ],
       "correct_option": 0,
-      "questionType": "multipleChoice"
+      "questionType": "multipleChoice",
+      "images": [
+        "folderImage.png"
+      ]
     },
     {
       "question": "Después de ejecutar el comando `ls -l` obtienes la siguiente descripción de ficheros. Teniendo en cuenta la información mostrada ¿Cuántos directorios existen?",
@@ -75,7 +78,10 @@
         ""
       ],
       "correct_option": 0,
-      "questionType": "multipleChoice"
+      "questionType": "multipleChoice",
+      "images": [
+        "folderImage.png"
+      ]
     },
     {
       "question": "Escribe el comando que usarías para monitorizar cada segundo las 10 últimas líneas del fichero /var/log/mysql/error.log",

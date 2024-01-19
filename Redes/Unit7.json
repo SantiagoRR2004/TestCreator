@@ -9,7 +9,10 @@
         ""
       ],
       "correct_option": 0,
-      "questionType": "multipleChoice"
+      "questionType": "multipleChoice",
+      "images": [
+        "sshImage.png"
+      ]
     },
     {
       "question": "¿Qué comando se utiliza para conectarse a un servidor SSH en un puerto específico?",
