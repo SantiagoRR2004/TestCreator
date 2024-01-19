@@ -2,11 +2,14 @@
   "questions": [
     {
       "question": "¿Cuáles de los siguientes pares de dimensiones se encuentran entre las dimensiones culturales de Hofstede?",
-      "options": ["Aversión a la incertidumbre y Orentiación a largo plazo",
-      		        "Individualismo vs. Colectivismo y Orientación la desempeño",
-      		        "Distancia al poder y Altruismo",
-      		        "Inclusividad vs. Exclusividad y Masculinidad vs. Feminidad"],
-      "correct_option": 0
+      "options": [
+        "Aversión a la incertidumbre y Orentiación a largo plazo",
+        "Individualismo vs. Colectivismo y Orientación la desempeño",
+        "Distancia al poder y Altruismo",
+        "Inclusividad vs. Exclusividad y Masculinidad vs. Feminidad"
+      ],
+      "correct_option": 0,
+      "questionType": "multipleChoice"
     }
   ]
 }

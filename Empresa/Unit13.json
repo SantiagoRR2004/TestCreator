@@ -2,99 +2,135 @@
   "questions": [
     {
       "question": "¿En que año se fundó Teimas?",
-      "options": ["2007",
-                  "2008",
-                  "2009",
-                  "2010"],
-      "correct_option": 1
+      "options": [
+        "2007",
+        "2008",
+        "2009",
+        "2010"
+      ],
+      "correct_option": 1,
+      "questionType": "multipleChoice"
     },
     {
       "question": "¿Cuál de estos no es un producto de la empresa de la charla?",
-      "options": ["Teimas",
-                  "Teixo",
-                  "Zero",
-                  "Teixo S"],
-      "correct_option": 0
+      "options": [
+        "Teimas",
+        "Teixo",
+        "Zero",
+        "Teixo S"
+      ],
+      "correct_option": 0,
+      "questionType": "multipleChoice"
     },
     {
       "question": "¿Porqué en Teimas eligieron el sector de gestión de residuos?",
-      "options": ["Para proteger el medio ambiente",
-                  "Porque la familia de Miguel Varela venía del sector",
-                  "Porque vieron que era un mercado poco desarrollado tecnológicamente",
-                  "Porque el código podía ser reutilizado para el sector"],
-      "correct_option": 2
+      "options": [
+        "Para proteger el medio ambiente",
+        "Porque la familia de Miguel Varela venía del sector",
+        "Porque vieron que era un mercado poco desarrollado tecnológicamente",
+        "Porque el código podía ser reutilizado para el sector"
+      ],
+      "correct_option": 2,
+      "questionType": "multipleChoice"
     },
     {
       "question": "¿De cuándo a cuándo duró la cueva técnica?",
-      "options": ["2009-2011",
-                  "2008-2012",
-                  "2011-2014",
-                  "2008-2009"],
-      "correct_option": 0
+      "options": [
+        "2009-2011",
+        "2008-2012",
+        "2011-2014",
+        "2008-2009"
+      ],
+      "correct_option": 0,
+      "questionType": "multipleChoice"
     },
     {
       "question": "¿Cuál fue el problema durante la etapa de la cueva técnica?",
-      "options": ["Tenían que haber sido más de cuatro personas",
-                  "Era una cueva de diorita y no de granito",
-                  "No fue el suficiente tiempo",
-                  "Se centraron demasiado en crear el producto y no en venderlo"],
-      "correct_option": 3
+      "options": [
+        "Tenían que haber sido más de cuatro personas",
+        "Era una cueva de diorita y no de granito",
+        "No fue el suficiente tiempo",
+        "Se centraron demasiado en crear el producto y no en venderlo"
+      ],
+      "correct_option": 3,
+      "questionType": "multipleChoice"
     },
     {
       "question": "¿Qué no pasó en 2012?",
-      "options": ["Estaban en bancarrota y con 500K investidos",
-                  "El modelo freemium funcionaba",
-                  "Mercado los escupe",
-                  "No había experiencia comercial. Todos eran de perfil técnico"],
-      "correct_option": 1
+      "options": [
+        "Estaban en bancarrota y con 500K investidos",
+        "El modelo freemium funcionaba",
+        "Mercado los escupe",
+        "No había experiencia comercial. Todos eran de perfil técnico"
+      ],
+      "correct_option": 1,
+      "questionType": "multipleChoice"
     },
     {
       "question": "¿Qué hicieron en 2013 para mejorar la situación de la empresa?",
-      "options": ["Se pusieron el precio más bajo del mercado",
-                  "Crearon un departamento de ventas",
-                  "Llamar muchas veces a los clientes hasta que digan que no",
-                  "Crearon productos paralelos"],
-      "correct_option": 0
+      "options": [
+        "Se pusieron el precio más bajo del mercado",
+        "Crearon un departamento de ventas",
+        "Llamar muchas veces a los clientes hasta que digan que no",
+        "Crearon productos paralelos"
+      ],
+      "correct_option": 0,
+      "questionType": "multipleChoice"
     },
     {
       "question": "¿Según Miguel Varela qué se puede aprender de Breaking Bad?",
-      "options": ["La importancia de tomar decisiones éticas en situaciones difíciles",
-                  "La droga es muy rentable",
-                  "Tus éxitos tendrán personas que los copien (Metástasis)",
-                  "Al montar una empresa hay que cambiar de especialista a empresario"],
-      "correct_option": 3
+      "options": [
+        "La importancia de tomar decisiones éticas en situaciones difíciles",
+        "La droga es muy rentable",
+        "Tus éxitos tendrán personas que los copien (Metástasis)",
+        "Al montar una empresa hay que cambiar de especialista a empresario"
+      ],
+      "correct_option": 3,
+      "questionType": "multipleChoice"
     },
     {
       "question": "¿En qué año empieza la época de programadores a vendedores?",
-      "options": ["2009",
-                  "2012",
-                  "2013",
-                  "2016"],
-      "correct_option": 2
+      "options": [
+        "2009",
+        "2012",
+        "2013",
+        "2016"
+      ],
+      "correct_option": 2,
+      "questionType": "multipleChoice"
     },
     {
       "question": "¿En qué año empieza la época de emprendedores a empresarios?",
-      "options": ["2009",
-                  "2012",
-                  "2013",
-                  "2016"],
-      "correct_option": 3
+      "options": [
+        "2009",
+        "2012",
+        "2013",
+        "2016"
+      ],
+      "correct_option": 3,
+      "questionType": "multipleChoice"
     },
     {
       "question": "¿Qué consejo dió Varela al final de la charla?",
-      "options": ["Uno puede ser un emprendedor",
-                  "Dió los tres consejos",
-                  "Hay que persistir",
-                  "Hay que hacer productos útiles que vendan"],
-      "correct_option": 1
+      "options": [
+        "Uno puede ser un emprendedor",
+        "Dió los tres consejos",
+        "Hay que persistir",
+        "Hay que hacer productos útiles que vendan"
+      ],
+      "correct_option": 1,
+      "questionType": "multipleChoice"
     },
     {
       "question": "¿Qué significa MVP?",
-      "options": ["Jugador Más Valioso (Most Valuable Player)",
-                  "Programa de Voluntariado Médico (Medical Volunteer Program)",
-                  "Proyecto de Emprendimiento en Marketing (Marketing Venture Project)",
-                  "Mínimo Producto Viable (Minimum Viable Product)"],
-      "correct_option": 3
+      "options": [
+        "Jugador Más Valioso (Most Valuable Player)",
+        "Programa de Voluntariado Médico (Medical Volunteer Program)",
+        "Proyecto de Emprendimiento en Marketing (Marketing Venture Project)",
+        "Mínimo Producto Viable (Minimum Viable Product)"
+      ],
+      "correct_option": 3,
+      "questionType": "multipleChoice"
     }
   ]
 }

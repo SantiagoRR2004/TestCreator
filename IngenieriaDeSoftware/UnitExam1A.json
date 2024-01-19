@@ -1,79 +1,108 @@
 {
-    "questions": [
-      {
-        "question": "Pregunta 1 del test",
-        "options": ["",
-                    "",
-                    "",
-                    ""],
-        "correct_option": 1
-      },
-      {
-        "question": "Pregunta 2 del test",
-        "options": ["",
-                    "",
-                    "",
-                    ""],
-        "correct_option": 3
-      },
-      {
-        "question": "Pregunta 3 del test",
-        "options": ["",
-                    "",
-                    "",
-                    ""],
-        "correct_option": 3
-      },
-      {
-        "question": "Pregunta 4 del test",
-        "options": ["",
-                    "",
-                    "",
-                    ""],
-        "correct_option": 1
-      },
-      {
-        "question": "Pregunta 5 del test",
-        "options": ["",
-                    "",
-                    "",
-                    ""],
-        "correct_option": 2
-      },
-      {
-        "question": "Pregunta 6 del test",
-        "options": ["",
-                    "",
-                    "",
-                    ""],
-        "correct_option": 0
-      },
-      {
-        "question": "Pregunta 7 del test",
-        "options": ["",
-                    "",
-                    "",
-                    ""],
-        "correct_option": 0
-      },
-      {
-        "question": "Pregunta 8 del test",
-        "options": ["",
-                    "",
-                    "",
-                    ""],
-        "correct_option": 0
-      },
-      {
-        "question": "Primera pregunta que no era del test",
-        "options": [""],
-        "correct_option": 0
-      },
-      {
-        "question": "Segunda pregunta que no era del test",
-        "options": [""],
-        "correct_option": 0
-      }
-    ]
-  }
-  
+  "questions": [
+    {
+      "question": "Pregunta 1 del test",
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "correct_option": 1,
+      "questionType": "multipleChoice"
+    },
+    {
+      "question": "Pregunta 2 del test",
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "correct_option": 3,
+      "questionType": "multipleChoice"
+    },
+    {
+      "question": "Pregunta 3 del test",
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "correct_option": 3,
+      "questionType": "multipleChoice"
+    },
+    {
+      "question": "Pregunta 4 del test",
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "correct_option": 1,
+      "questionType": "multipleChoice"
+    },
+    {
+      "question": "Pregunta 5 del test",
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "correct_option": 2,
+      "questionType": "multipleChoice"
+    },
+    {
+      "question": "Pregunta 6 del test",
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "correct_option": 0,
+      "questionType": "multipleChoice"
+    },
+    {
+      "question": "Pregunta 7 del test",
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "correct_option": 0,
+      "questionType": "multipleChoice"
+    },
+    {
+      "question": "Pregunta 8 del test",
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "correct_option": 0,
+      "questionType": "multipleChoice"
+    },
+    {
+      "question": "Primera pregunta que no era del test",
+      "options": [
+        ""
+      ],
+      "correct_option": 0,
+      "questionType": "multipleChoice"
+    },
+    {
+      "question": "Segunda pregunta que no era del test",
+      "options": [
+        ""
+      ],
+      "correct_option": 0,
+      "questionType": "multipleChoice"
+    }
+  ]
+}

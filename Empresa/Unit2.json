@@ -2,99 +2,135 @@
   "questions": [
     {
       "question": "¿Cuáles son las cuatro funciones básicas de gestión en el trabajo directivo?",
-      "options": ["Planificar, gestionar, controlar y administrar",
-                	"Gestionar, liderar, negociar y organizar",
-                	"Planificar, organizar, liderar y controlar",
-                	"Organizar, gestionar, controlar y liderar"],
-      "correct_option": 2
+      "options": [
+        "Planificar, gestionar, controlar y administrar",
+        "Gestionar, liderar, negociar y organizar",
+        "Planificar, organizar, liderar y controlar",
+        "Organizar, gestionar, controlar y liderar"
+      ],
+      "correct_option": 2,
+      "questionType": "multipleChoice"
     },
     {
       "question": "¿Según Mintzberg cuál no es un rol interpersonal?",
-      "options": ["Conciliador de conflictos",
-                	"Representante",
-                	"Líder",
-     	          	"Enlace"],
-      "correct_option": 0
+      "options": [
+        "Conciliador de conflictos",
+        "Representante",
+        "Líder",
+        "Enlace"
+      ],
+      "correct_option": 0,
+      "questionType": "multipleChoice"
     },
     {
       "question": "Señala la afirmación incorrecta:",
-      "options": ["Los Empleados no gerenciales trabajan directamente en las tareas",
-                 	"Los empleados gerenciales no trabajan directamente en las tareas",
-                 	"Los mandos medios supervisan a otros gerentes",
-                	"La alta dirección toma las decisiones acerca de la dirección de la empresa o grupo"],
-      "correct_option": 1
+      "options": [
+        "Los Empleados no gerenciales trabajan directamente en las tareas",
+        "Los empleados gerenciales no trabajan directamente en las tareas",
+        "Los mandos medios supervisan a otros gerentes",
+        "La alta dirección toma las decisiones acerca de la dirección de la empresa o grupo"
+      ],
+      "correct_option": 1,
+      "questionType": "multipleChoice"
     },
     {
       "question": "¿Qué son las habilidades políticas?",
-      "options": ["Capacidad de trabajar bien con otras personas, individualmente y en grupos",
-                 	"Habilidades de análisis para definir correctamente los problemas y las oportunidades en la organización",
-                	"Habilidad para desarrollar una red de contactos dentro y fuera de la empresa",
-                 	"Todas las respuestas anteriores constituyen las habilidades políticas"],
-      "correct_option": 2
+      "options": [
+        "Capacidad de trabajar bien con otras personas, individualmente y en grupos",
+        "Habilidades de análisis para definir correctamente los problemas y las oportunidades en la organización",
+        "Habilidad para desarrollar una red de contactos dentro y fuera de la empresa",
+        "Todas las respuestas anteriores constituyen las habilidades políticas"
+      ],
+      "correct_option": 2,
+      "questionType": "multipleChoice"
     },
     {
       "question": "Señala la afirmación incorrecta:",
-      "options": ["Los gerentes de administración no están asociados con ninguna especialidad gerencial en particular",
-                 	"Los gerentes financieros se encargan de los recursos financieros de una organización para incrementar el valor",
-                	"Los gerentes de operaciones tienden a ser generalistas, tienen cierta familiaridad básica con todas las",
-                 	"Los gerentes de recursos humanos son los responsables de contratar y de capacitar a los empleados"],
-      "correct_option": 2
+      "options": [
+        "Los gerentes de administración no están asociados con ninguna especialidad gerencial en particular",
+        "Los gerentes financieros se encargan de los recursos financieros de una organización para incrementar el valor",
+        "Los gerentes de operaciones tienden a ser generalistas, tienen cierta familiaridad básica con todas las",
+        "Los gerentes de recursos humanos son los responsables de contratar y de capacitar a los empleados"
+      ],
+      "correct_option": 2,
+      "questionType": "multipleChoice"
     },
     {
       "question": "Según los modelos del diseño organizacional:",
-      "options": ["El tamaño de la empresa no importa, independientemente de si es mecánica o orgánica",
-                 	"El entorno en una organización mecánica suele ser dinámico",
-                 	"En una organización orgánica, la comunicación suele ser formal",
-                	"Todas son incorrectas"],
-      "correct_option": 3
+      "options": [
+        "El tamaño de la empresa no importa, independientemente de si es mecánica o orgánica",
+        "El entorno en una organización mecánica suele ser dinámico",
+        "En una organización orgánica, la comunicación suele ser formal",
+        "Todas son incorrectas"
+      ],
+      "correct_option": 3,
+      "questionType": "multipleChoice"
     },
     {
       "question": "¿Qué es una estructura matricial?",
-      "options": ["Aquella donde la organización está comopuesta por grupos de trabajo que tralizan las tareas",
-                	"Aquellas cuyo diseño no está limitado ni definido por fronteras impuestas mediente una estructura predefinida",
-                 	"Aquellas que siguen una estructura divisional",
-                	"Aquella que está basada en proyectos, donde los empleados se centran continuamente en proyectos"],
-      "correct_option": 3
+      "options": [
+        "Aquella donde la organización está comopuesta por grupos de trabajo que tralizan las tareas",
+        "Aquellas cuyo diseño no está limitado ni definido por fronteras impuestas mediente una estructura predefinida",
+        "Aquellas que siguen una estructura divisional",
+        "Aquella que está basada en proyectos, donde los empleados se centran continuamente en proyectos"
+      ],
+      "correct_option": 3,
+      "questionType": "multipleChoice"
     },
     {
       "question": "Los desafíos actuales en el diseño organizacional son:",
-      "options": ["Mantener empleados conectados, gestionar diferencias globales y construir una 'organización que aprende'",
-                	"Conseguir aumentar la eficiencia y la eficacia con éxito",
-                	"Conseguir crear una estructura divisional con éxito",
-                	"Todas son correctas"],
-      "correct_option": 0
+      "options": [
+        "Mantener empleados conectados, gestionar diferencias globales y construir una 'organización que aprende'",
+        "Conseguir aumentar la eficiencia y la eficacia con éxito",
+        "Conseguir crear una estructura divisional con éxito",
+        "Todas son correctas"
+      ],
+      "correct_option": 0,
+      "questionType": "multipleChoice"
     },
     {
       "question": "Cual es la variable mas importante en la productividad y compromiso del empleado sin que haya algun factor externo como una crisis financiera:",
-      "options": ["Prestaciones laborales y ambiente laboral",
-                	"Salario",
-      	          "Relacion con el supervisor",
-                 	"Situaciones de estrés"],
-      "correct_option": 2
+      "options": [
+        "Prestaciones laborales y ambiente laboral",
+        "Salario",
+        "Relacion con el supervisor",
+        "Situaciones de estrés"
+      ],
+      "correct_option": 2,
+      "questionType": "multipleChoice"
     },
     {
       "question": "Cual es la variable mas importante en la productividad y compromiso del empleado contando con factores externos como una crisis financiera:",
-      "options": ["Prestaciones laborales y ambiente laboral",
-                	"Salario y menor estrés",
-                	"Relacion con el supervisor",
-                 	"Facilidades que ofrece la compañía, tales como cafetería o zonas de ocio"],
-      "correct_option": 1
+      "options": [
+        "Prestaciones laborales y ambiente laboral",
+        "Salario y menor estrés",
+        "Relacion con el supervisor",
+        "Facilidades que ofrece la compañía, tales como cafetería o zonas de ocio"
+      ],
+      "correct_option": 1,
+      "questionType": "multipleChoice"
     },
     {
       "question": "Como estructurarías en niveles una organización:",
-      "options": ["Altos cargos, directivos, supervisores y empleados no gerenciales",
-                 	"Directivos, medios cargos, lideres de equipo y empleados no gerenciales",
-                 	"Altos cargos, medios cargos, gerentes de primera linea y lideres de equipo",
-                	"CEOs, vicedirectores, gerentes y trabajadores no gerenenciales"],
-      "correct_option": 2
+      "options": [
+        "Altos cargos, directivos, supervisores y empleados no gerenciales",
+        "Directivos, medios cargos, lideres de equipo y empleados no gerenciales",
+        "Altos cargos, medios cargos, gerentes de primera linea y lideres de equipo",
+        "CEOs, vicedirectores, gerentes y trabajadores no gerenenciales"
+      ],
+      "correct_option": 2,
+      "questionType": "multipleChoice"
     },
     {
       "question": "Cuales son las cuatro funciones basicas de gestion:",
-      "options": ["Planificar, organizar, liderar y controlar",
-                 	"Pensar, ordenar, listar y comunicar",
-                 	"Planificar, ordenar, liderar y comunicar",
-                 	"Pensar, organizar, listar y controlar"],
-      "correct_option": 0
+      "options": [
+        "Planificar, organizar, liderar y controlar",
+        "Pensar, ordenar, listar y comunicar",
+        "Planificar, ordenar, liderar y comunicar",
+        "Pensar, organizar, listar y controlar"
+      ],
+      "correct_option": 0,
+      "questionType": "multipleChoice"
     }
   ]
 }

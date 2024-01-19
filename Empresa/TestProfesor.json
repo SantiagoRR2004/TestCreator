@@ -2,83 +2,113 @@
   "questions": [
     {
       "question": "Señale la respuesta correcta",
-      "options": ["Eficiencia y eficacia se diferencian sólo por los resultados",
-      		        "En general, una mayor eficiencia implica una mejor productividad",
-      		        "Una empresa no eficiente en ningún caso puede ser eficaz",
-      		        "Eficacia es obtener el máximo rendimiento con el mínimo de recursos"],
-      "correct_option": 1
+      "options": [
+        "Eficiencia y eficacia se diferencian sólo por los resultados",
+        "En general, una mayor eficiencia implica una mejor productividad",
+        "Una empresa no eficiente en ningún caso puede ser eficaz",
+        "Eficacia es obtener el máximo rendimiento con el mínimo de recursos"
+      ],
+      "correct_option": 1,
+      "questionType": "multipleChoice"
     },
     {
       "question": "¿Cuáles son las cuatro funciones básicas de gestión en el trabajo directivo?",
-      "options": ["Planificar, gestionar, controlar y administrar",
-      		        "Gestionar, liderar, negociar y organizar",
-      		        "Planificar, organizar, liderar y controlar",
-      		        "Organizar, gestionar, controlar y liderar"],
-      "correct_option": 2
+      "options": [
+        "Planificar, gestionar, controlar y administrar",
+        "Gestionar, liderar, negociar y organizar",
+        "Planificar, organizar, liderar y controlar",
+        "Organizar, gestionar, controlar y liderar"
+      ],
+      "correct_option": 2,
+      "questionType": "multipleChoice"
     },
     {
       "question": "¿Qué diferencias hay entre la descripción y la especificación del puesto de trabajo?",
-      "options": ["La DPT establece las competencias que idealmente debería tener un candidato",
-      		        "La EPT es lo mismo que el registro de trabajo",
-      		        "La DPT describe lo que debe hacer el titular de un puesto de trabajo",
-      		        "EPT y DPT son lo mismo, pero adoptan nombres diferentes según la empresa"],
-      "correct_option": 2
+      "options": [
+        "La DPT establece las competencias que idealmente debería tener un candidato",
+        "La EPT es lo mismo que el registro de trabajo",
+        "La DPT describe lo que debe hacer el titular de un puesto de trabajo",
+        "EPT y DPT son lo mismo, pero adoptan nombres diferentes según la empresa"
+      ],
+      "correct_option": 2,
+      "questionType": "multipleChoice"
     },
     {
       "question": "En relación con la cadena de valor de Porter, señale la afirmación correcta",
-      "options": ["Contabilidad marketing y recursos humanos son actividades de apoyo",
-                  "Servicio post-venta e I+D de la tecnología son actividades primarias",
-      		        "Toda la ventaja competitiva viene de las interrelaciones entre actividades",
-      		        "Un objetivo pricipal de las actividades primarias es crear valor añadido"],
-      "correct_option": 3
+      "options": [
+        "Contabilidad marketing y recursos humanos son actividades de apoyo",
+        "Servicio post-venta e I+D de la tecnología son actividades primarias",
+        "Toda la ventaja competitiva viene de las interrelaciones entre actividades",
+        "Un objetivo pricipal de las actividades primarias es crear valor añadido"
+      ],
+      "correct_option": 3,
+      "questionType": "multipleChoice"
     },
     {
       "question": "El producto es una variable del marketing-mix. Desde esta perspectiva señale la afimación correcta",
-      "options": ["El producto es una variable controlable a corto plazo",
-      		        "'Línea de productos' es un conjunto de porductos heterogéneos",
-      		        "Oferta del producto incluye: producto básico, aspectos formales y añadidos",
-      		        "Debe centrarse en las características físicas y no en los beneficios que da"],
-      "correct_option": 2
+      "options": [
+        "El producto es una variable controlable a corto plazo",
+        "'Línea de productos' es un conjunto de porductos heterogéneos",
+        "Oferta del producto incluye: producto básico, aspectos formales y añadidos",
+        "Debe centrarse en las características físicas y no en los beneficios que da"
+      ],
+      "correct_option": 2,
+      "questionType": "multipleChoice"
     },
     {
       "question": "Criterios para ordenar las cuentas del activo y pasivo",
-      "options": ["Monetario en el activo, deudor en el pasivo",
-      		        "Permanencia en el activo, rotación en el pasivo",
-      		        "Ninguna respuesta es correcta",
-      		        "Liquidez en el activo, exibiligidad en el pasivo"],
-      "correct_option": 3
+      "options": [
+        "Monetario en el activo, deudor en el pasivo",
+        "Permanencia en el activo, rotación en el pasivo",
+        "Ninguna respuesta es correcta",
+        "Liquidez en el activo, exibiligidad en el pasivo"
+      ],
+      "correct_option": 3,
+      "questionType": "multipleChoice"
     },
     {
       "question": "Siendo r el tipo de rendimiento interno y k el coste del capital, una inversión es realizable según el criterio de TIR",
-      "options": ["cuando TIR >= 0",
-      		        "cuando TIR >  0",
-      		        "cuando r   >= k",
-      		        "cuando r   >  k"],
-      "correct_option": 3
+      "options": [
+        "cuando TIR >= 0",
+        "cuando TIR >  0",
+        "cuando r   >= k",
+        "cuando r   >  k"
+      ],
+      "correct_option": 3,
+      "questionType": "multipleChoice"
     },
     {
       "question": "En relación con la planificación estratégica podemos afirmar:",
-      "options": ["Todas las respuestas son correctas",
-      		        "Se apoyan fuertemente en el análisis del entorno",
-      		        "Implica tomar decisiones sobre las metas y planes en el largo plazo",
-      		        "Implica acciones y asignaciones de recursos necesarios"],
-      "correct_option": 0
+      "options": [
+        "Todas las respuestas son correctas",
+        "Se apoyan fuertemente en el análisis del entorno",
+        "Implica tomar decisiones sobre las metas y planes en el largo plazo",
+        "Implica acciones y asignaciones de recursos necesarios"
+      ],
+      "correct_option": 0,
+      "questionType": "multipleChoice"
     },
     {
       "question": "¿Cuáles de los siguientes pares de dimensiones se encuentran entre las dimensiones culturales de Hofstede?",
-      "options": ["Aversión a la incertidumbre y Orentiación a largo plazo",
-      		        "Individualismo vs. Colectivismo y Orientación la desempeño",
-      		        "Distancia al poder y Altruismo",
-      		        "Inclusividad vs. Exclusividad y Masculinidad vs. Feminidad"],
-      "correct_option": 0
+      "options": [
+        "Aversión a la incertidumbre y Orentiación a largo plazo",
+        "Individualismo vs. Colectivismo y Orientación la desempeño",
+        "Distancia al poder y Altruismo",
+        "Inclusividad vs. Exclusividad y Masculinidad vs. Feminidad"
+      ],
+      "correct_option": 0,
+      "questionType": "multipleChoice"
     },
     {
       "question": "¿Qué tipo de empresas son más propensas a sufrir el 'dilema del innovador'?",
-      "options": ["Empresas pequeñas y nuevas que ofrecen productos o servicios disruptivos",
-      		        "Empresas grandes y establecidas que ofrecen productos o serv. de alto valor",
-      		        "Empresas medianas y emergentes que exploran nuevos mercados y tecnologías",
-      		        "Todas las empresas que optan por la innovación abierta"],
-      "correct_option": 1
+      "options": [
+        "Empresas pequeñas y nuevas que ofrecen productos o servicios disruptivos",
+        "Empresas grandes y establecidas que ofrecen productos o serv. de alto valor",
+        "Empresas medianas y emergentes que exploran nuevos mercados y tecnologías",
+        "Todas las empresas que optan por la innovación abierta"
+      ],
+      "correct_option": 1,
+      "questionType": "multipleChoice"
     }
   ]
 }

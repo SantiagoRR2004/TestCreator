@@ -2,19 +2,25 @@
   "questions": [
     {
       "question": "Criterios para ordenar las cuentas del activo y pasivo",
-      "options": ["Monetario en el activo, deudor en el pasivo",
-      		        "Permanencia en el activo, rotación en el pasivo",
-      		        "Ninguna respuesta es correcta",
-      		        "Liquidez en el activo, exibiligidad en el pasivo"],
-      "correct_option": 3
+      "options": [
+        "Monetario en el activo, deudor en el pasivo",
+        "Permanencia en el activo, rotación en el pasivo",
+        "Ninguna respuesta es correcta",
+        "Liquidez en el activo, exibiligidad en el pasivo"
+      ],
+      "correct_option": 3,
+      "questionType": "multipleChoice"
     },
     {
       "question": "¿Cómo no se calcula el fondo de maniobra?",
-      "options": ["Pasivo no corriente – Patrimonio neto",
-                  "Es igual al capital circulante", 
-                  "Activo corriente – Pasivo corriente",
-                  "Patrimonio neto + Pasivo no corriente – Activo no corriente"],
-      "correct_option": 0
+      "options": [
+        "Pasivo no corriente – Patrimonio neto",
+        "Es igual al capital circulante",
+        "Activo corriente – Pasivo corriente",
+        "Patrimonio neto + Pasivo no corriente – Activo no corriente"
+      ],
+      "correct_option": 0,
+      "questionType": "multipleChoice"
     }
   ]
 }

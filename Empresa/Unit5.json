@@ -2,11 +2,14 @@
   "questions": [
     {
       "question": "El producto es una variable del marketing-mix. Desde esta perspectiva señale la afimación correcta",
-      "options": ["El producto es una variable controlable a corto plazo",
-      		        "'Línea de productos' es un conjunto de productos heterogéneos",
-      		        "Oferta del producto incluye: producto básico, aspectos formales y añadidos",
-      		        "Debe centrarse en las características físicas y no en los beneficios que da"],
-      "correct_option": 2
+      "options": [
+        "El producto es una variable controlable a corto plazo",
+        "'Línea de productos' es un conjunto de productos heterogéneos",
+        "Oferta del producto incluye: producto básico, aspectos formales y añadidos",
+        "Debe centrarse en las características físicas y no en los beneficios que da"
+      ],
+      "correct_option": 2,
+      "questionType": "multipleChoice"
     }
   ]
 }

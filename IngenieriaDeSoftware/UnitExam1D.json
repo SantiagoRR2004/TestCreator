@@ -1,79 +1,108 @@
 {
-    "questions": [
-      {
-        "question": "Las Bases de Datos y los Sistemas Multiusuario en Tiempo Real aparecen en la década",
-        "options": ["1950-6?",
-                    "1960-7?",
-                    "1970-8?",
-                    "1980-9?"],
-        "correct_option": 1
-      },
-      {
-        "question": "NO es una característica del Software",
-        "options": ["El software es desarrollado",
-                    "El software se deteriora con el uso al igual que el resto de productos manufacturados",
-                    "Carece de piezas de repuesto para las partes que funcionan mal",
-                    "La mayoría se realiza a medida"],
-        "correct_option": 1
-      },
-      {
-        "question": "La Ingeniería del Software es una disciplina tecnológica que",
-        "options": ["trata de la producción y mantenimiento asistemático de productos software que se desarrollan a lo largo del tiempo con un coste estimado",
-                    "trata de la producción y mantenimiento sistemático de productos software que se fabrica con un coste estimado",
-                    "trata del desarrollo de productos software que con un coste estimado solucionan problemas de manera permanente",
-                    "trata de la producción y mantenimiento sistemático de productos software que se desarrollan y mantienen a lo largo del tiempo y con un coste estimado"],
-        "correct_option": 3
-      },
-      {
-        "question": "En el paradigma del modelo en cascada, la fase de análisis de los requisitos se encarga",
-        "options": ["Del estudio del sistema global en el que se va a incorporar el software",
-                    "De recoger los requisitos para el software",
-                    "De traducir los requisitos en código",
-                    "Ninguna de las opciones es correcta"],
-        "correct_option": 1
-      },
-      {
-        "question": "NO es un modelo de ciclo de vida alternativo",
-        "options": ["Los modelos de reutilización de componentes",
-                    "Los modelos de refinamiento progresivo y mejoras iterativas",
-                    "Los modelos de transformaciones formales",
-                    "Los modelos orientados al escenario de producción"],
-        "correct_option": 1
-      },
-      {
-        "question": "Es un principio ágil",
-        "options": ["Abrazar la permanencia del código",
-                    "Realizar pocas entregas y poco frecuentes",
-                    "Equipos con individuos motivados",
-                    "Medir la calidad del producto mediante complejas métricas estandarizadas"],
-        "correct_option": 2
-      },
-      {
-        "question": "Es una práctica central en las metodologías ágiles",
-        "options": ["Propiedad individual",
-                    "Crear los modelos de manera secuencial",
-                    "Crear contenido simple",
-                    "Representación completa y exhaustiva de los modelos"],
-        "correct_option": 2
-      },
-      {
-        "question": "Con la relación a la Programación eXtrema podemos afirmar",
-        "options": ["No tiene carácter evolutivo",
-                    "A pesar de ser una metodología ágil incrementa considerablemente la burocracia",
-                    "El cliente pasa a formar parte del equipo de desarrollo",
-                    "Las historias de ususario escritas en tarjetas no permiten especificar la importancia de la misma"],
-        "correct_option": 2
-      },
-      {
-        "question": "Trasladar AMDD sobre el modelo en espiral",
-        "options": [""],
-        "correct_option": 0
-      },
-      {
-        "question": "Dada una historia de ususario sobre un servicio de control de evaluaciones hacer la tarjeta CRC de la clase Evaluación",
-        "options": [""],
-        "correct_option": 0
-      }
-    ]
-  }
-  
+  "questions": [
+    {
+      "question": "Las Bases de Datos y los Sistemas Multiusuario en Tiempo Real aparecen en la década",
+      "options": [
+        "1950-6?",
+        "1960-7?",
+        "1970-8?",
+        "1980-9?"
+      ],
+      "correct_option": 1,
+      "questionType": "multipleChoice"
+    },
+    {
+      "question": "NO es una característica del Software",
+      "options": [
+        "El software es desarrollado",
+        "El software se deteriora con el uso al igual que el resto de productos manufacturados",
+        "Carece de piezas de repuesto para las partes que funcionan mal",
+        "La mayoría se realiza a medida"
+      ],
+      "correct_option": 1,
+      "questionType": "multipleChoice"
+    },
+    {
+      "question": "La Ingeniería del Software es una disciplina tecnológica que",
+      "options": [
+        "trata de la producción y mantenimiento asistemático de productos software que se desarrollan a lo largo del tiempo con un coste estimado",
+        "trata de la producción y mantenimiento sistemático de productos software que se fabrica con un coste estimado",
+        "trata del desarrollo de productos software que con un coste estimado solucionan problemas de manera permanente",
+        "trata de la producción y mantenimiento sistemático de productos software que se desarrollan y mantienen a lo largo del tiempo y con un coste estimado"
+      ],
+      "correct_option": 3,
+      "questionType": "multipleChoice"
+    },
+    {
+      "question": "En el paradigma del modelo en cascada, la fase de análisis de los requisitos se encarga",
+      "options": [
+        "Del estudio del sistema global en el que se va a incorporar el software",
+        "De recoger los requisitos para el software",
+        "De traducir los requisitos en código",
+        "Ninguna de las opciones es correcta"
+      ],
+      "correct_option": 1,
+      "questionType": "multipleChoice"
+    },
+    {
+      "question": "NO es un modelo de ciclo de vida alternativo",
+      "options": [
+        "Los modelos de reutilización de componentes",
+        "Los modelos de refinamiento progresivo y mejoras iterativas",
+        "Los modelos de transformaciones formales",
+        "Los modelos orientados al escenario de producción"
+      ],
+      "correct_option": 1,
+      "questionType": "multipleChoice"
+    },
+    {
+      "question": "Es un principio ágil",
+      "options": [
+        "Abrazar la permanencia del código",
+        "Realizar pocas entregas y poco frecuentes",
+        "Equipos con individuos motivados",
+        "Medir la calidad del producto mediante complejas métricas estandarizadas"
+      ],
+      "correct_option": 2,
+      "questionType": "multipleChoice"
+    },
+    {
+      "question": "Es una práctica central en las metodologías ágiles",
+      "options": [
+        "Propiedad individual",
+        "Crear los modelos de manera secuencial",
+        "Crear contenido simple",
+        "Representación completa y exhaustiva de los modelos"
+      ],
+      "correct_option": 2,
+      "questionType": "multipleChoice"
+    },
+    {
+      "question": "Con la relación a la Programación eXtrema podemos afirmar",
+      "options": [
+        "No tiene carácter evolutivo",
+        "A pesar de ser una metodología ágil incrementa considerablemente la burocracia",
+        "El cliente pasa a formar parte del equipo de desarrollo",
+        "Las historias de ususario escritas en tarjetas no permiten especificar la importancia de la misma"
+      ],
+      "correct_option": 2,
+      "questionType": "multipleChoice"
+    },
+    {
+      "question": "Trasladar AMDD sobre el modelo en espiral",
+      "options": [
+        ""
+      ],
+      "correct_option": 0,
+      "questionType": "multipleChoice"
+    },
+    {
+      "question": "Dada una historia de ususario sobre un servicio de control de evaluaciones hacer la tarjeta CRC de la clase Evaluación",
+      "options": [
+        ""
+      ],
+      "correct_option": 0,
+      "questionType": "multipleChoice"
+    }
+  ]
+}

@@ -1,79 +1,108 @@
 {
-    "questions": [
-      {
-        "question": "¿En qué década se dieron las aplicaciones Cliente-Servidor y los productos 'inteligentes'?",
-        "options": ["Década 1970-198?",
-                    "Década 1970-198?",
-                    "Década 1980-199?",
-                    "Década 1990-20??"],
-        "correct_option": 3
-      },
-      {
-        "question": "¿Cuál no es una característica del software?",
-        "options": ["No es un elemento lógico.",
-                    "",
-                    "",
-                    "Se realiza combinando componentes"],
-        "correct_option": 3
-      },
-      {
-        "question": "¿Qué se tiene en cuenta en la evaluación del software?",
-        "options": ["",
-                    "",
-                    "",
-                    "El uso de métodos sitemáticos"],
-        "correct_option": 3
-      },
-      {
-        "question": "¿Cuál es un modelo de desarrollo alternativo?",
-        "options": ["Versiones incrementales",
-                    "Prototipado",
-                    "Refinamiento progresivo y mejoras iterativas",
-                    "Modelo en cascada"],
-        "correct_option": 1
-      },
-      {
-        "question": "Pregunta 5 del test",
-        "options": ["",
-                    "",
-                    "",
-                    ""],
-        "correct_option": 2
-      },
-      {
-        "question": "Pregunta 6 del test",
-        "options": ["",
-                    "",
-                    "",
-                    ""],
-        "correct_option": 0
-      },
-      {
-        "question": "¿Cuál no es una categoría de modelado?",
-        "options": ["Modelado de la planificación del desarrollo",
-                    "Modelado de uso",
-                    "Modelado del proceso",
-                    "Modelado de interfaces de usuario"],
-        "correct_option": 0
-      },
-      {
-        "question": "¿Qué característica es del AMDD?",
-        "options": ["Las revisiones no son opcionales",
-                    "La tormenta de ideas se hace en horas",
-                    "La implementación se hace en horas",
-                    "El modelado inicial se hace en horas"],
-        "correct_option": 2
-      },
-      {
-        "question": "Era pasar el modelo XP sobre el espiral",
-        "options": [""],
-        "correct_option": 0
-      },
-      {
-        "question": "Daba una historia de usuario y había que hacer la tarjeta CRC de la clase Prueba",
-        "options": [""],
-        "correct_option": 0
-      }
-    ]
-  }
-  
+  "questions": [
+    {
+      "question": "¿En qué década se dieron las aplicaciones Cliente-Servidor y los productos 'inteligentes'?",
+      "options": [
+        "Década 1970-198?",
+        "Década 1970-198?",
+        "Década 1980-199?",
+        "Década 1990-20??"
+      ],
+      "correct_option": 3,
+      "questionType": "multipleChoice"
+    },
+    {
+      "question": "¿Cuál no es una característica del software?",
+      "options": [
+        "No es un elemento lógico.",
+        "",
+        "",
+        "Se realiza combinando componentes"
+      ],
+      "correct_option": 3,
+      "questionType": "multipleChoice"
+    },
+    {
+      "question": "¿Qué se tiene en cuenta en la evaluación del software?",
+      "options": [
+        "",
+        "",
+        "",
+        "El uso de métodos sitemáticos"
+      ],
+      "correct_option": 3,
+      "questionType": "multipleChoice"
+    },
+    {
+      "question": "¿Cuál es un modelo de desarrollo alternativo?",
+      "options": [
+        "Versiones incrementales",
+        "Prototipado",
+        "Refinamiento progresivo y mejoras iterativas",
+        "Modelo en cascada"
+      ],
+      "correct_option": 1,
+      "questionType": "multipleChoice"
+    },
+    {
+      "question": "Pregunta 5 del test",
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "correct_option": 2,
+      "questionType": "multipleChoice"
+    },
+    {
+      "question": "Pregunta 6 del test",
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "correct_option": 0,
+      "questionType": "multipleChoice"
+    },
+    {
+      "question": "¿Cuál no es una categoría de modelado?",
+      "options": [
+        "Modelado de la planificación del desarrollo",
+        "Modelado de uso",
+        "Modelado del proceso",
+        "Modelado de interfaces de usuario"
+      ],
+      "correct_option": 0,
+      "questionType": "multipleChoice"
+    },
+    {
+      "question": "¿Qué característica es del AMDD?",
+      "options": [
+        "Las revisiones no son opcionales",
+        "La tormenta de ideas se hace en horas",
+        "La implementación se hace en horas",
+        "El modelado inicial se hace en horas"
+      ],
+      "correct_option": 2,
+      "questionType": "multipleChoice"
+    },
+    {
+      "question": "Era pasar el modelo XP sobre el espiral",
+      "options": [
+        ""
+      ],
+      "correct_option": 0,
+      "questionType": "multipleChoice"
+    },
+    {
+      "question": "Daba una historia de usuario y había que hacer la tarjeta CRC de la clase Prueba",
+      "options": [
+        ""
+      ],
+      "correct_option": 0,
+      "questionType": "multipleChoice"
+    }
+  ]
+}

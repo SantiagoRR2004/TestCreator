@@ -8,7 +8,8 @@
         "df -h && fdisk -l && du -sh /documentos",
         "du -sh /documentos && df -h && fdisk -l"
       ],
-      "correct_option": 3
+      "correct_option": 3,
+      "questionType": "multipleChoice"
     },
     {
       "question": "Si deseas dar permisos de lectura, escritura y ejecución a un archivo en Linux para todos los usuarios, ¿cuál sería el comando correcto?",
@@ -18,7 +19,8 @@
         "chmod 666 archivo",
         "chmod 777 archivo"
       ],
-      "correct_option": 3
+      "correct_option": 3,
+      "questionType": "multipleChoice"
     },
     {
       "question": "Como sysadmin quieres ver la carga promedia del sistema en tiempo real (cada 1 segundo), teniendo en cuenta los comandos vistos en clase y exceptuando el uso de `top` ¿Qué comando usarías? (Ejemplo de respuesta no aplicable a este ejercicio echo '1' >/var/log/dpkg.log ;  ps ; time",
@@ -28,7 +30,8 @@
         "",
         ""
       ],
-      "correct_option": 0
+      "correct_option": 0,
+      "questionType": "multipleChoice"
     },
     {
       "question": "Escribe el comando que usarías para enviar el siguiente proceso a background watch uptime",
@@ -38,7 +41,8 @@
         "",
         ""
       ],
-      "correct_option": 0
+      "correct_option": 0,
+      "questionType": "multipleChoice"
     },
     {
       "question": "Cuantos comandos/pasos son necesarios para que un nuevo disco duro este disponible en la carpeta /tmp/alumnos teniendo en cuenta que el disco duro está recién conectado y la carpeta /tmp/alumnos no existe.",
@@ -48,7 +52,8 @@
         "",
         ""
       ],
-      "correct_option": 0
+      "correct_option": 0,
+      "questionType": "multipleChoice"
     },
     {
       "question": "Después de ejecutar el comando `ls -l` obtienes la siguiente descripción de ficheros. Teniendo en cuenta la información mostrada ¿Cuántos enlaces existen?",
@@ -58,7 +63,8 @@
         "",
         ""
       ],
-      "correct_option": 0
+      "correct_option": 0,
+      "questionType": "multipleChoice"
     },
     {
       "question": "Después de ejecutar el comando `ls -l` obtienes la siguiente descripción de ficheros. Teniendo en cuenta la información mostrada ¿Cuántos directorios existen?",
@@ -68,7 +74,8 @@
         "",
         ""
       ],
-      "correct_option": 0
+      "correct_option": 0,
+      "questionType": "multipleChoice"
     },
     {
       "question": "Escribe el comando que usarías para monitorizar cada segundo las 10 últimas líneas del fichero /var/log/mysql/error.log",
@@ -78,7 +85,8 @@
         "",
         ""
       ],
-      "correct_option": 0
+      "correct_option": 0,
+      "questionType": "multipleChoice"
     },
     {
       "question": "Como sysadmin desear cambiar los permisos de una carpeta 'tareas' para que pertenezcan al usuario 'alumno' y al grupo 'aprobados'. ¿Qué comando/s emplearías? (Ejemplo de respuesta no aplicable a este ejercicio echo '1' >/var/log/dpkg.log ;  ps ; time )",
@@ -88,7 +96,8 @@
         "",
         ""
       ],
-      "correct_option": 0
+      "correct_option": 0,
+      "questionType": "multipleChoice"
     },
     {
       "question": "¿Qué comando usarías para cambiar la configuración de MySQL teniendo en cuenta que el fichero se encuentra en /etc/mysql/conf.d/my.cnf?",
@@ -98,7 +107,8 @@
         "",
         ""
       ],
-      "correct_option": 0
+      "correct_option": 0,
+      "questionType": "multipleChoice"
     }
   ]
 }

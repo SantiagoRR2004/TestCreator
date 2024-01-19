@@ -2,27 +2,36 @@
   "questions": [
     {
       "question": "¿Cuál no es un criterio del control?",
-      "options": ["Financiero",
-      		        "Objetivo",
-      		        "No financiero",
-      		        "Mixto"],
-      "correct_option": 1
+      "options": [
+        "Financiero",
+        "Objetivo",
+        "No financiero",
+        "Mixto"
+      ],
+      "correct_option": 1,
+      "questionType": "multipleChoice"
     },
     {
       "question": "Elija la opción correcta",
-      "options": ["Un proyecto predictivo o adaptativo son lo mismo",
-      		        "Los proyectos adaptativos siguen un ciclo de vida secuencial",
-      		        "Los proyectos predictivos intentan cumplir con el plan establecido",
-      		        "La estimación de un proyecto predictivo es el alcance"],
-      "correct_option": 2
+      "options": [
+        "Un proyecto predictivo o adaptativo son lo mismo",
+        "Los proyectos adaptativos siguen un ciclo de vida secuencial",
+        "Los proyectos predictivos intentan cumplir con el plan establecido",
+        "La estimación de un proyecto predictivo es el alcance"
+      ],
+      "correct_option": 2,
+      "questionType": "multipleChoice"
     },
     {
       "question": "¿Qué es incorrecto sobre un análisis PERT?",
-      "options": ["Sólo contiene las actividades más importantes",
-      		        "Importa el orden de los eventos",
-      		        "Lo más importante es la ruta crítica",
-      		        "Hay que estimar el tiempo para cada actividad"],
-      "correct_option": 0
+      "options": [
+        "Sólo contiene las actividades más importantes",
+        "Importa el orden de los eventos",
+        "Lo más importante es la ruta crítica",
+        "Hay que estimar el tiempo para cada actividad"
+      ],
+      "correct_option": 0,
+      "questionType": "multipleChoice"
     }
   ]
 }

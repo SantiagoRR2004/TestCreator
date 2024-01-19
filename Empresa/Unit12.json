@@ -2,27 +2,36 @@
   "questions": [
     {
       "question": "¿Cuál de los siguientes no es un modelo de negocio?",
-      "options": ["Software as a Service (SaaS)",
-      		        "Long tail",
-      		        "Red Colaborativa",
-      		        "Comercio electrónico"],
-      "correct_option": 2
+      "options": [
+        "Software as a Service (SaaS)",
+        "Long tail",
+        "Red Colaborativa",
+        "Comercio electrónico"
+      ],
+      "correct_option": 2,
+      "questionType": "multipleChoice"
     },
     {
       "question": "¿Cuál de los siguientes no es un modelo de negocio?",
-      "options": ["De dos (o varios) lados",
-      		        "Personalized Solution",
-      		        "Crowdsourcing",
-      		        "Modelo de suscripción"],
-      "correct_option": 1
+      "options": [
+        "De dos (o varios) lados",
+        "Personalized Solution",
+        "Crowdsourcing",
+        "Modelo de suscripción"
+      ],
+      "correct_option": 1,
+      "questionType": "multipleChoice"
     },
     {
       "question": "¿Cuál de los siguientes no es un modelo de negocio?",
-      "options": ["Continuous Innovation",
-      		        "Bait & hook",
-      		        "Freemium",
-      		        "Peer to peer"],
-      "correct_option": 0
+      "options": [
+        "Continuous Innovation",
+        "Bait & hook",
+        "Freemium",
+        "Peer to peer"
+      ],
+      "correct_option": 0,
+      "questionType": "multipleChoice"
     }
   ]
 }

@@ -8,7 +8,8 @@
         "",
         ""
       ],
-      "correct_option": 0
+      "correct_option": 0,
+      "questionType": "multipleChoice"
     },
     {
       "question": "¿Qué comando se utiliza para conectarse a un servidor SSH en un puerto específico?",
@@ -18,7 +19,8 @@
         "ssh -p",
         "ssh --remote_port"
       ],
-      "correct_option": 2
+      "correct_option": 2,
+      "questionType": "multipleChoice"
     },
     {
       "question": "¿Qué comando usarías para ver en tiempo real (cada 10 segundos) desde tu máquina los usuarios conectados a una máquina remota (usuario: user, IP:192.168.0.222)? Deberás emplear unicamente los comandos vistos en clase y sin iniciar una sesión ssh interactiva. Es decir, sin que al ejecutar el comando, la sesión ssh se siga ejecutando",
@@ -28,7 +30,8 @@
         "ssh user@192.168.0.222 'watch -n 10 who'",
         "Todas son correctas"
       ],
-      "correct_option": 3
+      "correct_option": 3,
+      "questionType": "multipleChoice"
     },
     {
       "question": "Teniendo en cuenta que el comando `date` nos permite ver la fecha actual, escribe el comando que nos permite ver la fecha remota del equipo `192.168.0.88` con el usuario `alumno` sin iniciar una sesión ssh interactiva. Es decir, sin que al ejecutar el comando, la sesión ssh se siga abierta",
@@ -38,7 +41,8 @@
         "",
         ""
       ],
-      "correct_option": 0
+      "correct_option": 0,
+      "questionType": "multipleChoice"
     },
     {
       "question": "¿Qué es un ataque de “brute force” en SSH?",
@@ -48,7 +52,8 @@
         "Un ataque en el que un atacante intercepta el fichero de clave pública e intenta descifrarla mediante fuerza bruta",
         "Un ataque en el que el atacante trata de encontrar las contraseñas de inicio mediante la fuerza, probando múltiples combinaciones"
       ],
-      "correct_option": 3
+      "correct_option": 3,
+      "questionType": "multipleChoice"
     },
     {
       "question": "¿Cuál es la función principal del archivo sshd_config en un servidor SSH?",
@@ -58,7 +63,8 @@
         "Configurar las criptografía de contraseñas de los usuarios.",
         "Configurar las reglas SSH del servidor firewall."
       ],
-      "correct_option": 0
+      "correct_option": 0,
+      "questionType": "multipleChoice"
     },
     {
       "question": "¿Qué extensión suelen tener los archivos que almacenan las claves públicas SSH?",
@@ -68,7 +74,8 @@
         ".pub",
         ".priv"
       ],
-      "correct_option": 1
+      "correct_option": 1,
+      "questionType": "multipleChoice"
     },
     {
       "question": "En un sistema de almacenamiento, ¿Cuál es la relación entre el disco duro, particiones y los sistemas de archivos?",
@@ -78,7 +85,8 @@
         "",
         ""
       ],
-      "correct_option": 0
+      "correct_option": 0,
+      "questionType": "multipleChoice"
     },
     {
       "question": "¿Qué comando (con parámetros y opciones) usarías para crear una clave privada de tipo ecdsa de 9046 bits? (Si 9046 no es posible, escribe el comando como si fuera posible tal cantidad de bits)",
@@ -88,7 +96,8 @@
         "",
         ""
       ],
-      "correct_option": 0
+      "correct_option": 0,
+      "questionType": "multipleChoice"
     },
     {
       "question": "¿Cuál es el protocolo comúnmente utilizado para la transferencia de archivos a través de SSH?",
@@ -98,7 +107,8 @@
         "PUB",
         "HTTP"
       ],
-      "correct_option": 0
+      "correct_option": 0,
+      "questionType": "multipleChoice"
     }
   ]
 }

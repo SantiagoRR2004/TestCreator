@@ -2,179 +2,245 @@
   "questions": [
     {
       "question": "Señale la respuesta correcta",
-      "options": ["Eficiencia y eficacia se diferencian sólo por los resultados",
-      	          "En general, una mayor eficiencia implica una mejor productividad",
-      		        "Una empresa no eficiente en ningún caso puede ser eficaz",
-                  "Eficacia es obtener el máximo rendimiento con el mínimo de recursos"],
-      "correct_option": 1
+      "options": [
+        "Eficiencia y eficacia se diferencian sólo por los resultados",
+        "En general, una mayor eficiencia implica una mejor productividad",
+        "Una empresa no eficiente en ningún caso puede ser eficaz",
+        "Eficacia es obtener el máximo rendimiento con el mínimo de recursos"
+      ],
+      "correct_option": 1,
+      "questionType": "multipleChoice"
     },
     {
       "question": "¿Qué no es una empresa?",
-      "options": ["Unidad de decisión",
-                  "Unidad de producción",
-                  "Unidad técnico-económica",
-                  "Unidad socio-política"],
-      "correct_option": 1
+      "options": [
+        "Unidad de decisión",
+        "Unidad de producción",
+        "Unidad técnico-económica",
+        "Unidad socio-política"
+      ],
+      "correct_option": 1,
+      "questionType": "multipleChoice"
     },
     {
       "question": "Señale la respuesta correcta",
-      "options": ["Las organizaciones son un tipo específico de empresas",
-                  "Las organizaciones no tienen un propósito o finalidad específicos",
-                  "Todas las organizaciones tienen un fin lucrativo",
-                  "Las organizaciones no empresariales tienen beneficios"],
-      "correct_option": 3
+      "options": [
+        "Las organizaciones son un tipo específico de empresas",
+        "Las organizaciones no tienen un propósito o finalidad específicos",
+        "Todas las organizaciones tienen un fin lucrativo",
+        "Las organizaciones no empresariales tienen beneficios"
+      ],
+      "correct_option": 3,
+      "questionType": "multipleChoice"
     },
     {
       "question": "¿Qué característica no identifica a una organización?",
-      "options": ["Los objetivos",
-                  "Las personas",
-                  "Los procesos",
-                  "Una estructura"],
-      "correct_option": 2
+      "options": [
+        "Los objetivos",
+        "Las personas",
+        "Los procesos",
+        "Una estructura"
+      ],
+      "correct_option": 2,
+      "questionType": "multipleChoice"
     },
     {
       "question": "¿Qué es la gestión de organizaciones?",
-      "options": ["El proceso de dirigir y controlar las empresas",
-                  "El proceso de lograr metas y objetivos",
-                  "La forma de trabajar en diferentes áreas",
-                  "La forma de gestionar el tamaño de la organización"],
-      "correct_option": 0
+      "options": [
+        "El proceso de dirigir y controlar las empresas",
+        "El proceso de lograr metas y objetivos",
+        "La forma de trabajar en diferentes áreas",
+        "La forma de gestionar el tamaño de la organización"
+      ],
+      "correct_option": 0,
+      "questionType": "multipleChoice"
     },
     {
       "question": "¿Cuál de los siguientes factores puede influir en el modo y ámbito de la gestión?",
-      "options": ["El nivel jerárquico del directivo",
-                  "El área de trabajo del directivo",
-                  "El tamaño de la organización",
-                  "Todas son correctas"],
-      "correct_option": 3
+      "options": [
+        "El nivel jerárquico del directivo",
+        "El área de trabajo del directivo",
+        "El tamaño de la organización",
+        "Todas son correctas"
+      ],
+      "correct_option": 3,
+      "questionType": "multipleChoice"
     },
     {
       "question": "Es posible que existan diferentes enfoques de gestión en diferentes culturas y sectores?",
-      "options": ["Solo los sectores tienen diferentes enfoques de gestión",
-                  "No, todas las culturas y sectores gestionan de la misma manera",
-                  "Sí, ya que las culturas y los sectores pueden tener diferentes formas de gestionar",
-                  "Solo las culturas tienen diferentes enfoques de gestión"],
-      "correct_option": 2
+      "options": [
+        "Solo los sectores tienen diferentes enfoques de gestión",
+        "No, todas las culturas y sectores gestionan de la misma manera",
+        "Sí, ya que las culturas y los sectores pueden tener diferentes formas de gestionar",
+        "Solo las culturas tienen diferentes enfoques de gestión"
+      ],
+      "correct_option": 2,
+      "questionType": "multipleChoice"
     },
     {
       "question": "¿Cuál es uno de los beneficios de la IA para empresas y organizaciones?",
-      "options": ["Incrementar los costos operativos",
-                  "Optimizar los procesos empresariales y mejorar la eficiencia",
-                  "Reducir la productividad de los empleados",
-                  "Limitar la toma de decisiones"],
-      "correct_option": 1
+      "options": [
+        "Incrementar los costos operativos",
+        "Optimizar los procesos empresariales y mejorar la eficiencia",
+        "Reducir la productividad de los empleados",
+        "Limitar la toma de decisiones"
+      ],
+      "correct_option": 1,
+      "questionType": "multipleChoice"
     },
     {
       "question": "¿En qué estado se encuentra la economía?",
-      "options": ["Semiglobalización",
-                  "Globalización",
-                  "Depende del experto",
-                  "Glocalización"],
-      "correct_option": 2
+      "options": [
+        "Semiglobalización",
+        "Globalización",
+        "Depende del experto",
+        "Glocalización"
+      ],
+      "correct_option": 2,
+      "questionType": "multipleChoice"
     },
     {
       "question": "¿Qué significa globalización?",
-      "options": ["Las organizaciones piensan globalmente pero actúan localmente",
-                  "Un mundo sin fronteras donde los bienes y servicios se producen y comercializan en todo el mundo, donde hay un intercambio de directivos y empleados entre países, y flujos de fuentes y recursos financieros.",
-                  "Todas son incorrectas",
-                  "Los gerentes deben entender culturas, sistemas, técnicas y leyes diferentes de las propias y adaptarse al entorno cambiante."],
-      "correct_option": 1
+      "options": [
+        "Las organizaciones piensan globalmente pero actúan localmente",
+        "Un mundo sin fronteras donde los bienes y servicios se producen y comercializan en todo el mundo, donde hay un intercambio de directivos y empleados entre países, y flujos de fuentes y recursos financieros.",
+        "Todas son incorrectas",
+        "Los gerentes deben entender culturas, sistemas, técnicas y leyes diferentes de las propias y adaptarse al entorno cambiante."
+      ],
+      "correct_option": 1,
+      "questionType": "multipleChoice"
     },
     {
       "question": "¿Qué significa semiglobalización?",
-      "options": ["Las organizaciones piensan globalmente pero actúan localmente",
-                  "Un mundo sin fronteras donde los bienes y servicios se producen y comercializan en todo el mundo, donde hay un intercambio de directivos y empleados entre países, y flujos de fuentes y recursos financieros.",
-                  "Todas son incorrectas",
-                  "Los gerentes deben entender culturas, sistemas, técnicas y leyes diferentes de las propias y adaptarse al entorno cambiante."],
-      "correct_option": 3
+      "options": [
+        "Las organizaciones piensan globalmente pero actúan localmente",
+        "Un mundo sin fronteras donde los bienes y servicios se producen y comercializan en todo el mundo, donde hay un intercambio de directivos y empleados entre países, y flujos de fuentes y recursos financieros.",
+        "Todas son incorrectas",
+        "Los gerentes deben entender culturas, sistemas, técnicas y leyes diferentes de las propias y adaptarse al entorno cambiante."
+      ],
+      "correct_option": 3,
+      "questionType": "multipleChoice"
     },
     {
       "question": "¿Qué significa glocalización?",
-      "options": ["Las organizaciones piensan globalmente pero actúan localmente",
-                  "Un mundo sin fronteras donde los bienes y servicios se producen y comercializan en todo el mundo, donde hay un intercambio de directivos y empleados entre países, y flujos de fuentes y recursos financieros.",
-                  "Todas son incorrectas",
-                  "Los gerentes deben entender culturas, sistemas, técnicas y leyes diferentes de las propias y adaptarse al entorno cambiante"],
-      "correct_option": 0
+      "options": [
+        "Las organizaciones piensan globalmente pero actúan localmente",
+        "Un mundo sin fronteras donde los bienes y servicios se producen y comercializan en todo el mundo, donde hay un intercambio de directivos y empleados entre países, y flujos de fuentes y recursos financieros.",
+        "Todas son incorrectas",
+        "Los gerentes deben entender culturas, sistemas, técnicas y leyes diferentes de las propias y adaptarse al entorno cambiante"
+      ],
+      "correct_option": 0,
+      "questionType": "multipleChoice"
     },
     {
       "question": "¿Qué se entiende por entorno externo en el contexto de una organización?",
-      "options": ["Factores y situaciones dentro de la organización que afectan su desempeño",
-                  "Factores, fuerzas, situaciones y acontecimientos fuera de la organización que afectan su desempeño.",
-                  "El conjunto de reglamentos y políticas internas de la organización",
-                  "Las tendencias demográficas dentro de la organización"],
-      "correct_option": 1
+      "options": [
+        "Factores y situaciones dentro de la organización que afectan su desempeño",
+        "Factores, fuerzas, situaciones y acontecimientos fuera de la organización que afectan su desempeño.",
+        "El conjunto de reglamentos y políticas internas de la organización",
+        "Las tendencias demográficas dentro de la organización"
+      ],
+      "correct_option": 1,
+      "questionType": "multipleChoice"
     },
     {
       "question": "¿Cuál de las siguientes tríos dimensiones no se incluye en la clasificación del entorno externo?",
-      "options": ["Económica, Demográfica y Tecnológica",
-                  "Económica, Sociocultural y Político/legal",
-                  "Demográfica, Tecnológica y Organizacional",
-                  "Económica, Tecnológica y Global"],
-      "correct_option": 2
+      "options": [
+        "Económica, Demográfica y Tecnológica",
+        "Económica, Sociocultural y Político/legal",
+        "Demográfica, Tecnológica y Organizacional",
+        "Económica, Tecnológica y Global"
+      ],
+      "correct_option": 2,
+      "questionType": "multipleChoice"
     },
     {
       "question": "¿Qué es incorrecto sobre la economía compartida (sharing economy)?",
-      "options": ["Los propietarios de activos comparten con otras personas a través del servicio de pares (peer-to-peer)",
-                  "Airbnb y Uber son ejemplos de economía compartida",
-                  "El modelo de economía compartida se basa en la propiedad colectiva de activos y recursos en lugar de la propiedad individual",
-                  "Puede ser llamada economía de acceso"],
-      "correct_option": 2
+      "options": [
+        "Los propietarios de activos comparten con otras personas a través del servicio de pares (peer-to-peer)",
+        "Airbnb y Uber son ejemplos de economía compartida",
+        "El modelo de economía compartida se basa en la propiedad colectiva de activos y recursos en lugar de la propiedad individual",
+        "Puede ser llamada economía de acceso"
+      ],
+      "correct_option": 2,
+      "questionType": "multipleChoice"
     },
     {
       "question": "¿Qué es una empresa?",
-      "options": ["Una organización sin ánimo de lucro",
-                  "Una entidad que transforma recursos en bienes y/o servicios para obtener beneficios",
-                  "Un sistema abierto que intercambia retroalimentación con su entorno",
-                  "Una forma de gobierno"],
-      "correct_option": 1
+      "options": [
+        "Una organización sin ánimo de lucro",
+        "Una entidad que transforma recursos en bienes y/o servicios para obtener beneficios",
+        "Un sistema abierto que intercambia retroalimentación con su entorno",
+        "Una forma de gobierno"
+      ],
+      "correct_option": 1,
+      "questionType": "multipleChoice"
     },
     {
       "question": "¿Cuál es el objetivo último de una empresa?",
-      "options": ["Crear valor para la sociedad",
-                  "Crear valor para los accionistas",
-                  "Crear valor para los empleados",
-                  "Crear valor para el gobierno"],
-      "correct_option": 1
+      "options": [
+        "Crear valor para la sociedad",
+        "Crear valor para los accionistas",
+        "Crear valor para los empleados",
+        "Crear valor para el gobierno"
+      ],
+      "correct_option": 1,
+      "questionType": "multipleChoice"
     },
     {
       "question": "¿Cuál es una característica de las organizaciones?",
-      "options": ["La falta de estructura y reglas establecidas",
-                  "La ausencia de metas y objetivos",
-                  "La existencia de un propósito o finalidad específicos",
-                  "La imprevisibilidad constante"],
-      "correct_option": 2
+      "options": [
+        "La falta de estructura y reglas establecidas",
+        "La ausencia de metas y objetivos",
+        "La existencia de un propósito o finalidad específicos",
+        "La imprevisibilidad constante"
+      ],
+      "correct_option": 2,
+      "questionType": "multipleChoice"
     },
     {
       "question": "¿Qué se entiende por eficiencia en la gestión?",
-      "options": ["Realizar tareas que ayudan a la organización a alcanzar sus objetivos",
-                  "Obtener el máximo rendimiento con el mínimo de recursos",
-                  "Tomar decisiones informadas y eficaces",
-                  "No cometer errores en la toma de decisiones"],
-      "correct_option": 1
+      "options": [
+        "Realizar tareas que ayudan a la organización a alcanzar sus objetivos",
+        "Obtener el máximo rendimiento con el mínimo de recursos",
+        "Tomar decisiones informadas y eficaces",
+        "No cometer errores en la toma de decisiones"
+      ],
+      "correct_option": 1,
+      "questionType": "multipleChoice"
     },
     {
       "question": "¿Qué es la economía compartida?",
-      "options": ["Un sistema cerrado que no intercambia retroalimentación con su entorno",
-                  "Un sistema económico basado en el intercambio de bienes y servicios",
-                  "Un sistema en el que los propietarios comparten activos subutilizados con otras personas a través de servicios peer-to-peer",
-                  "Un sistema en el que los propietarios obtienen beneficios sin compartir con otros"],
-      "correct_option": 2
+      "options": [
+        "Un sistema cerrado que no intercambia retroalimentación con su entorno",
+        "Un sistema económico basado en el intercambio de bienes y servicios",
+        "Un sistema en el que los propietarios comparten activos subutilizados con otras personas a través de servicios peer-to-peer",
+        "Un sistema en el que los propietarios obtienen beneficios sin compartir con otros"
+      ],
+      "correct_option": 2,
+      "questionType": "multipleChoice"
     },
     {
       "question": "¿Cuál es una categoría del entorno externo que afecta a una organización?",
-      "options": ["La dimensión astronómica",
-                  "La dimensión cultural",
-                  "La dimensión virtual",
-                  "La dimensión espiritual"],
-      "correct_option": 1
+      "options": [
+        "La dimensión astronómica",
+        "La dimensión cultural",
+        "La dimensión virtual",
+        "La dimensión espiritual"
+      ],
+      "correct_option": 1,
+      "questionType": "multipleChoice"
     },
     {
       "question": "¿Cuál es una tendencia demográfica relevante?",
-      "options": ["El aumento de la población en Europa",
-                  "El envejecimiento de la población en China",
-                  "La disminución de la población en África",
-                  "La migración masiva en América"],
-      "correct_option": 1
+      "options": [
+        "El aumento de la población en Europa",
+        "El envejecimiento de la población en China",
+        "La disminución de la población en África",
+        "La migración masiva en América"
+      ],
+      "correct_option": 1,
+      "questionType": "multipleChoice"
     }
   ]
 }

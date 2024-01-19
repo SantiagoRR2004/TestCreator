@@ -8,7 +8,8 @@
         "Listar archivos en un directorio de forma ordenada",
         "Copiar archivos entre volúmenes"
       ],
-      "correct_option": 1
+      "correct_option": 1,
+      "questionType": "multipleChoice"
     },
     {
       "question": "¿Qué comando se utiliza para programar tareas periódicas en Linux?",
@@ -18,7 +19,8 @@
         "schedule",
         "cron"
       ],
-      "correct_option": 3
+      "correct_option": 3,
+      "questionType": "multipleChoice"
     },
     {
       "question": "¿Cuáles de los siguientes comandos permiten instalar programas y gestionar paquetes?",
@@ -28,7 +30,8 @@
         "apt",
         "Todos los anteriores"
       ],
-      "correct_option": 3
+      "correct_option": 3,
+      "questionType": "multipleChoice"
     },
     {
       "question": "¿Qué hace el comando “cat quijote.txt | head -n 100 | tail 5” en un hipotético fichero?",
@@ -38,7 +41,8 @@
         "Ninguna de las anteriores es correcta",
         "Muestra las 5 últimas líneas.Es decir: 95, 96 … 100."
       ],
-      "correct_option": 1
+      "correct_option": 1,
+      "questionType": "multipleChoice"
     },
     {
       "question": "En el supuesto de que un usuario tenga como directorio actual /var/www/html/myApp y quiera moverse a la carpeta /var/lib con un solo comando. ¿Cuál de los siguientes debería utilizar?",
@@ -48,7 +52,8 @@
         "Todos las respuestas son válidas",
         "cd ../../.././lib"
       ],
-      "correct_option": 2
+      "correct_option": 2,
+      "questionType": "multipleChoice"
     },
     {
       "question": "Que comando usarías junto con man para buscar de forma rápida una opción o un texto concreto en la ayuda/descripción de otro comando (deberás escribir el comando usado)",
@@ -58,7 +63,8 @@
         "",
         ""
       ],
-      "correct_option": 0
+      "correct_option": 0,
+      "questionType": "multipleChoice"
     },
     {
       "question": "Escribe el comando que usarías para guardar la salida del comando date en el fichero /tmp/date",
@@ -68,7 +74,8 @@
         "",
         ""
       ],
-      "correct_option": 0
+      "correct_option": 0,
+      "questionType": "multipleChoice"
     },
     {
       "question": "Escribe el comando completo que usarías para ver el resultado de apt search mysql de forma paginada",
@@ -78,7 +85,8 @@
         "",
         ""
       ],
-      "correct_option": 0
+      "correct_option": 0,
+      "questionType": "multipleChoice"
     },
     {
       "question": "¿Qué comando usarías para guardar el resultado de pwd en una variable llamada var?",
@@ -88,7 +96,8 @@
         "",
         ""
       ],
-      "correct_option": 0
+      "correct_option": 0,
+      "questionType": "multipleChoice"
     },
     {
       "question": "Escribe el comando que usarías para desinstalar el paquete mysql de tu ordenador",
@@ -98,7 +107,8 @@
         "",
         ""
       ],
-      "correct_option": 0
+      "correct_option": 0,
+      "questionType": "multipleChoice"
     }
   ]
 }
