@@ -107,6 +107,61 @@
       ],
       "correct_option": 2,
       "questionType": "multipleChoice"
+    },
+    {
+      "question": "¿Qué es Proxmox ?",
+      "options": [
+        "Todas son correctas",
+        "Un sistema operativo",
+        "Un Administración de contenedores",
+        "Un sistema de virtualización"
+      ],
+      "correct_option": 0,
+      "questionType": "multipleChoice"
+    },
+    {
+      "question": "Cuáles de las siguientes opciones contiene los distintos atributos (columnas) que se pueden ver en el Cluster Log de Proxmox :",
+      "options": [
+        "TIME, NODE, SERVICE, DAEMON, USER NAME , PID, MESSAGE,SEVERITY",
+        "TIME, SERVICE, NODE, USER NAME, PID, MESSAGE, SEVERITY",
+        "TIME, SERVICE, NODE, USER NAME, TIME, NODE, SERVICE, INFO, RAM, TRACE, VM,",
+        "TIME, CPU, RAM, SEVERITY"
+      ],
+      "correct_option": 1,
+      "questionType": "multipleChoice"
+    },
+    {
+      "question": "¿Cuál es la versión más antigua de Windows que tenemos disponible para virtualizar a la hora de crear un máquina virtual en Proxmox ?",
+      "options": [
+        "Windows 98",
+        "Windows 95",
+        "Windows 2007",
+        "Windows 2000"
+      ],
+      "correct_option": 3,
+      "questionType": "multipleChoice"
+    },
+    {
+      "question": "A la hora de añadir un dispositivo hardware “serial port” a nuestra máquina virtual ¿cual es el número más alto que podemos introducir sin error?",
+      "options": [
+        "80",
+        "3",
+        "Infinito",
+        "50"
+      ],
+      "correct_option": 1,
+      "questionType": "multipleChoice"
+    },
+    {
+      "question": "Cual de las siguientes afirmaciones es Verdadera:",
+      "options": [
+        "Proxmox sólo puede ser ejecutado como máquina virtual",
+        "Proxmox sólo se puede ejecutar en grandes servidores",
+        "Proxmox es un programa ejecutable de Windows",
+        "Puede instalarse Proxmox en cualquier hardware compatible"
+      ],
+      "correct_option": 3,
+      "questionType": "multipleChoice"
     }
   ]
 }

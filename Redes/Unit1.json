@@ -109,6 +109,39 @@
       ],
       "correct_option": 0,
       "questionType": "multipleChoice"
+    },
+    {
+      "question": "¿Qué comando se utiliza para copiar archivos y directorios preservando atributos y permisos en Linux?",
+      "options": [
+        "cp",
+        "mv",
+        "permsync",
+        "rsync"
+      ],
+      "correct_option": 3,
+      "questionType": "multipleChoice"
+    },
+    {
+      "question": "¿Cuál es el comando para eliminar un directorio llamado 'old_dir' y todos sus contenidos, incluyendo subdirectorios y archivos?",
+      "options": [
+        "rmdir -p old_dir",
+        "rmdir old_dir",
+        "rm -r old_dir",
+        "rm old_dir"
+      ],
+      "correct_option": 2,
+      "questionType": "multipleChoice"
+    },
+    {
+      "question": "¿Qué comando usarías para mostrar las últimas 5 líneas de un archivo llamado 'archivo.txt'?",
+      "options": [
+        "head -n 5 archivo.txt | cat",
+        "cat archivo.txt | head -5",
+        "tail -5 archivo.txt",
+        "cat archivo.txt & tail -5"
+      ],
+      "correct_option": 2,
+      "questionType": "multipleChoice"
     }
   ]
 }

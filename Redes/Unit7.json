@@ -112,6 +112,83 @@
       ],
       "correct_option": 0,
       "questionType": "multipleChoice"
+    },
+    {
+      "question": "¿Qué comando usarías para ver en tiempo real (cada 10 segundos) desde tu máquina los usuarios conectados a una máquina remota (usuario: user, IP:192.168.0.222)? Deberás emplear unicamente los comandos vistos en clase y sin iniciar una sesión ssh interactiva. Es decir, sin que al ejecutar el comando, la sesión ssh se siga ejecutando",
+      "options": [
+        "ssh user@192.168.0.222 'watch -n 10 who'",
+        "",
+        "",
+        ""
+      ],
+      "correct_option": 0,
+      "questionType": "multipleChoice"
+    },
+    {
+      "question": "Con que comando (escríbelo) copiarías el fichero informe.txt  (en tu actual directorio) a un servidor remoto (192.168.0.33) con el usuario 'alumno' a la carpeta /tmp",
+      "options": [
+        "scp informe.txt alumno@192.168.0.33:/tmp",
+        "",
+        "",
+        ""
+      ],
+      "correct_option": 0,
+      "questionType": "multipleChoice"
+    },
+    {
+      "question": "¿Cuál de las siguientes respuestas es cierta?",
+      "options": [
+        "Todas son ciertas.",
+        "Es posible conectarse a un servicio SSH escuchando en el puerto 80.",
+        "SSH NO es  un protocolo exclusivo del sistema operativo linux.",
+        "SSH se utiliza para dar seguridad a protocolos de transporte inseguros."
+      ],
+      "correct_option": 0,
+      "questionType": "multipleChoice"
+    },
+    {
+      "question": "Teniendo en cuenta la siguiente imagen, en la que con un firewall deniega exclusivamente  conexiones a los puertos inferiores al 33, ¿Qué opción debemos cambiar del archivo sshd_config? (Escribe únicamente la línea modificada, cómo la dejarías en el fichero)",
+      "options": [
+        "Port 33",
+        "",
+        "",
+        ""
+      ],
+      "correct_option": 0,
+      "questionType": "multipleChoice"
+    },
+    {
+      "question": "¿Cuál es la forma más segura de transportar nuestra clave privada?",
+      "options": [
+        "Almacenarla en un servidor HTTPS para descargarla posteriormente.",
+        "Enviarla por correo electrónico a uno mismo.",
+        "Realizar una copia mediante FTP.",
+        "Copiarla en un dispositivo USB."
+      ],
+      "correct_option": 3,
+      "questionType": "multipleChoice"
+    },
+    {
+      "question": "¿Cuál de las siguientes afirmaciones sobre las claves SSH es cierta?",
+      "options": [
+        "La clave pública se transporta mediante ssh-copy-id y la clave privada se transporta mediante usb.",
+        "Las claves SSH no se utilizan para cifrar datos, simplemente se usan para autenticarse antes de comenzar la comunicación. ",
+        "La clave publica cifra la clave privada para que pueda ser transportada de modo seguro",
+        "La clave pública se mantiene en secreto y la clave privada se comparte mediante ssh-copy-id."
+      ],
+      "correct_option": 0,
+      "questionType": "multipleChoice"
+    },
+    {
+      "question": "¿Qué comando se usarías para iniciar una sesión SSH con un usuario específico (ejemplo alumno) en un servidor remoto?",
+      "options": [
+        "ssh -l usuario servidor",
+        "ssh -c usuario servidor",
+        "ssh -r usuario servidor",
+        "ssh -s usuario servidor"
+      ],
+      "correct_option": 0,
+      "questionType": "multipleChoice"
     }
   ]
 }

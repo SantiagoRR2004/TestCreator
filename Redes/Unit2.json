@@ -115,6 +115,61 @@
       ],
       "correct_option": 0,
       "questionType": "multipleChoice"
+    },
+    {
+      "question": "Imagina que tienes un archivo de registro llamado '/var/log/dpkg.log' que contiene una gran cantidad de datos. Deseas encontrar todas las líneas que contienen la palabra 'status' y de esas líneas, las que contienen únicamente la palabra 'ubuntu' en ese archivo de registro. ¿Qué secuencias de comandos de Linux (vistos en clase) lograría esto? (ejemplo de respuesta no aplicable a este ejercicio echo '1' >/var/log/dpkg.log |  ps | time )",
+      "options": [
+        "cat /var/log/dpkg.log | grep 'status' | grep 'ubuntu'",
+        "",
+        "",
+        ""
+      ],
+      "correct_option": 0,
+      "questionType": "multipleChoice"
+    },
+    {
+      "question": "El usuario empleado1 está intentando acceder a la carpeta /usr/empleado2 y no tiene permisos ¿Cómo sysadmin cómo lo solucionarías teniendo en cuenta la seguridad general?",
+      "options": [
+        "Añadiría al usuario empleado1 al grupo de sudoers",
+        "Cambiaría los permisos de la carpeta haciendo uso de `chmod -R +rw /usr/empleado2",
+        "Ninguna de las anteriores es correcta",
+        "Cambiaría los permisos de la carpeta haciendo uso de `chmod -R 777 /usr/empleado2"
+      ],
+      "correct_option": 2,
+      "questionType": "multipleChoice"
+    },
+    {
+      "question": "Supongamos que deseas formatear una nueva partición que creaste en tu disco duro para que pueda ser utilizada para almacenar datos. ¿Cuál de los siguientes comandos sería apropiado para formatear la partición con un sistema de archivos ext4?",
+      "options": [
+        "fscreate ext4 /dev/sda1",
+        "mkdisk -fs ext4 /dev/sda1",
+        "format -ext4 /dev/sda1",
+        "mkfs -t ext4 /dev/sda1"
+      ],
+      "correct_option": 3,
+      "questionType": "multipleChoice"
+    },
+    {
+      "question": "Imagina que necesitas conocer la cantidad total de espacio en disco utilizado por un directorio llamado 'datos', verificar la capacidad de almacenamiento de tu sistema y, finalmente, listar las particiones de tu disco duro. ¿Cuál sería el orden correcto para ejecutar estos comandos?",
+      "options": [
+        "du -sh /datos && df -h && fdisk -l",
+        "du -sh /datos && df -h /datos && fdisk -l",
+        "fdisk -l && du -sh /datos && df -h",
+        "df -h && fdisk -l && du -sh /datos"
+      ],
+      "correct_option": 0,
+      "questionType": "multipleChoice"
+    },
+    {
+      "question": "Escribe el comando (y sus opciones) que usarías para que se muestre desde cuando tu ordenador lleva encendido con el siguiente formato:",
+      "options": [
+        "uptime -s",
+        "",
+        "",
+        ""
+      ],
+      "correct_option": 0,
+      "questionType": "multipleChoice"
     }
   ]
 }

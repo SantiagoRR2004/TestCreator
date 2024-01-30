@@ -36,7 +36,7 @@ def questionGenerator(folderPath, numOfQuestions=10, questionsOfEachUnit=None):
             questionsOfEachUnit[x] += 1
 
     for unit in questionsOfEachUnit.keys():
-        with open(os.path.join(folderPath, "Unit" + str(unit) + ".json"), "r") as file:
+        with open(os.path.join(folderPath, "Unit" + str(unit) + ".json"), "r", encoding='utf-8') as file:
             questionsData = json.load(file)
             numOfQuestionsInUnit = len(questionsData["questions"])
 
