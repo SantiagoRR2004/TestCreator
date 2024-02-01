@@ -155,7 +155,10 @@
         ""
       ],
       "correct_option": 0,
-      "questionType": "multipleChoice"
+      "questionType": "multipleChoice",
+      "images": [
+        "firewall.png"
+      ]
     },
     {
       "question": "¿Cuál es la forma más segura de transportar nuestra clave privada?",
