@@ -1,0 +1,61 @@
+{
+  "questions": [
+    {
+      "question": "(Diapositiva 16) ¿Cuál no es una arquitectura informática?",
+      "options": [
+        "Arquitecturas multiprocesador con bus compartido",
+        "Arquitecturas multicomputador",
+        "Arquitecturas vectoriales",
+        "Arquitecturas descentralizadas homogéneas"
+      ],
+      "correct_option": 3,
+      "questionType": "multipleChoice"
+    },
+    {
+      "question": "(Diapositiva 20) ¿Qué modelo paralelo según el mecanismo de control y la clasificación de Flynn tiene varios flujos de instrucciones y un conjunto de datos?",
+      "options": [
+        "SISD",
+        "SIMD",
+        "MISD",
+        "MIMD"
+      ],
+      "correct_option": 2,
+      "questionType": "multipleChoice"
+    },
+    {
+      "question": "(Diapositiva 30) Tenemos un problema que tarda en computarse 1000 horas. Usamos 100 procesos en los cada uno calcula 10 horas y 20 minutos y comunica 10 minutos ¿Cuál es su granularidad?",
+      "options": [
+        "62",
+        "1050 horas",
+        "95.238",
+        "33.333 horas"
+      ],
+      "correct_option": 0,
+      "questionType": "multipleChoice"
+    },
+    {
+      "question": "(Diapositiva 32) ¿Cuáles son los tres tipos de aceleracción?",
+      "options": [
+        "Sublineal, lineal y superlineal",
+        "Geométrica, aritmética y exponencial",
+        "Grado 0, grado 1 y grado 2",
+        "Reactiva, proactiva y inactiva"
+      ],
+      "correct_option": 0,
+      "questionType": "multipleChoice"
+    },
+    {
+      "question": "(Diapositiva 35) Si tienes 1 albañil que hace 1 casa en 50 días, ¿cómo conseguimos 0.5 de eficiencia?",
+      "options": [
+        "2 albañiles hacen una casa en 25 días",
+        "4 albañiles hacen 2 casas en 100 días",
+        "2 albañiles hacen 2 casas en 50 días",
+        "4 albañiles hacen una casa en 100 días",
+        "4 albañiles hacen 4 casas en 25 días",
+        "2 albañiles hacen 2 casas en 75 días"
+      ],
+      "correct_option": 3,
+      "questionType": "multipleChoice"
+    }
+  ]
+}
