@@ -1,0 +1,26 @@
+{
+  "questions": [
+    {
+      "question": "(Diapositiva 6) ¿Qué aproximaciones hay de la IA?",
+      "options": [
+        "IA subsimbólica y simbólica",
+        "IA de inteligencia humana y de inteligencia racional",
+        "IA estrecha y general",
+        "IA subsimbólica, simbólica, de inteligencia humana y de inteligencia racional"
+      ],
+      "correct_option": 0,
+      "questionType": "multipleChoice"
+    },
+    {
+      "question": "(Diapositiva 8) ¿Con qué tipo de IA trabaja el enfoque cognoscitivo?",
+      "options": [
+        "IA que razona como un humano",
+        "IA que razona racionalmente",
+        "IA que se comporta como un humano",
+        "IA que se comporta racionalmente"
+      ],
+      "correct_option": 3,
+      "questionType": "multipleChoice"
+    }
+  ]
+}

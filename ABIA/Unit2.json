@@ -1,0 +1,26 @@
+{
+  "questions": [
+    {
+      "question": "(Diapositiva 8) ¿Qué puntos se deben tener en cuenta para los agentes resolventes de problemas?",
+      "options": [
+        "Tener un objetivo, formular el problema, el proceso de búsqueda y la ejecución",
+        "Indetificar el problema, formular el problema, el proceso de búsqueda y la racionalidad ideal",
+        "Identificar el problema, formular el problema, el proceso de búsqueda y la ejecución",
+        "Tener un objetivo, formular el problema, el proceso de búsqueda y la racionalidad ideal"
+      ],
+      "correct_option": 0,
+      "questionType": "multipleChoice"
+    },
+    {
+      "question": "(Diapositiva 37) ¿Cuáles son las posibles direcciones del proceso de búsqueda?",
+      "options": [
+        "Progresivo, dirigido por los objetivos y bidireccional",
+        "Progresivo, evocativo y dirigido por los datos",
+        "Dirigido por los datos, progresivo y bidireccional",
+        "Dirigido por los objetivos, evocativo y bidireccional"
+      ],
+      "correct_option": 0,
+      "questionType": "multipleChoice"
+    }
+  ]
+}
