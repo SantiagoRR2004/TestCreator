@@ -36,27 +36,32 @@ def questionGenerator(folderPath, numOfQuestions=10, questionsOfEachUnit=None):
             questionsOfEachUnit[x] += 1
 
     for unit in questionsOfEachUnit.keys():
-        with open(os.path.join(folderPath, "Unit" + str(unit) + ".json"), "r", encoding='utf-8') as file:
+        with open(
+            os.path.join(folderPath, "Unit" + str(unit) + ".json"),
+            "r",
+            encoding="utf-8",
+        ) as file:
             questionsData = json.load(file)
-            numOfQuestionsInUnit = len(questionsData["questions"])
+        numOfQuestionsInUnit = len(questionsData["questions"])
 
-            enoughQuestions = questionsOfEachUnit[unit] <= numOfQuestionsInUnit
+        enoughQuestions = questionsOfEachUnit[unit] <= numOfQuestionsInUnit
 
-            while questionsOfEachUnit[unit] > 0:
-                x = randint(0, numOfQuestionsInUnit - 1)
-                questionAdded = copy.deepcopy(questionsData)
-                questionAdded = questionAdded["questions"][x]
-                questionAdded["question"] = (
-                    questionAdded["question"] + " [Tema " + str(unit) + "]"
-                )
+        while questionsOfEachUnit[unit] > 0:
+            x = randint(0, numOfQuestionsInUnit - 1)
+            questionAdded = copy.deepcopy(questionsData)
+            questionAdded = questionAdded["questions"][x]
+            questionAdded["folder"] = folderPath
+            questionAdded["question"] = (
+                questionAdded["question"] + " [Tema " + str(unit) + "]"
+            )
 
-                if enoughQuestions and questionAdded not in questions:
-                    questions.append(questionAdded)
-                    questionsOfEachUnit[unit] -= 1
+            if enoughQuestions and questionAdded not in questions:
+                questions.append(questionAdded)
+                questionsOfEachUnit[unit] -= 1
 
-                elif not enoughQuestions:
-                    questions.append(questionAdded)
-                    questionsOfEachUnit[unit] -= 1
+            elif not enoughQuestions:
+                questions.append(questionAdded)
+                questionsOfEachUnit[unit] -= 1
 
     return questions
 
@@ -234,6 +239,12 @@ def examWriter(questions, fileOutName):
             option_letter = chr(ord("A") + j)  ## Convertir el índice en una letra
             option_html += f'<li><input type="radio" name="question_{i}" value="{option_letter}"> {option_letter}) {option}</li>'
 
+        images = ""
+        if "images" in question:
+            for im in question["images"]:
+                location = os.path.join(question["folder"], im)
+                images += f'<img src="{location}" alt="imagen">'
+
         correct_html = f'<p class="correct-answer">Respuesta correcta: {chr(ord("A") + correct_option)}</p>'
         correct_hidden_input = f'<input type="hidden" name="correct_{i}" value="{chr(ord("A") + correct_option)}">'
 
@@ -241,6 +252,7 @@ def examWriter(questions, fileOutName):
             f"""
         <div class="question">
             <p>{question_number}: {question_text}</p>  <!-- Mostrar el número de pregunta -->
+            {images}
             <ul>
                 {option_html}
             </ul>
