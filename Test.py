@@ -4,6 +4,7 @@ import copy
 import glob
 import os
 import re
+import sys
 from typing import List
 
 
@@ -277,9 +278,9 @@ def examGenerator(
         examWriter(questions, "./ExamenTest" + str(exam + 1) + ".html")
 
 
-numExams = 2
-numOfQuestions = 10
-folder = "Redes"
+numExams = sys.argv[2] if len(sys.argv) > 2 else 1
+numOfQuestions = 10 if len(sys.argv) > 3 else 10
+folder = sys.argv[1] if len(sys.argv) > 1 else "."
 
 
 examGenerator(folder, numExams, numOfQuestions)
