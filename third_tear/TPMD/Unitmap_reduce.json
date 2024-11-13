@@ -1,0 +1,84 @@
+{
+    "questions": [
+        {
+            "question": "Explique la diferencia entre la fase `map` y la fase `reduce` en MapReduce.",
+            "options": [
+                "La fase `map` toma los datos de entrada, los procesa y devuelve pares clave-valor. La fase `reduce` toma estos pares, los agrupa por clave y aplica una función de reducción a cada grupo para obtener un valor único por cada clave."
+            ],
+            "correct_option": 0,
+            "questionType": "multipleChoice"
+        },
+        {
+            "question": "¿Qué significa que una función `reduce` debe ser conmutativa y asociativa? Proporcione un ejemplo de una función que NO cumpla estas propiedades y explique por qué no sería adecuada para la fase `reduce`.",
+            "options": [
+                "Una función es conmutativa si el orden de los operandos no afecta el resultado, y es asociativa si el agrupamiento de los operandos no afecta el resultado. Un ejemplo de función que no cumple estas propiedades es la resta (`resta(x, y) = x - y`), ya que x - y ≠ y - x (no es conmutativa) y (x - y) - z ≠ x - (y - z) (no es asociativa). Esta función no es adecuada porque el resultado final dependería del orden de los valores en la lista."
+            ],
+            "correct_option": 0,
+            "questionType": "multipleChoice"
+        },
+        {
+            "question": "Describa el propósito de la fase `shuffle` en MapReduce. ¿Qué papel juega en la distribución de los datos entre nodos?",
+            "options": [
+                "La fase `shuffle` redistribuye los pares clave-valor generados por la fase `map` para que todos los valores con la misma clave se agrupen juntos en un mismo nodo. Esto es crucial para asegurar que la fase `reduce` reciba todos los valores correspondientes a cada clave y pueda procesarlos correctamente."
+            ],
+            "correct_option": 0,
+            "questionType": "multipleChoice"
+        },
+        {
+            "question": "Indique si las siguientes afirmaciones son verdaderas o falsas, y justifique su respuesta:\na) El resultado de la fase `map` siempre debe ser una lista con el mismo número de elementos que la entrada.\nb) Las claves en la fase `map` pueden ser cualquier tipo de dato, siempre y cuando sean inmutables.\nc) El propósito principal de un `combiner` es reducir el tiempo de procesamiento de la fase `reduce`.",
+            "options": [
+                "a) Falso: La fase `map` puede devolver más o menos elementos dependiendo de la lógica de procesamiento.\nb) Verdadero: Las claves deben ser inmutables para evitar errores durante la fase `shuffle`.\nc) Verdadero: Un `combiner` ayuda a reducir la cantidad de datos que se transfieren y procesan en la fase `reduce`."
+            ],
+            "correct_option": 0,
+            "questionType": "multipleChoice"
+        },
+        {
+            "question": "Describa un escenario en el cual el uso de un `combiner` podría mejorar significativamente el rendimiento de un trabajo MapReduce.",
+            "options": [
+                "En un escenario de conteo de palabras (`Word Count`), un `combiner` local podría sumar las ocurrencias de cada palabra dentro de un nodo antes de enviar los resultados a la fase `reduce`. De esta forma, se reduce la cantidad de datos que se transfieren entre nodos y se minimiza el tiempo de procesamiento de la fase `reduce`."
+            ],
+            "correct_option": 0,
+            "questionType": "multipleChoice"
+        },
+        {
+            "question": "Explique cómo MapReduce garantiza la tolerancia a fallos en un sistema distribuido. ¿Qué ocurre si un nodo falla durante la ejecución de la fase `map`?",
+            "options": [
+                "MapReduce garantiza la tolerancia a fallos reiniciando la tarea fallida en otro nodo que contenga una copia de los datos necesarios. Si un nodo falla durante la ejecución de la fase `map`, la tarea de `map` se reasigna a otro nodo y se reinicia la ejecución desde el inicio, sin perder la información ya procesada en otros nodos."
+            ],
+            "correct_option": 0,
+            "questionType": "multipleChoice"
+        },
+        {
+            "question": "Considere el siguiente problema: Contar la cantidad total de palabras en un archivo distribuido de gran tamaño utilizando MapReduce. Explique cómo diseñaría la función `map` y la función `reduce` para este problema.",
+            "options": [
+                "La función `map` dividiría el archivo en palabras individuales y generaría un par (palabra, 1) para cada palabra encontrada. La función `reduce` tomaría estas listas de (palabra, [1, 1, 1, ...]) y sumaría todos los unos para obtener el total de ocurrencias de cada palabra."
+            ],
+            "correct_option": 0,
+            "questionType": "multipleChoice"
+        },
+        {
+            "question": "Diseñe la función `map` y la función `reduce` para encontrar la máxima temperatura por año a partir de los siguientes datos: `2015-07-13; 24`, `2012-07-11; 24`, `2011-08-13; 43`, `2015-09-11; 17`.",
+            "options": [
+                "```python\n# Función Map\n def map_function(line):\n    year, temp = line.split(';')\n    year = year.split('-')[0]\n    temp = int(temp)\n    return (year, temp)\n\n# Función Reduce\ndef reduce_function(year, temps):\n    return (year, max(temps))\n```"
+            ],
+            "correct_option": 0,
+            "questionType": "multipleChoice"
+        },
+        {
+            "question": "Escriba un programa en Python que calcule la suma de la lista `[1, 2, 3, 4, 5]` utilizando `map` y `reduce`.",
+            "options": [
+                "```python\nfrom functools import reduce\n# Lista de entrada\nlst = [1, 2, 3, 4, 5]\n# Fase Map\nmapped_lst = list(map(lambda x: (1, x), lst))\n# Fase Reduce\ntotal_sum = reduce(lambda x, y: x + y, [val for key, val in mapped_lst])\nprint(\"La suma total es:\", total_sum)  # Salida esperada: La suma total es: 15\n```"
+            ],
+            "correct_option": 0,
+            "questionType": "multipleChoice"
+        },
+        {
+            "question": "Dado el texto `Welcome to the Big World of Big Data`, diseñe una función `map` para descomponer el texto en palabras y una función `reduce` que cuente la frecuencia de cada palabra.",
+            "options": [
+                "```python\n# Función Map\ndef map_function(text):\n    words = text.split()\n    return [(word.lower(), 1) for word in words]\n\n# Función Reduce\ndef reduce_function(word, counts):\n    return (word, sum(counts))\n```"
+            ],
+            "correct_option": 0,
+            "questionType": "multipleChoice"
+        }
+    ]
+}
