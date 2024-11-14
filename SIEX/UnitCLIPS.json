@@ -1,0 +1,213 @@
+{
+    "questions": [
+        {
+            "question": "¿Qué comando se usa para ejecutar las reglas activas en CLIPS?",
+            "options": [
+                "(run)",
+                "(start)",
+                "(reset)",
+                "Todas las opciones son equivalentes (son alias de (run))"
+            ],
+            "correct_option": 0,
+            "questionType": "multipleChoice"
+        },
+        {
+            "question": "¿Cuál es la sintaxis correcta para definir un hecho simple (ordered fact) en CLIPS?",
+            "options": [
+                "(nombre_hecho valor1 valor2 ...)",
+                "(nombre_hecho (campol valor1) (campo2 valor2) ...)",
+                "(deftemplate nombre_hecho valor1 valor2...)",
+                "(ordered-fact nombre valor1 valor2 ...)"
+            ],
+            "correct_option": 0,
+            "questionType": "multipleChoice"
+        },
+        {
+            "question": "¿Qué estrategia de resolución de conflictos en CLIPS prioriza las reglas más recientemente activadas?",
+            "options": [
+                "Depth Strategy (Profundidad)",
+                "Breadth Strategy (Anchura)",
+                "LEX Strategy",
+                "Random Strategy"
+            ],
+            "correct_option": 0,
+            "questionType": "multipleChoice"
+        },
+        {
+            "question": "¿Qué hará el siguiente código si se ejecuta en CLIPS?\n(defrule verificar-descuento\n\t\t(comprador ?x)\n\t\t(edad ?x ?edad)\n\t\t(test (> ?edad 65))\n\t\t=>\n\t\t(assert (descuento ?x))\n)",
+            "options": [
+                "El código elimina los hechos de los compradores mayores de 65 años",
+                "El código no hace nada ya que no se especifica qué hacer en el RHS (lado derecho)",
+                "El código añade un hecho de descuento para los compradores cuya edad es mayor a 65 años",
+                "El código imprime un mensaje en consola para los compradores mayores de 65 años"
+            ],
+            "correct_option": 2,
+            "questionType": "multipleChoice"
+        },
+        {
+            "question": "¿Cómo se define la prioridad de ejecución de las reglas en CLIPS?",
+            "options": [
+                "Mediante la propiedad \"salience\", que asigna una prioridad numérica entre -10000 y 10000.",
+                "Por el orden en el que los hechos de las reglas son definidos en el código.",
+                "Según el tipo de hechos que manipula cada regla.",
+                "Las reglas siempre se ejecutan en orden alfabético."
+            ],
+            "correct_option": 0,
+            "questionType": "multipleChoice"
+        },
+        {
+            "question": "¿Qué comando se usa en CLIPS para definir una plantilla de hecho estructurado?",
+            "options": [
+                "(deftemplate ...)",
+                "(assert ...)",
+                "(defrule ...)",
+                "(deffacts ...)"
+            ],
+            "correct_option": 0,
+            "questionType": "multipleChoice"
+        },
+        {
+            "question": "¿Qué comando se usa en CLIPS para insertar manualmente un nuevo hecho?",
+            "options": [
+                "(insert [hecho])",
+                "(assert [hecho])",
+                "(add [hecho])",
+                "Todas las opciones son equivalentes (son alias de assert)"
+            ],
+            "correct_option": 1,
+            "questionType": "multipleChoice"
+        },
+        {
+            "question": "¿Cuál es la función principal de las reglas en CLIPS y cómo se estructuran?",
+            "options": [
+                "Establecen las condiciones que han de cumplir los hechos almacenados en la agenda.",
+                "Relacionan hechos y ejecutan acciones cuando las condiciones se cumplen.",
+                "Todas las opciones son correctas.",
+                "Organizan hechos en una estructura jerárquica de memoria."
+            ],
+            "correct_option": 1,
+            "questionType": "multipleChoice"
+        },
+        {
+            "question": "¿Qué hace el siguiente fragmento de código CLIPS?\n(defrule ejemplo-regla\n\t\t(animal ?a)\n\t\t(edad ?a ?edad)\n\t\t(test (=> ?edad 5)\n)=>\n\t\t(printout t ?a \" es un animal adulto.\" crlf)\n)",
+            "options": [
+                "El código añade un hecho con la información de los animales con más de 5 años, sin importar sus otras características.",
+                "El código imprime el nombre de los animales con más de 5 años, sin importar sus otras características.",
+                "El código sólo imprime animales que tienen exactamente 5 años.",
+                "Todas las opciones son correctas"
+            ],
+            "correct_option": 1,
+            "questionType": "multipleChoice"
+        },
+        {
+            "question": "¿Cuál es el propósito de una plantilla (template) en CLIPS?",
+            "options": [
+                "Para estandarizar la estructura de los hechos",
+                "Para definir variables globales (las enumeradas en el template)",
+                "Para ejecutar reglas en un orden específico (el definido en el template)",
+                "Para crear automáticamente la lista de hechos simples que define"
+            ],
+            "correct_option": 0,
+            "questionType": "multipleChoice"
+        },
+        {
+            "question": "¿Cómo se definen las variables en CLIPS dentro de las reglas?",
+            "options": [
+                "Con el prefijo \"?\" seguido del nombre de la variable",
+                "Con el símbolo \"$\" seguido del nombre de la variable",
+                "Con el símbolo \"@\" seguido del nombre de la variable",
+                "Definiendo las variables como \"fact\" o \"rule\""
+            ],
+            "correct_option": 0,
+            "questionType": "multipleChoice"
+        },
+        {
+            "question": "¿Para qué sirve el comando (reset) en CLIPS?",
+            "options": [
+                "Todas las opciones son correctas",
+                "Para ejecutar las reglas aplicables",
+                "Para limpiar la memoria activa",
+                "Para cargar los hechos iniciales y preparar la agenda de reglas activadas"
+            ],
+            "correct_option": 3,
+            "questionType": "multipleChoice"
+        },
+        {
+            "question": "¿Cuál es la diferencia principal entre hechos simples (ordered facts) y hechos estructurados (template facts) en CLIPS?",
+            "options": [
+                "Los hechos estructurados tienen una estructura con campos especificos",
+                "Los hechos simples almacenan múltiples valores, los estructurados no",
+                "Los hechos simples se definen con templates, los estructurados no",
+                "No hay diferencia, ambos se usan para almacenar datos básicos"
+            ],
+            "correct_option": 0,
+            "questionType": "multipleChoice"
+        },
+        {
+            "question": "¿Qué ocurre cuando una regla en CLIPS contiene variables en el LHS (lado izquierdo, condiciones)?",
+            "options": [
+                "No se permiten variables en el LHS",
+                "Las variables en el LHS se utilizan únicamente para apuntar a hechos presentes en la agenda.",
+                "Las variables permiten capturar valores de hechos y aplican restricciones en el LHS y RHS.",
+                "Todas las opciones son correctas"
+            ],
+            "correct_option": 2,
+            "questionType": "multipleChoice"
+        },
+        {
+            "question": "¿Qué sucede cuando las condiciones de una regla coinciden con los hechos en CLIPS?",
+            "options": [
+                "La regla se activa y se añade a la agenda",
+                "Se ejecutan automáticamente todas las reglas",
+                "La regla es eliminada de la base de hechos",
+                "Se reinicia el sistema"
+            ],
+            "correct_option": 0,
+            "questionType": "multipleChoice"
+        },
+        {
+            "question": "¿Qué tipos principales de hechos permite definir CLIPS?",
+            "options": [
+                "Hechos simples (ordered facts) y hechos estructurados (template tacts)",
+                "Hechos complejos (ordered facts) y simples (plain facts)",
+                "Hechos estáticos (static facts) y dinámicos (dynamic facts)",
+                "Únicamente hechos estructurados (template facts)"
+            ],
+            "correct_option": 0,
+            "questionType": "multipleChoice"
+        },
+        {
+            "question": "¿Qué ocurre cuando un módulo en CLIPS es puesto \"en foco\" mediante el comando (focus)?",
+            "options": [
+                "Las reglas del módulo en foco son las primeras en ejecutarse según su prioridad.",
+                "El módulo en foco no puede tener reglas activadas.",
+                "Las reglas del módulo en foco se ejecutan después de las reglas de otros módulos.",
+                "El motor de inferencia ignora las reglas del módulo en foco."
+            ],
+            "correct_option": 0,
+            "questionType": "multipleChoice"
+        },
+        {
+            "question": "¿Qué sucede después de la ejecución de una regla en CLIPS?",
+            "options": [
+                "Se reinicia la memoria activa",
+                "La ejecución se detiene hasta que el usuario la reinicie",
+                "La agenda se borra automáticamente",
+                "El motor reevaluará las reglas de la base de conocimiento para ver si otras pueden aplicarse"
+            ],
+            "correct_option": 3,
+            "questionType": "multipleChoice"
+        },
+        {
+            "question": "¿Qué función tiene el comando (test) en una regla de CLIPS?",
+            "options": [
+                "Permite evaluar expresiones booleanas en las condiciones de la regla",
+                "Define las condiciones lógicas para el lado derecho (acciones) de la regla",
+                "Inserta nuevos hechos en la memoria activa",
+                "Elimina hechos de la memoria activa"
+            ],
+            "correct_option": 0,
+            "questionType": "multipleChoice"
+        }
+    ]
+}
